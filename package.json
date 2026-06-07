@@ -1,0 +1,14 @@
+{
+  "name": "dimaggio-watch",
+  "version": "1.0.0",
+  "description": "Tracks the longest active hitting streaks in MLB and how close they are to Joe DiMaggio's record of 56.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build:data": "node scripts/build-data.mjs",
+    "dev": "node scripts/build-data.mjs && node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiMaggio Watch — Longest active MLB hitting streaks</title>
+    <meta
+      name="description"
+      content="Live tracker of the longest active hitting streaks in Major League Baseball and how close they are to Joe DiMaggio's record of 56 games."
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%BE%3C/text%3E%3C/svg%3E" />
+    <meta property="og:title" content="DiMaggio Watch" />
+    <meta property="og:description" content="The longest active hitting streaks in MLB, and how close they are to 56." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="stitching" aria-hidden="true"></div>
+
+    <header class="masthead">
+      <div class="masthead__inner">
+        <p class="masthead__kicker">Major League Baseball · Est. record 1941</p>
+        <h1 class="masthead__title">DiMaggio&nbsp;Watch</h1>
+        <p class="masthead__tagline">
+          Tracking the longest <em>active</em> hitting streaks in baseball —
+          and the chase toward Joe DiMaggio's <strong>56</strong>.
+        </p>
+      </div>
+    </header>
+
+    <main class="wrap" id="app">
+      <section class="hero" id="hero" hidden>
+        <div class="hero__label">Current streak leader</div>
+        <div class="hero__name" id="hero-name">—</div>
+        <div class="hero__team" id="hero-team"></div>
+
+        <div class="hero__count">
+          <span class="hero__num" id="hero-num">0</span>
+          <span class="hero__unit">straight games with a hit</span>
+        </div>
+
+        <div class="hero__verdict" id="hero-verdict"></div>
+
+        <div class="track" id="track" aria-hidden="true">
+          <div class="track__fill" id="track-fill"></div>
+          <div class="track__marks" id="track-marks"></div>
+        </div>
+        <div class="track__caption">
+          <span>Game 1</span>
+          <span>DiMaggio — 56</span>
+        </div>
+      </section>
+
+      <section class="board" id="board" hidden>
+        <h2 class="board__title">Active hitting streaks</h2>
+        <ol class="board__list" id="board-list"></ol>
+      </section>
+
+      <section class="record">
+        <div class="record__badge">56</div>
+        <div class="record__body">
+          <h2 class="record__title">The record</h2>
+          <p>
+            From May 15 to July 16, <strong>1941</strong>, Joe DiMaggio of the
+            New York Yankees got a hit in <strong>56 consecutive games</strong> —
+            the longest hitting streak in modern Major League history. No one has
+            come within a dozen games of it in over eight decades.
+          </p>
+          <p class="record__milestones" id="record-milestones"></p>
+        </div>
+      </section>
+
+      <section class="state" id="loading">Loading today's streaks…</section>
+      <section class="state state--empty" id="empty" hidden>
+        No active hitting streaks right now — check back during the season.
+      </section>
+      <section class="state state--error" id="error" hidden>
+        Couldn't load the latest streaks. Please refresh in a moment.
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p id="updated" class="foot__updated"></p>
+      <p class="foot__note">
+        Streaks are computed from official regular-season at-bats via the public
+        MLB Stats API. A game with no official at-bats (all walks, a sacrifice
+        bunt, hit-by-pitch) does not break a streak; a rare sac-fly-only game may
+        extend one by a game. Not affiliated with MLB.
+      </p>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

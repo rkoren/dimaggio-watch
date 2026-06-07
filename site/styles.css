@@ -1,0 +1,418 @@
+:root {
+  --navy: #0a2240;
+  --navy-deep: #061629;
+  --cream: #f6f1e3;
+  --cream-dim: #e9e1cb;
+  --ink: #1a1a1a;
+  --red: #b11313;
+  --gold: #c8a24a;
+  --line: rgba(10, 34, 64, 0.14);
+  --shadow: 0 10px 30px rgba(6, 22, 41, 0.12);
+  --max: 880px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Spectral", Georgia, "Times New Roman", serif;
+  color: var(--ink);
+  background-color: var(--cream);
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(10, 34, 64, 0.05) 1px, transparent 0);
+  background-size: 22px 22px;
+  line-height: 1.55;
+}
+
+.stitching {
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--red) 0 14px,
+    transparent 14px 24px
+  );
+  opacity: 0.85;
+}
+
+/* ---------- masthead ---------- */
+.masthead {
+  background: var(--navy);
+  color: var(--cream);
+  text-align: center;
+  padding: 2.4rem 1.25rem 2.6rem;
+  border-bottom: 3px solid var(--gold);
+}
+
+.masthead__inner {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.masthead__kicker {
+  font-family: "Oswald", system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  font-size: 0.72rem;
+  color: var(--gold);
+  margin: 0 0 0.6rem;
+}
+
+.masthead__title {
+  font-family: "Oswald", system-ui, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: clamp(2.6rem, 9vw, 5rem);
+  line-height: 0.95;
+  margin: 0;
+}
+
+.masthead__tagline {
+  max-width: 34rem;
+  margin: 0.9rem auto 0;
+  font-size: 1.05rem;
+  color: rgba(246, 241, 227, 0.85);
+}
+
+.masthead__tagline strong {
+  color: var(--gold);
+}
+
+/* ---------- layout ---------- */
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.6rem 1.25rem 3rem;
+}
+
+section {
+  margin-top: 1.6rem;
+}
+
+/* ---------- hero ---------- */
+.hero {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--red);
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  padding: 1.8rem 1.6rem 2rem;
+  text-align: center;
+}
+
+.hero__label {
+  font-family: "Oswald", system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: 0.74rem;
+  color: var(--red);
+}
+
+.hero__name {
+  font-family: "Oswald", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.8rem, 6vw, 3rem);
+  line-height: 1.05;
+  margin-top: 0.3rem;
+  color: var(--navy);
+}
+
+.hero__team {
+  font-size: 0.95rem;
+  color: rgba(10, 34, 64, 0.7);
+  letter-spacing: 0.02em;
+}
+
+.hero__count {
+  margin: 1.1rem 0 0.4rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.hero__num {
+  font-family: "Oswald", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(3.4rem, 16vw, 6rem);
+  line-height: 1;
+  color: var(--red);
+}
+
+.hero__unit {
+  font-size: 1rem;
+  color: rgba(10, 34, 64, 0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-family: "Oswald", system-ui, sans-serif;
+}
+
+.hero__verdict {
+  font-size: 1.1rem;
+  margin: 0.2rem auto 1.4rem;
+  max-width: 30rem;
+  color: var(--navy);
+}
+
+.hero__verdict strong {
+  color: var(--red);
+}
+
+/* ---------- progress track ---------- */
+.track {
+  position: relative;
+  height: 16px;
+  background: var(--cream-dim);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: visible;
+}
+
+.track__fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0;
+  background: linear-gradient(90deg, var(--gold), var(--red));
+  border-radius: 999px;
+  transition: width 0.9s ease;
+}
+
+.track__marks {
+  position: absolute;
+  inset: 0;
+}
+
+.mark {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  background: var(--navy);
+  opacity: 0.45;
+}
+
+.mark__label {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Oswald", system-ui, sans-serif;
+  font-size: 0.7rem;
+  color: rgba(10, 34, 64, 0.7);
+  white-space: nowrap;
+}
+
+.mark--hit {
+  opacity: 1;
+  background: var(--red);
+  width: 3px;
+}
+
+.track__caption {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.1rem;
+  font-family: "Oswald", system-ui, sans-serif;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(10, 34, 64, 0.65);
+}
+
+/* ---------- board ---------- */
+.board__title,
+.record__title {
+  font-family: "Oswald", system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 1rem;
+  color: var(--navy);
+  border-bottom: 2px solid var(--navy);
+  padding-bottom: 0.4rem;
+  margin: 0 0 0.6rem;
+}
+
+.board__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  align-items: center;
+  gap: 0.5rem 0.9rem;
+  padding: 0.7rem 0.4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.row:first-child {
+  border-top: 1px solid var(--line);
+}
+
+.row__rank {
+  font-family: "Oswald", system-ui, sans-serif;
+  font-weight: 600;
+  color: rgba(10, 34, 64, 0.5);
+  text-align: right;
+}
+
+.row__name {
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 1.08rem;
+}
+
+.row__meta {
+  font-size: 0.82rem;
+  color: rgba(10, 34, 64, 0.6);
+}
+
+.row__streak {
+  font-family: "Oswald", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--red);
+  text-align: right;
+  line-height: 1;
+}
+
+.row__streak span {
+  display: block;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: rgba(10, 34, 64, 0.55);
+}
+
+.row__bar {
+  grid-column: 2 / 4;
+  height: 5px;
+  background: var(--cream-dim);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.row__bar > i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--red));
+}
+
+.tag {
+  display: inline-block;
+  font-family: "Oswald", system-ui, sans-serif;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: var(--gold);
+  color: var(--navy-deep);
+  padding: 0.05rem 0.45rem;
+  border-radius: 3px;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
+/* ---------- record card ---------- */
+.record {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.4rem;
+  align-items: start;
+  background: var(--navy);
+  color: var(--cream);
+  border-radius: 6px;
+  padding: 1.6rem;
+  box-shadow: var(--shadow);
+}
+
+.record__badge {
+  font-family: "Oswald", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(3rem, 14vw, 5rem);
+  line-height: 0.9;
+  color: var(--gold);
+  border: 3px solid var(--gold);
+  border-radius: 50%;
+  width: clamp(5rem, 22vw, 7rem);
+  height: clamp(5rem, 22vw, 7rem);
+  display: grid;
+  place-items: center;
+}
+
+.record__title {
+  color: var(--gold);
+  border-color: rgba(200, 162, 74, 0.4);
+}
+
+.record p {
+  margin: 0.2rem 0 0.7rem;
+  color: rgba(246, 241, 227, 0.88);
+  font-size: 0.98rem;
+}
+
+.record__milestones {
+  font-size: 0.85rem !important;
+  color: rgba(246, 241, 227, 0.7) !important;
+}
+
+/* ---------- states / footer ---------- */
+.state {
+  text-align: center;
+  padding: 1.4rem;
+  color: rgba(10, 34, 64, 0.7);
+  font-style: italic;
+}
+
+.state--error {
+  color: var(--red);
+}
+
+.foot {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.6rem 1.25rem 3rem;
+  border-top: 1px solid var(--line);
+}
+
+.foot__updated {
+  font-family: "Oswald", system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.74rem;
+  color: var(--navy);
+  margin: 0 0 0.5rem;
+}
+
+.foot__note {
+  font-size: 0.8rem;
+  color: rgba(10, 34, 64, 0.6);
+  margin: 0;
+  max-width: 46rem;
+}
+
+@media (max-width: 520px) {
+  .record {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .row {
+    grid-template-columns: 1.6rem 1fr auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track__fill {
+    transition: none;
+  }
+}
