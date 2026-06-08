@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T21:44:05.291Z",
+  "generatedAt": "2026-06-08T22:38:35.824Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -71,19 +71,6 @@
     },
     {
       "rank": 4,
-      "playerId": 702284,
-      "name": "Cole Young",
-      "team": "SEA",
-      "teamName": "Mariners",
-      "streak": 10,
-      "startDate": "2026-05-27",
-      "lastHitDate": "2026-06-07",
-      "lastGameDate": "2026-06-07",
-      "gamesToRecord": 46,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 5,
       "playerId": 805367,
       "name": "Chase Meidroth",
       "team": "CWS",
@@ -96,7 +83,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 6,
+      "rank": 5,
       "playerId": 676475,
       "name": "Alec Burleson",
       "team": "STL",
@@ -109,7 +96,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 7,
+      "rank": 6,
       "playerId": 650333,
       "name": "Luis Arraez",
       "team": "SF",
@@ -122,7 +109,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 8,
+      "rank": 7,
       "playerId": 605170,
       "name": "Victor Caratini",
       "team": "MIN",
@@ -135,7 +122,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 8,
       "playerId": 668930,
       "name": "Brice Turang",
       "team": "MIL",
@@ -148,7 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 9,
       "playerId": 805808,
       "name": "Kevin McGonigle",
       "team": "DET",
@@ -161,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 10,
       "playerId": 687093,
       "name": "Vaughn Grissom",
       "team": "LAA",
@@ -174,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 11,
       "playerId": 669016,
       "name": "Brandon Marsh",
       "team": "PHI",
@@ -187,7 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 12,
       "playerId": 663968,
       "name": "Jake Mangum",
       "team": "PIT",
@@ -200,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 13,
       "playerId": 640902,
       "name": "Jhonny Pereda",
       "team": "SEA",
@@ -213,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 14,
       "playerId": 672960,
       "name": "Kazuma Okamoto",
       "team": "TOR",
@@ -226,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 15,
       "playerId": 678246,
       "name": "Miguel Vargas",
       "team": "CWS",
@@ -239,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 16,
       "playerId": 670541,
       "name": "Yordan Alvarez",
       "team": "HOU",
@@ -252,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 17,
       "playerId": 805999,
       "name": "A.J. Ewing",
       "team": "NYM",
@@ -265,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 18,
       "playerId": 664761,
       "name": "Alec Bohm",
       "team": "PHI",
@@ -278,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 19,
       "playerId": 694362,
       "name": "Blake Dunn",
       "team": "CIN",
@@ -291,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 20,
       "playerId": 681715,
       "name": "Heriberto Hernández",
       "team": "MIA",
@@ -304,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 21,
       "playerId": 691023,
       "name": "Jordan Walker",
       "team": "STL",
@@ -317,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 22,
       "playerId": 673962,
       "name": "Josh Jung",
       "team": "TEX",
@@ -330,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 23,
       "playerId": 543309,
       "name": "Kyle Higashioka",
       "team": "TEX",
@@ -343,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 25,
+      "rank": 24,
       "playerId": 673548,
       "name": "Seiya Suzuki",
       "team": "CHC",
@@ -353,6 +340,19 @@
       "lastHitDate": "2026-06-07",
       "lastGameDate": "2026-06-07",
       "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 655316,
+      "name": "Andruw Monasterio",
+      "team": "BOS",
+      "teamName": "Red Sox",
+      "streak": 4,
+      "startDate": "2026-05-30",
+      "lastHitDate": "2026-06-07",
+      "lastGameDate": "2026-06-07",
+      "gamesToRecord": 52,
       "nextMilestone": 20
     }
   ]
