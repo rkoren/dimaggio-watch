@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T17:16:24.527Z",
+  "generatedAt": "2026-06-10T19:06:00.300Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -136,6 +136,19 @@
     },
     {
       "rank": 9,
+      "playerId": 650490,
+      "name": "Yandy Díaz",
+      "team": "TB",
+      "teamName": "Rays",
+      "streak": 7,
+      "startDate": "2026-06-03",
+      "lastHitDate": "2026-06-10",
+      "lastGameDate": "2026-06-10",
+      "gamesToRecord": 49,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 10,
       "playerId": 805999,
       "name": "A.J. Ewing",
       "team": "NYM",
@@ -148,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 11,
       "playerId": 691023,
       "name": "Jordan Walker",
       "team": "STL",
@@ -161,26 +174,13 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 12,
       "playerId": 673962,
       "name": "Josh Jung",
       "team": "TEX",
       "teamName": "Rangers",
       "streak": 6,
       "startDate": "2026-06-02",
-      "lastHitDate": "2026-06-09",
-      "lastGameDate": "2026-06-09",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 12,
-      "playerId": 668723,
-      "name": "Ryan Vilade",
-      "team": "TB",
-      "teamName": "Rays",
-      "streak": 6,
-      "startDate": "2026-06-01",
       "lastHitDate": "2026-06-09",
       "lastGameDate": "2026-06-09",
       "gamesToRecord": 50,
@@ -201,14 +201,14 @@
     },
     {
       "rank": 14,
-      "playerId": 650490,
-      "name": "Yandy Díaz",
-      "team": "TB",
-      "teamName": "Rays",
+      "playerId": 663757,
+      "name": "Trent Grisham",
+      "team": "NYY",
+      "teamName": "Yankees",
       "streak": 6,
-      "startDate": "2026-06-03",
-      "lastHitDate": "2026-06-09",
-      "lastGameDate": "2026-06-09",
+      "startDate": "2026-06-04",
+      "lastHitDate": "2026-06-10",
+      "lastGameDate": "2026-06-10",
       "gamesToRecord": 50,
       "nextMilestone": 20
     },
@@ -266,19 +266,6 @@
     },
     {
       "rank": 19,
-      "playerId": 663757,
-      "name": "Trent Grisham",
-      "team": "NYY",
-      "teamName": "Yankees",
-      "streak": 5,
-      "startDate": "2026-06-04",
-      "lastHitDate": "2026-06-09",
-      "lastGameDate": "2026-06-09",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 20,
       "playerId": 687263,
       "name": "Zach Neto",
       "team": "LAA",
@@ -288,6 +275,19 @@
       "lastHitDate": "2026-06-09",
       "lastGameDate": "2026-06-09",
       "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 20,
+      "playerId": 682657,
+      "name": "Angel Martínez",
+      "team": "CLE",
+      "teamName": "Guardians",
+      "streak": 4,
+      "startDate": "2026-06-07",
+      "lastHitDate": "2026-06-10",
+      "lastGameDate": "2026-06-10",
+      "gamesToRecord": 52,
       "nextMilestone": 20
     },
     {
