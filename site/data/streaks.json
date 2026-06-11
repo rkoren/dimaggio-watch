@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T17:24:51.692Z",
+  "generatedAt": "2026-06-11T19:10:54.498Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -97,6 +97,19 @@
     },
     {
       "rank": 6,
+      "playerId": 691023,
+      "name": "Jordan Walker",
+      "team": "STL",
+      "teamName": "Cardinals",
+      "streak": 8,
+      "startDate": "2026-06-02",
+      "lastHitDate": "2026-06-11",
+      "lastGameDate": "2026-06-11",
+      "gamesToRecord": 48,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 7,
       "playerId": 678246,
       "name": "Miguel Vargas",
       "team": "CWS",
@@ -109,7 +122,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 7,
+      "rank": 8,
       "playerId": 694362,
       "name": "Blake Dunn",
       "team": "CIN",
@@ -122,7 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 8,
+      "rank": 9,
       "playerId": 640902,
       "name": "Jhonny Pereda",
       "team": "SEA",
@@ -135,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 10,
       "playerId": 673962,
       "name": "Josh Jung",
       "team": "TEX",
@@ -148,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 11,
       "playerId": 673548,
       "name": "Seiya Suzuki",
       "team": "CHC",
@@ -161,7 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 12,
       "playerId": 650490,
       "name": "Yandy Díaz",
       "team": "TB",
@@ -171,19 +184,6 @@
       "lastHitDate": "2026-06-10",
       "lastGameDate": "2026-06-10",
       "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 12,
-      "playerId": 681715,
-      "name": "Heriberto Hernández",
-      "team": "MIA",
-      "teamName": "Marlins",
-      "streak": 6,
-      "startDate": "2026-06-01",
-      "lastHitDate": "2026-06-10",
-      "lastGameDate": "2026-06-10",
-      "gamesToRecord": 50,
       "nextMilestone": 20
     },
     {
@@ -344,15 +344,15 @@
     },
     {
       "rank": 25,
-      "playerId": 675961,
-      "name": "Alika Williams",
-      "team": "ATH",
-      "teamName": "Athletics",
-      "streak": 4,
-      "startDate": "2026-06-07",
-      "lastHitDate": "2026-06-10",
-      "lastGameDate": "2026-06-10",
-      "gamesToRecord": 52,
+      "playerId": 656716,
+      "name": "Zach McKinstry",
+      "team": "DET",
+      "teamName": "Tigers",
+      "streak": 5,
+      "startDate": "2026-06-05",
+      "lastHitDate": "2026-06-11",
+      "lastGameDate": "2026-06-11",
+      "gamesToRecord": 51,
       "nextMilestone": 20
     }
   ]
