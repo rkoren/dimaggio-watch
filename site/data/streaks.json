@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T22:42:22.382Z",
+  "generatedAt": "2026-06-11T23:38:08.603Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -156,7 +156,7 @@
       "streak": 7,
       "startDate": "2026-05-29",
       "lastHitDate": "2026-06-08",
-      "lastGameDate": "2026-06-08",
+      "lastGameDate": "2026-06-11",
       "gamesToRecord": 49,
       "nextMilestone": 20
     },
@@ -175,19 +175,6 @@
     },
     {
       "rank": 12,
-      "playerId": 647304,
-      "name": "Josh Naylor",
-      "team": "SEA",
-      "teamName": "Mariners",
-      "streak": 6,
-      "startDate": "2026-06-05",
-      "lastHitDate": "2026-06-10",
-      "lastGameDate": "2026-06-10",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 13,
       "playerId": 663757,
       "name": "Trent Grisham",
       "team": "NYY",
@@ -200,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 13,
       "playerId": 686469,
       "name": "Vinnie Pasquantino",
       "team": "KC",
@@ -210,6 +197,19 @@
       "lastHitDate": "2026-06-11",
       "lastGameDate": "2026-06-11",
       "gamesToRecord": 50,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 14,
+      "playerId": 681624,
+      "name": "Andy Pages",
+      "team": "LAD",
+      "teamName": "Dodgers",
+      "streak": 5,
+      "startDate": "2026-06-05",
+      "lastHitDate": "2026-06-11",
+      "lastGameDate": "2026-06-11",
+      "gamesToRecord": 51,
       "nextMilestone": 20
     },
     {
@@ -234,7 +234,7 @@
       "streak": 5,
       "startDate": "2026-06-05",
       "lastHitDate": "2026-06-10",
-      "lastGameDate": "2026-06-10",
+      "lastGameDate": "2026-06-11",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
@@ -318,19 +318,6 @@
     },
     {
       "rank": 23,
-      "playerId": 669899,
-      "name": "Ryan Ward",
-      "team": "LAD",
-      "teamName": "Dodgers",
-      "streak": 5,
-      "startDate": "2026-06-04",
-      "lastHitDate": "2026-06-10",
-      "lastGameDate": "2026-06-10",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 24,
       "playerId": 669127,
       "name": "Shea Langeliers",
       "team": "ATH",
@@ -339,6 +326,19 @@
       "startDate": "2026-06-06",
       "lastHitDate": "2026-06-10",
       "lastGameDate": "2026-06-10",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 24,
+      "playerId": 660271,
+      "name": "Shohei Ohtani",
+      "team": "LAD",
+      "teamName": "Dodgers",
+      "streak": 5,
+      "startDate": "2026-06-06",
+      "lastHitDate": "2026-06-11",
+      "lastGameDate": "2026-06-11",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
