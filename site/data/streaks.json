@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T19:10:54.498Z",
+  "generatedAt": "2026-06-11T20:58:04.631Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -123,6 +123,19 @@
     },
     {
       "rank": 8,
+      "playerId": 673548,
+      "name": "Seiya Suzuki",
+      "team": "CHC",
+      "teamName": "Cubs",
+      "streak": 8,
+      "startDate": "2026-06-03",
+      "lastHitDate": "2026-06-11",
+      "lastGameDate": "2026-06-11",
+      "gamesToRecord": 48,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 9,
       "playerId": 694362,
       "name": "Blake Dunn",
       "team": "CIN",
@@ -135,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 10,
       "playerId": 640902,
       "name": "Jhonny Pereda",
       "team": "SEA",
@@ -148,33 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
-      "playerId": 673962,
-      "name": "Josh Jung",
-      "team": "TEX",
-      "teamName": "Rangers",
-      "streak": 7,
-      "startDate": "2026-06-02",
-      "lastHitDate": "2026-06-10",
-      "lastGameDate": "2026-06-10",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
       "rank": 11,
-      "playerId": 673548,
-      "name": "Seiya Suzuki",
-      "team": "CHC",
-      "teamName": "Cubs",
-      "streak": 7,
-      "startDate": "2026-06-03",
-      "lastHitDate": "2026-06-10",
-      "lastGameDate": "2026-06-10",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 12,
       "playerId": 650490,
       "name": "Yandy Díaz",
       "team": "TB",
@@ -187,7 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 12,
       "playerId": 647304,
       "name": "Josh Naylor",
       "team": "SEA",
@@ -200,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 13,
       "playerId": 663757,
       "name": "Trent Grisham",
       "team": "NYY",
@@ -213,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 14,
       "playerId": 667472,
       "name": "Dane Myers",
       "team": "CIN",
@@ -226,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 15,
       "playerId": 518692,
       "name": "Freddie Freeman",
       "team": "LAD",
@@ -239,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 16,
       "playerId": 665877,
       "name": "José Fermín",
       "team": "STL",
@@ -252,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 17,
       "playerId": 660688,
       "name": "Keibert Ruiz",
       "team": "WSH",
@@ -261,6 +248,19 @@
       "startDate": "2026-06-03",
       "lastHitDate": "2026-06-10",
       "lastGameDate": "2026-06-10",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 18,
+      "playerId": 683737,
+      "name": "Michael Busch",
+      "team": "CHC",
+      "teamName": "Cubs",
+      "streak": 5,
+      "startDate": "2026-06-06",
+      "lastHitDate": "2026-06-11",
+      "lastGameDate": "2026-06-11",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
@@ -338,7 +338,7 @@
       "streak": 5,
       "startDate": "2026-06-05",
       "lastHitDate": "2026-06-10",
-      "lastGameDate": "2026-06-10",
+      "lastGameDate": "2026-06-11",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
