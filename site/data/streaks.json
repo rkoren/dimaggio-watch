@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T01:17:56.396Z",
+  "generatedAt": "2026-06-11T03:22:53.848Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -49,11 +49,11 @@
       "name": "Zack Gelof",
       "team": "ATH",
       "teamName": "Athletics",
-      "streak": 14,
+      "streak": 15,
       "startDate": "2026-05-25",
-      "lastHitDate": "2026-06-09",
-      "lastGameDate": "2026-06-09",
-      "gamesToRecord": 42,
+      "lastHitDate": "2026-06-10",
+      "lastGameDate": "2026-06-10",
+      "gamesToRecord": 41,
       "nextMilestone": 20
     },
     {
@@ -84,6 +84,19 @@
     },
     {
       "rank": 5,
+      "playerId": 676475,
+      "name": "Alec Burleson",
+      "team": "STL",
+      "teamName": "Cardinals",
+      "streak": 10,
+      "startDate": "2026-05-30",
+      "lastHitDate": "2026-06-10",
+      "lastGameDate": "2026-06-10",
+      "gamesToRecord": 46,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 6,
       "playerId": 678246,
       "name": "Miguel Vargas",
       "team": "CWS",
@@ -96,7 +109,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 6,
+      "rank": 7,
       "playerId": 694362,
       "name": "Blake Dunn",
       "team": "CIN",
@@ -109,7 +122,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 7,
+      "rank": 8,
       "playerId": 640902,
       "name": "Jhonny Pereda",
       "team": "SEA",
@@ -122,7 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 8,
+      "rank": 9,
       "playerId": 691023,
       "name": "Jordan Walker",
       "team": "STL",
@@ -135,7 +148,33 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 10,
+      "playerId": 673962,
+      "name": "Josh Jung",
+      "team": "TEX",
+      "teamName": "Rangers",
+      "streak": 7,
+      "startDate": "2026-06-02",
+      "lastHitDate": "2026-06-10",
+      "lastGameDate": "2026-06-10",
+      "gamesToRecord": 49,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 11,
+      "playerId": 673548,
+      "name": "Seiya Suzuki",
+      "team": "CHC",
+      "teamName": "Cubs",
+      "streak": 7,
+      "startDate": "2026-06-03",
+      "lastHitDate": "2026-06-10",
+      "lastGameDate": "2026-06-10",
+      "gamesToRecord": 49,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 12,
       "playerId": 650490,
       "name": "Yandy Díaz",
       "team": "TB",
@@ -148,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 13,
       "playerId": 681715,
       "name": "Heriberto Hernández",
       "team": "MIA",
@@ -161,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 14,
       "playerId": 647304,
       "name": "Josh Naylor",
       "team": "SEA",
@@ -174,7 +213,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 15,
+      "playerId": 665019,
+      "name": "Kody Clemens",
+      "team": "MIN",
+      "teamName": "Twins",
+      "streak": 6,
+      "startDate": "2026-06-04",
+      "lastHitDate": "2026-06-10",
+      "lastGameDate": "2026-06-10",
+      "gamesToRecord": 50,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 16,
       "playerId": 663757,
       "name": "Trent Grisham",
       "team": "NYY",
@@ -187,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 17,
       "playerId": 667472,
       "name": "Dane Myers",
       "team": "CIN",
@@ -200,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 18,
       "playerId": 518692,
       "name": "Freddie Freeman",
       "team": "LAD",
@@ -213,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 19,
       "playerId": 665877,
       "name": "José Fermín",
       "team": "STL",
@@ -226,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 20,
       "playerId": 660688,
       "name": "Keibert Ruiz",
       "team": "WSH",
@@ -239,20 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
-      "playerId": 665019,
-      "name": "Kody Clemens",
-      "team": "MIN",
-      "teamName": "Twins",
-      "streak": 5,
-      "startDate": "2026-06-04",
-      "lastHitDate": "2026-06-09",
-      "lastGameDate": "2026-06-09",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 18,
+      "rank": 21,
       "playerId": 683083,
       "name": "Nasim Nuñez",
       "team": "WSH",
@@ -265,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 22,
       "playerId": 664770,
       "name": "Nathan Lukes",
       "team": "TOR",
@@ -278,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 23,
       "playerId": 669899,
       "name": "Ryan Ward",
       "team": "LAD",
@@ -291,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 24,
       "playerId": 686469,
       "name": "Vinnie Pasquantino",
       "team": "KC",
@@ -304,50 +343,11 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
-      "playerId": 687263,
-      "name": "Zach Neto",
-      "team": "LAA",
-      "teamName": "Angels",
-      "streak": 5,
-      "startDate": "2026-06-05",
-      "lastHitDate": "2026-06-09",
-      "lastGameDate": "2026-06-09",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 23,
-      "playerId": 681624,
-      "name": "Andy Pages",
-      "team": "LAD",
-      "teamName": "Dodgers",
-      "streak": 4,
-      "startDate": "2026-06-05",
-      "lastHitDate": "2026-06-10",
-      "lastGameDate": "2026-06-10",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 24,
-      "playerId": 682657,
-      "name": "Angel Martínez",
-      "team": "CLE",
-      "teamName": "Guardians",
-      "streak": 4,
-      "startDate": "2026-06-07",
-      "lastHitDate": "2026-06-10",
-      "lastGameDate": "2026-06-10",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
       "rank": 25,
-      "playerId": 681082,
-      "name": "Bryson Stott",
-      "team": "PHI",
-      "teamName": "Phillies",
+      "playerId": 675961,
+      "name": "Alika Williams",
+      "team": "ATH",
+      "teamName": "Athletics",
       "streak": 4,
       "startDate": "2026-06-07",
       "lastHitDate": "2026-06-10",
