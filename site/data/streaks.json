@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T23:38:08.603Z",
+  "generatedAt": "2026-06-12T01:20:50.442Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -149,19 +149,6 @@
     },
     {
       "rank": 10,
-      "playerId": 640902,
-      "name": "Jhonny Pereda",
-      "team": "SEA",
-      "teamName": "Mariners",
-      "streak": 7,
-      "startDate": "2026-05-29",
-      "lastHitDate": "2026-06-08",
-      "lastGameDate": "2026-06-11",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 11,
       "playerId": 650490,
       "name": "Yandy Díaz",
       "team": "TB",
@@ -171,6 +158,19 @@
       "lastHitDate": "2026-06-10",
       "lastGameDate": "2026-06-10",
       "gamesToRecord": 49,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 11,
+      "playerId": 518692,
+      "name": "Freddie Freeman",
+      "team": "LAD",
+      "teamName": "Dodgers",
+      "streak": 6,
+      "startDate": "2026-06-05",
+      "lastHitDate": "2026-06-11",
+      "lastGameDate": "2026-06-11",
+      "gamesToRecord": 50,
       "nextMilestone": 20
     },
     {
@@ -227,19 +227,6 @@
     },
     {
       "rank": 16,
-      "playerId": 518692,
-      "name": "Freddie Freeman",
-      "team": "LAD",
-      "teamName": "Dodgers",
-      "streak": 5,
-      "startDate": "2026-06-05",
-      "lastHitDate": "2026-06-10",
-      "lastGameDate": "2026-06-11",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 17,
       "playerId": 665877,
       "name": "José Fermín",
       "team": "STL",
@@ -252,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 17,
       "playerId": 660688,
       "name": "Keibert Ruiz",
       "team": "WSH",
@@ -265,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 18,
       "playerId": 683737,
       "name": "Michael Busch",
       "team": "CHC",
@@ -278,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 19,
       "playerId": 683083,
       "name": "Nasim Nuñez",
       "team": "WSH",
@@ -291,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 20,
       "playerId": 664770,
       "name": "Nathan Lukes",
       "team": "TOR",
@@ -304,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 21,
       "playerId": 672640,
       "name": "Otto Lopez",
       "team": "MIA",
@@ -317,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 22,
       "playerId": 669127,
       "name": "Shea Langeliers",
       "team": "ATH",
@@ -330,13 +317,26 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 23,
       "playerId": 660271,
       "name": "Shohei Ohtani",
       "team": "LAD",
       "teamName": "Dodgers",
       "streak": 5,
       "startDate": "2026-06-06",
+      "lastHitDate": "2026-06-11",
+      "lastGameDate": "2026-06-11",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 24,
+      "playerId": 621493,
+      "name": "Taylor Ward",
+      "team": "BAL",
+      "teamName": "Orioles",
+      "streak": 5,
+      "startDate": "2026-06-07",
       "lastHitDate": "2026-06-11",
       "lastGameDate": "2026-06-11",
       "gamesToRecord": 51,
