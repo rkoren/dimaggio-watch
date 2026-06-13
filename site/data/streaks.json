@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T22:30:21.493Z",
+  "generatedAt": "2026-06-13T23:31:47.479Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -149,25 +149,25 @@
     },
     {
       "rank": 10,
-      "playerId": 686469,
-      "name": "Vinnie Pasquantino",
-      "team": "KC",
-      "teamName": "Royals",
-      "streak": 7,
-      "startDate": "2026-06-05",
-      "lastHitDate": "2026-06-12",
-      "lastGameDate": "2026-06-12",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 11,
       "playerId": 800050,
       "name": "Chase DeLauter",
       "team": "CLE",
       "teamName": "Guardians",
       "streak": 6,
       "startDate": "2026-06-06",
+      "lastHitDate": "2026-06-13",
+      "lastGameDate": "2026-06-13",
+      "gamesToRecord": 50,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 11,
+      "playerId": 694192,
+      "name": "Jackson Chourio",
+      "team": "MIL",
+      "teamName": "Brewers",
+      "streak": 6,
+      "startDate": "2026-06-07",
       "lastHitDate": "2026-06-13",
       "lastGameDate": "2026-06-13",
       "gamesToRecord": 50,
@@ -279,19 +279,6 @@
     },
     {
       "rank": 20,
-      "playerId": 695600,
-      "name": "Carter Jensen",
-      "team": "KC",
-      "teamName": "Royals",
-      "streak": 5,
-      "startDate": "2026-06-06",
-      "lastHitDate": "2026-06-12",
-      "lastGameDate": "2026-06-12",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 21,
       "playerId": 695490,
       "name": "Edwin Arroyo",
       "team": "CIN",
@@ -304,20 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
-      "playerId": 694192,
-      "name": "Jackson Chourio",
-      "team": "MIL",
-      "teamName": "Brewers",
-      "streak": 5,
-      "startDate": "2026-06-07",
-      "lastHitDate": "2026-06-12",
-      "lastGameDate": "2026-06-12",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 23,
+      "rank": 21,
       "playerId": 695578,
       "name": "James Wood",
       "team": "WSH",
@@ -330,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 22,
       "playerId": 691783,
       "name": "Jordan Lawlar",
       "team": "AZ",
@@ -343,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 25,
+      "rank": 23,
       "playerId": 689414,
       "name": "Liam Hicks",
       "team": "MIA",
@@ -352,6 +326,32 @@
       "startDate": "2026-06-09",
       "lastHitDate": "2026-06-13",
       "lastGameDate": "2026-06-13",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 24,
+      "playerId": 694410,
+      "name": "LuJames Groover",
+      "team": "AZ",
+      "teamName": "D-backs",
+      "streak": 5,
+      "startDate": "2026-06-06",
+      "lastHitDate": "2026-06-12",
+      "lastGameDate": "2026-06-12",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 701762,
+      "name": "Nick Kurtz",
+      "team": "ATH",
+      "teamName": "Athletics",
+      "streak": 5,
+      "startDate": "2026-06-07",
+      "lastHitDate": "2026-06-12",
+      "lastGameDate": "2026-06-12",
       "gamesToRecord": 51,
       "nextMilestone": 20
     }
