@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T21:34:55.979Z",
+  "generatedAt": "2026-06-14T22:33:17.063Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -266,6 +266,19 @@
     },
     {
       "rank": 19,
+      "playerId": 703607,
+      "name": "Henry Bolte",
+      "team": "ATH",
+      "teamName": "Athletics",
+      "streak": 6,
+      "startDate": "2026-06-08",
+      "lastHitDate": "2026-06-14",
+      "lastGameDate": "2026-06-14",
+      "gamesToRecord": 50,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 20,
       "playerId": 695578,
       "name": "James Wood",
       "team": "WSH",
@@ -278,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 21,
       "playerId": 689414,
       "name": "Liam Hicks",
       "team": "MIA",
@@ -291,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 22,
       "playerId": 624413,
       "name": "Pete Alonso",
       "team": "BAL",
@@ -304,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 23,
       "playerId": 677951,
       "name": "Bobby Witt Jr.",
       "team": "KC",
@@ -317,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 24,
       "playerId": 702284,
       "name": "Cole Young",
       "team": "SEA",
@@ -330,26 +343,13 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 25,
       "playerId": 686527,
       "name": "Dominic Canzone",
       "team": "SEA",
       "teamName": "Mariners",
       "streak": 5,
       "startDate": "2026-06-10",
-      "lastHitDate": "2026-06-14",
-      "lastGameDate": "2026-06-14",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
-      "playerId": 665487,
-      "name": "Fernando Tatis Jr.",
-      "team": "SD",
-      "teamName": "Padres",
-      "streak": 5,
-      "startDate": "2026-06-09",
       "lastHitDate": "2026-06-14",
       "lastGameDate": "2026-06-14",
       "gamesToRecord": 51,
