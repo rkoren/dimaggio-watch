@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T16:40:14.761Z",
+  "generatedAt": "2026-06-14T17:35:57.891Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -279,19 +279,6 @@
     },
     {
       "rank": 20,
-      "playerId": 668804,
-      "name": "Bryan Reynolds",
-      "team": "PIT",
-      "teamName": "Pirates",
-      "streak": 5,
-      "startDate": "2026-06-09",
-      "lastHitDate": "2026-06-13",
-      "lastGameDate": "2026-06-14",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 21,
       "playerId": 805811,
       "name": "Bryce Eldridge",
       "team": "SF",
@@ -304,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 21,
       "playerId": 695490,
       "name": "Edwin Arroyo",
       "team": "CIN",
@@ -317,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 22,
       "playerId": 703607,
       "name": "Henry Bolte",
       "team": "ATH",
@@ -330,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 23,
       "playerId": 695578,
       "name": "James Wood",
       "team": "WSH",
@@ -343,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 25,
+      "rank": 24,
       "playerId": 691783,
       "name": "Jordan Lawlar",
       "team": "AZ",
@@ -352,6 +339,19 @@
       "startDate": "2026-03-30",
       "lastHitDate": "2026-06-12",
       "lastGameDate": "2026-06-12",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 681351,
+      "name": "Logan O'Hoppe",
+      "team": "LAA",
+      "teamName": "Angels",
+      "streak": 5,
+      "startDate": "2026-06-08",
+      "lastHitDate": "2026-06-13",
+      "lastGameDate": "2026-06-13",
       "gamesToRecord": 51,
       "nextMilestone": 20
     }
