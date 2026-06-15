@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T22:49:36.209Z",
+  "generatedAt": "2026-06-15T23:41:09.869Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -97,32 +97,6 @@
     },
     {
       "rank": 6,
-      "playerId": 672640,
-      "name": "Otto Lopez",
-      "team": "MIA",
-      "teamName": "Marlins",
-      "streak": 8,
-      "startDate": "2026-06-06",
-      "lastHitDate": "2026-06-14",
-      "lastGameDate": "2026-06-15",
-      "gamesToRecord": 48,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 7,
-      "playerId": 695600,
-      "name": "Carter Jensen",
-      "team": "KC",
-      "teamName": "Royals",
-      "streak": 7,
-      "startDate": "2026-06-06",
-      "lastHitDate": "2026-06-14",
-      "lastGameDate": "2026-06-15",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 8,
       "playerId": 694192,
       "name": "Jackson Chourio",
       "team": "MIL",
@@ -135,7 +109,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 7,
+      "playerId": 695578,
+      "name": "James Wood",
+      "team": "WSH",
+      "teamName": "Nationals",
+      "streak": 7,
+      "startDate": "2026-06-08",
+      "lastHitDate": "2026-06-15",
+      "lastGameDate": "2026-06-15",
+      "gamesToRecord": 49,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 8,
       "playerId": 689414,
       "name": "Liam Hicks",
       "team": "MIA",
@@ -148,7 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 9,
       "playerId": 701762,
       "name": "Nick Kurtz",
       "team": "ATH",
@@ -161,20 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
-      "playerId": 682622,
-      "name": "Noelvi Marte",
-      "team": "CIN",
-      "teamName": "Reds",
-      "streak": 7,
-      "startDate": "2026-06-05",
-      "lastHitDate": "2026-06-14",
-      "lastGameDate": "2026-06-14",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 12,
+      "rank": 10,
       "playerId": 502671,
       "name": "Paul Goldschmidt",
       "team": "NYY",
@@ -187,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 11,
       "playerId": 668904,
       "name": "Royce Lewis",
       "team": "MIN",
@@ -200,7 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 12,
       "playerId": 669392,
       "name": "Samad Taylor",
       "team": "SD",
@@ -213,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 13,
       "playerId": 669127,
       "name": "Shea Langeliers",
       "team": "ATH",
@@ -226,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 14,
       "playerId": 675961,
       "name": "Alika Williams",
       "team": "ATH",
@@ -239,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 15,
       "playerId": 668804,
       "name": "Bryan Reynolds",
       "team": "PIT",
@@ -252,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 16,
       "playerId": 805811,
       "name": "Bryce Eldridge",
       "team": "SF",
@@ -265,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 17,
       "playerId": 800050,
       "name": "Chase DeLauter",
       "team": "CLE",
@@ -278,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 18,
       "playerId": 703607,
       "name": "Henry Bolte",
       "team": "ATH",
@@ -291,20 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
-      "playerId": 695578,
-      "name": "James Wood",
-      "team": "WSH",
-      "teamName": "Nationals",
-      "streak": 6,
-      "startDate": "2026-06-08",
-      "lastHitDate": "2026-06-14",
-      "lastGameDate": "2026-06-15",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 22,
+      "rank": 19,
       "playerId": 624413,
       "name": "Pete Alonso",
       "team": "BAL",
@@ -317,20 +278,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
-      "playerId": 677951,
-      "name": "Bobby Witt Jr.",
-      "team": "KC",
-      "teamName": "Royals",
+      "rank": 20,
+      "playerId": 666182,
+      "name": "Bo Bichette",
+      "team": "NYM",
+      "teamName": "Mets",
       "streak": 5,
-      "startDate": "2026-06-10",
-      "lastHitDate": "2026-06-14",
+      "startDate": "2026-06-11",
+      "lastHitDate": "2026-06-15",
       "lastGameDate": "2026-06-15",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 21,
       "playerId": 702284,
       "name": "Cole Young",
       "team": "SEA",
@@ -343,13 +304,52 @@
       "nextMilestone": 20
     },
     {
-      "rank": 25,
+      "rank": 22,
       "playerId": 686527,
       "name": "Dominic Canzone",
       "team": "SEA",
       "teamName": "Mariners",
       "streak": 5,
       "startDate": "2026-06-10",
+      "lastHitDate": "2026-06-14",
+      "lastGameDate": "2026-06-14",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 23,
+      "playerId": 665487,
+      "name": "Fernando Tatis Jr.",
+      "team": "SD",
+      "teamName": "Padres",
+      "streak": 5,
+      "startDate": "2026-06-09",
+      "lastHitDate": "2026-06-14",
+      "lastGameDate": "2026-06-14",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 24,
+      "playerId": 596142,
+      "name": "Gary Sánchez",
+      "team": "MIL",
+      "teamName": "Brewers",
+      "streak": 5,
+      "startDate": "2026-06-04",
+      "lastHitDate": "2026-06-14",
+      "lastGameDate": "2026-06-14",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 680776,
+      "name": "Jarren Duran",
+      "team": "BOS",
+      "teamName": "Red Sox",
+      "streak": 5,
+      "startDate": "2026-06-09",
       "lastHitDate": "2026-06-14",
       "lastGameDate": "2026-06-14",
       "gamesToRecord": 51,
