@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T03:21:45.416Z",
+  "generatedAt": "2026-06-17T05:50:49.505Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -58,6 +58,32 @@
     },
     {
       "rank": 3,
+      "playerId": 701762,
+      "name": "Nick Kurtz",
+      "team": "ATH",
+      "teamName": "Athletics",
+      "streak": 9,
+      "startDate": "2026-06-07",
+      "lastHitDate": "2026-06-16",
+      "lastGameDate": "2026-06-16",
+      "gamesToRecord": 47,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 4,
+      "playerId": 669127,
+      "name": "Shea Langeliers",
+      "team": "ATH",
+      "teamName": "Athletics",
+      "streak": 9,
+      "startDate": "2026-06-06",
+      "lastHitDate": "2026-06-16",
+      "lastGameDate": "2026-06-16",
+      "gamesToRecord": 47,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 5,
       "playerId": 668804,
       "name": "Bryan Reynolds",
       "team": "PIT",
@@ -70,7 +96,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 4,
+      "rank": 6,
       "playerId": 695600,
       "name": "Carter Jensen",
       "team": "KC",
@@ -83,7 +109,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 5,
+      "rank": 7,
       "playerId": 695578,
       "name": "James Wood",
       "team": "WSH",
@@ -96,7 +122,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 6,
+      "rank": 8,
       "playerId": 665877,
       "name": "José Fermín",
       "team": "STL",
@@ -109,7 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 7,
+      "rank": 9,
       "playerId": 689414,
       "name": "Liam Hicks",
       "team": "MIA",
@@ -122,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 8,
+      "rank": 10,
       "playerId": 502671,
       "name": "Paul Goldschmidt",
       "team": "NYY",
@@ -135,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 11,
       "playerId": 669392,
       "name": "Samad Taylor",
       "team": "SD",
@@ -148,7 +174,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 12,
+      "playerId": 675961,
+      "name": "Alika Williams",
+      "team": "ATH",
+      "teamName": "Athletics",
+      "streak": 7,
+      "startDate": "2026-06-07",
+      "lastHitDate": "2026-06-16",
+      "lastGameDate": "2026-06-16",
+      "gamesToRecord": 49,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 13,
       "playerId": 681351,
       "name": "Logan O'Hoppe",
       "team": "LAA",
@@ -161,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 14,
       "playerId": 545361,
       "name": "Mike Trout",
       "team": "LAA",
@@ -174,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 15,
       "playerId": 691718,
       "name": "Pete Crow-Armstrong",
       "team": "CHC",
@@ -187,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 16,
       "playerId": 670541,
       "name": "Yordan Alvarez",
       "team": "HOU",
@@ -200,20 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
-      "playerId": 675961,
-      "name": "Alika Williams",
-      "team": "ATH",
-      "teamName": "Athletics",
-      "streak": 6,
-      "startDate": "2026-06-07",
-      "lastHitDate": "2026-06-14",
-      "lastGameDate": "2026-06-14",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 15,
+      "rank": 17,
       "playerId": 596103,
       "name": "Austin Slater",
       "team": "TB",
@@ -226,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 18,
       "playerId": 666182,
       "name": "Bo Bichette",
       "team": "NYM",
@@ -239,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 19,
       "playerId": 805811,
       "name": "Bryce Eldridge",
       "team": "SF",
@@ -252,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 20,
       "playerId": 800050,
       "name": "Chase DeLauter",
       "team": "CLE",
@@ -265,7 +291,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 21,
+      "playerId": 686527,
+      "name": "Dominic Canzone",
+      "team": "SEA",
+      "teamName": "Mariners",
+      "streak": 6,
+      "startDate": "2026-06-10",
+      "lastHitDate": "2026-06-16",
+      "lastGameDate": "2026-06-16",
+      "gamesToRecord": 50,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 22,
       "playerId": 664983,
       "name": "Jake McCarthy",
       "team": "COL",
@@ -278,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 23,
       "playerId": 680776,
       "name": "Jarren Duran",
       "team": "BOS",
@@ -291,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 24,
       "playerId": 606466,
       "name": "Ketel Marte",
       "team": "AZ",
@@ -304,7 +343,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 25,
       "playerId": 656941,
       "name": "Kyle Schwarber",
       "team": "PHI",
@@ -314,45 +353,6 @@
       "lastHitDate": "2026-06-16",
       "lastGameDate": "2026-06-16",
       "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 23,
-      "playerId": 595978,
-      "name": "Austin Hedges",
-      "team": "CLE",
-      "teamName": "Guardians",
-      "streak": 5,
-      "startDate": "2026-06-05",
-      "lastHitDate": "2026-06-16",
-      "lastGameDate": "2026-06-16",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 24,
-      "playerId": 621439,
-      "name": "Byron Buxton",
-      "team": "MIN",
-      "teamName": "Twins",
-      "streak": 5,
-      "startDate": "2026-06-12",
-      "lastHitDate": "2026-06-16",
-      "lastGameDate": "2026-06-16",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
-      "playerId": 694203,
-      "name": "Denzer Guzman",
-      "team": "LAA",
-      "teamName": "Angels",
-      "streak": 5,
-      "startDate": "2026-06-12",
-      "lastHitDate": "2026-06-16",
-      "lastGameDate": "2026-06-16",
-      "gamesToRecord": 51,
       "nextMilestone": 20
     }
   ]
