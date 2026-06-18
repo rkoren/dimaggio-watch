@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T17:13:22.516Z",
+  "generatedAt": "2026-06-18T18:59:09.126Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -305,32 +305,6 @@
     },
     {
       "rank": 22,
-      "playerId": 595978,
-      "name": "Austin Hedges",
-      "team": "CLE",
-      "teamName": "Guardians",
-      "streak": 5,
-      "startDate": "2026-06-05",
-      "lastHitDate": "2026-06-16",
-      "lastGameDate": "2026-06-16",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 23,
-      "playerId": 621439,
-      "name": "Byron Buxton",
-      "team": "MIN",
-      "teamName": "Twins",
-      "streak": 5,
-      "startDate": "2026-06-12",
-      "lastHitDate": "2026-06-16",
-      "lastGameDate": "2026-06-16",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 24,
       "playerId": 622268,
       "name": "Donovan Walton",
       "team": "LAA",
@@ -343,13 +317,39 @@
       "nextMilestone": 20
     },
     {
-      "rank": 25,
+      "rank": 23,
       "playerId": 672515,
       "name": "Gabriel Moreno",
       "team": "AZ",
       "teamName": "D-backs",
       "streak": 5,
       "startDate": "2026-06-12",
+      "lastHitDate": "2026-06-17",
+      "lastGameDate": "2026-06-17",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 24,
+      "playerId": 663968,
+      "name": "Jake Mangum",
+      "team": "PIT",
+      "teamName": "Pirates",
+      "streak": 5,
+      "startDate": "2026-06-13",
+      "lastHitDate": "2026-06-17",
+      "lastGameDate": "2026-06-17",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 663656,
+      "name": "Kyle Tucker",
+      "team": "LAD",
+      "teamName": "Dodgers",
+      "streak": 5,
+      "startDate": "2026-06-13",
       "lastHitDate": "2026-06-17",
       "lastGameDate": "2026-06-17",
       "gamesToRecord": 51,
