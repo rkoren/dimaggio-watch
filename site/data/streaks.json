@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T18:47:46.418Z",
+  "generatedAt": "2026-06-19T19:38:59.826Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -214,19 +214,6 @@
     },
     {
       "rank": 15,
-      "playerId": 596103,
-      "name": "Austin Slater",
-      "team": "TB",
-      "teamName": "Rays",
-      "streak": 6,
-      "startDate": "2026-06-08",
-      "lastHitDate": "2026-06-16",
-      "lastGameDate": "2026-06-17",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 16,
       "playerId": 643396,
       "name": "Isiah Kiner-Falefa",
       "team": "BOS",
@@ -239,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 16,
       "playerId": 683011,
       "name": "Anthony Volpe",
       "team": "NYY",
@@ -252,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 17,
       "playerId": 700250,
       "name": "Ben Rice",
       "team": "NYY",
@@ -265,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 18,
       "playerId": 622268,
       "name": "Donovan Walton",
       "team": "LAA",
@@ -278,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 19,
       "playerId": 672515,
       "name": "Gabriel Moreno",
       "team": "AZ",
@@ -291,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 20,
       "playerId": 805779,
       "name": "Jacob Wilson",
       "team": "ATH",
@@ -304,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 21,
       "playerId": 669394,
       "name": "Jake Burger",
       "team": "TEX",
@@ -317,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 22,
       "playerId": 663968,
       "name": "Jake Mangum",
       "team": "PIT",
@@ -330,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 23,
       "playerId": 663656,
       "name": "Kyle Tucker",
       "team": "LAD",
@@ -343,13 +330,26 @@
       "nextMilestone": 20
     },
     {
-      "rank": 25,
+      "rank": 24,
       "playerId": 663368,
       "name": "Blake Perkins",
       "team": "MIL",
       "teamName": "Brewers",
       "streak": 4,
       "startDate": "2026-06-07",
+      "lastHitDate": "2026-06-18",
+      "lastGameDate": "2026-06-18",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 678218,
+      "name": "Brandon Valenzuela",
+      "team": "TOR",
+      "teamName": "Blue Jays",
+      "streak": 4,
+      "startDate": "2026-06-09",
       "lastHitDate": "2026-06-18",
       "lastGameDate": "2026-06-18",
       "gamesToRecord": 52,
