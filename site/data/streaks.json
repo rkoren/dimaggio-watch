@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T17:43:24.406Z",
+  "generatedAt": "2026-06-19T18:47:46.418Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -110,6 +110,19 @@
     },
     {
       "rank": 7,
+      "playerId": 691718,
+      "name": "Pete Crow-Armstrong",
+      "team": "CHC",
+      "teamName": "Cubs",
+      "streak": 9,
+      "startDate": "2026-06-10",
+      "lastHitDate": "2026-06-19",
+      "lastGameDate": "2026-06-19",
+      "gamesToRecord": 47,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 8,
       "playerId": 669392,
       "name": "Samad Taylor",
       "team": "SD",
@@ -122,26 +135,13 @@
       "nextMilestone": 20
     },
     {
-      "rank": 8,
+      "rank": 9,
       "playerId": 805811,
       "name": "Bryce Eldridge",
       "team": "SF",
       "teamName": "Giants",
       "streak": 8,
       "startDate": "2026-06-08",
-      "lastHitDate": "2026-06-17",
-      "lastGameDate": "2026-06-17",
-      "gamesToRecord": 48,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 9,
-      "playerId": 691718,
-      "name": "Pete Crow-Armstrong",
-      "team": "CHC",
-      "teamName": "Cubs",
-      "streak": 8,
-      "startDate": "2026-06-10",
       "lastHitDate": "2026-06-17",
       "lastGameDate": "2026-06-17",
       "gamesToRecord": 48,
