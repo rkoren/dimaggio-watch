@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T19:38:59.826Z",
+  "generatedAt": "2026-06-19T20:38:34.743Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -331,25 +331,25 @@
     },
     {
       "rank": 24,
+      "playerId": 664770,
+      "name": "Nathan Lukes",
+      "team": "TOR",
+      "teamName": "Blue Jays",
+      "streak": 5,
+      "startDate": "2026-06-14",
+      "lastHitDate": "2026-06-19",
+      "lastGameDate": "2026-06-19",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
       "playerId": 663368,
       "name": "Blake Perkins",
       "team": "MIL",
       "teamName": "Brewers",
       "streak": 4,
       "startDate": "2026-06-07",
-      "lastHitDate": "2026-06-18",
-      "lastGameDate": "2026-06-18",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
-      "playerId": 678218,
-      "name": "Brandon Valenzuela",
-      "team": "TOR",
-      "teamName": "Blue Jays",
-      "streak": 4,
-      "startDate": "2026-06-09",
       "lastHitDate": "2026-06-18",
       "lastGameDate": "2026-06-18",
       "gamesToRecord": 52,
