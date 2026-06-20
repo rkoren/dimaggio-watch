@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T18:40:13.706Z",
+  "generatedAt": "2026-06-20T19:37:45.114Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -153,11 +153,11 @@
       "name": "Anthony Volpe",
       "team": "NYY",
       "teamName": "Yankees",
-      "streak": 6,
+      "streak": 7,
       "startDate": "2026-06-10",
-      "lastHitDate": "2026-06-19",
+      "lastHitDate": "2026-06-20",
       "lastGameDate": "2026-06-20",
-      "gamesToRecord": 50,
+      "gamesToRecord": 49,
       "nextMilestone": 20
     },
     {
