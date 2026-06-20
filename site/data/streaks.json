@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T20:36:16.597Z",
+  "generatedAt": "2026-06-20T21:35:38.636Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -175,6 +175,19 @@
     },
     {
       "rank": 12,
+      "playerId": 669477,
+      "name": "Casey Schmitt",
+      "team": "SF",
+      "teamName": "Giants",
+      "streak": 6,
+      "startDate": "2026-06-13",
+      "lastHitDate": "2026-06-20",
+      "lastGameDate": "2026-06-20",
+      "gamesToRecord": 50,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 13,
       "playerId": 672515,
       "name": "Gabriel Moreno",
       "team": "AZ",
@@ -187,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 14,
       "playerId": 643396,
       "name": "Isiah Kiner-Falefa",
       "team": "BOS",
@@ -200,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 15,
       "playerId": 805779,
       "name": "Jacob Wilson",
       "team": "ATH",
@@ -209,19 +222,6 @@
       "startDate": "2026-06-13",
       "lastHitDate": "2026-06-19",
       "lastGameDate": "2026-06-19",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 15,
-      "playerId": 669394,
-      "name": "Jake Burger",
-      "team": "TEX",
-      "teamName": "Rangers",
-      "streak": 6,
-      "startDate": "2026-06-13",
-      "lastHitDate": "2026-06-19",
-      "lastGameDate": "2026-06-20",
       "gamesToRecord": 50,
       "nextMilestone": 20
     },
@@ -253,6 +253,19 @@
     },
     {
       "rank": 18,
+      "playerId": 683083,
+      "name": "Nasim Nuñez",
+      "team": "WSH",
+      "teamName": "Nationals",
+      "streak": 6,
+      "startDate": "2026-06-14",
+      "lastHitDate": "2026-06-20",
+      "lastGameDate": "2026-06-20",
+      "gamesToRecord": 50,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 19,
       "playerId": 803011,
       "name": "Sam Antonacci",
       "team": "CWS",
@@ -265,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 20,
       "playerId": 678218,
       "name": "Brandon Valenzuela",
       "team": "TOR",
@@ -278,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 21,
       "playerId": 701358,
       "name": "Cam Smith",
       "team": "HOU",
@@ -287,19 +300,6 @@
       "startDate": "2026-06-14",
       "lastHitDate": "2026-06-19",
       "lastGameDate": "2026-06-19",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 21,
-      "playerId": 669477,
-      "name": "Casey Schmitt",
-      "team": "SF",
-      "teamName": "Giants",
-      "streak": 5,
-      "startDate": "2026-06-13",
-      "lastHitDate": "2026-06-19",
-      "lastGameDate": "2026-06-20",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
