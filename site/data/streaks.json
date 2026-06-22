@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T21:07:44.783Z",
+  "generatedAt": "2026-06-22T22:40:04.725Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -123,6 +123,19 @@
     },
     {
       "rank": 8,
+      "playerId": 805808,
+      "name": "Kevin McGonigle",
+      "team": "DET",
+      "teamName": "Tigers",
+      "streak": 8,
+      "startDate": "2026-06-13",
+      "lastHitDate": "2026-06-22",
+      "lastGameDate": "2026-06-22",
+      "gamesToRecord": 48,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 9,
       "playerId": 669477,
       "name": "Casey Schmitt",
       "team": "SF",
@@ -135,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 10,
       "playerId": 622268,
       "name": "Donovan Walton",
       "team": "LAA",
@@ -148,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 11,
       "playerId": 672515,
       "name": "Gabriel Moreno",
       "team": "AZ",
@@ -161,7 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 12,
       "playerId": 663968,
       "name": "Jake Mangum",
       "team": "PIT",
@@ -174,26 +187,13 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 13,
       "playerId": 605137,
       "name": "Josh Bell",
       "team": "MIN",
       "teamName": "Twins",
       "streak": 7,
       "startDate": "2026-06-14",
-      "lastHitDate": "2026-06-21",
-      "lastGameDate": "2026-06-21",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 13,
-      "playerId": 805808,
-      "name": "Kevin McGonigle",
-      "team": "DET",
-      "teamName": "Tigers",
-      "streak": 7,
-      "startDate": "2026-06-13",
       "lastHitDate": "2026-06-21",
       "lastGameDate": "2026-06-21",
       "gamesToRecord": 49,
