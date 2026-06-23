@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T20:52:16.980Z",
+  "generatedAt": "2026-06-23T21:39:53.519Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -344,14 +344,14 @@
     },
     {
       "rank": 25,
-      "playerId": 678218,
-      "name": "Brandon Valenzuela",
-      "team": "TOR",
-      "teamName": "Blue Jays",
+      "playerId": 702332,
+      "name": "Caleb Durbin",
+      "team": "BOS",
+      "teamName": "Red Sox",
       "streak": 5,
-      "startDate": "2026-06-09",
-      "lastHitDate": "2026-06-20",
-      "lastGameDate": "2026-06-23",
+      "startDate": "2026-06-18",
+      "lastHitDate": "2026-06-22",
+      "lastGameDate": "2026-06-22",
       "gamesToRecord": 51,
       "nextMilestone": 20
     }
