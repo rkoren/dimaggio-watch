@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T03:19:04.571Z",
+  "generatedAt": "2026-06-23T05:30:57.305Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -97,6 +97,19 @@
     },
     {
       "rank": 6,
+      "playerId": 622268,
+      "name": "Donovan Walton",
+      "team": "LAA",
+      "teamName": "Angels",
+      "streak": 8,
+      "startDate": "2026-06-10",
+      "lastHitDate": "2026-06-22",
+      "lastGameDate": "2026-06-22",
+      "gamesToRecord": 48,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 7,
       "playerId": 805808,
       "name": "Kevin McGonigle",
       "team": "DET",
@@ -109,7 +122,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 7,
+      "rank": 8,
       "playerId": 683083,
       "name": "Nasim Nuñez",
       "team": "WSH",
@@ -122,7 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 8,
+      "rank": 9,
       "playerId": 669477,
       "name": "Casey Schmitt",
       "team": "SF",
@@ -135,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 10,
       "playerId": 672515,
       "name": "Gabriel Moreno",
       "team": "AZ",
@@ -148,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 11,
       "playerId": 670623,
       "name": "Isaac Paredes",
       "team": "HOU",
@@ -161,7 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 12,
       "playerId": 663968,
       "name": "Jake Mangum",
       "team": "PIT",
@@ -174,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 13,
       "playerId": 657041,
       "name": "Lane Thomas",
       "team": "KC",
@@ -187,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 14,
       "playerId": 691026,
       "name": "Masyn Winn",
       "team": "STL",
@@ -200,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 15,
       "playerId": 671739,
       "name": "Michael Harris II",
       "team": "ATL",
@@ -213,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 16,
       "playerId": 663368,
       "name": "Blake Perkins",
       "team": "MIL",
@@ -226,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 17,
       "playerId": 664040,
       "name": "Brandon Lowe",
       "team": "PIT",
@@ -239,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 18,
       "playerId": 607043,
       "name": "Brandon Nimmo",
       "team": "TEX",
@@ -252,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 19,
       "playerId": 682928,
       "name": "CJ Abrams",
       "team": "WSH",
@@ -265,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 20,
       "playerId": 660688,
       "name": "Keibert Ruiz",
       "team": "WSH",
@@ -278,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 21,
       "playerId": 681198,
       "name": "TJ Rumfield",
       "team": "COL",
@@ -291,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 22,
       "playerId": 683953,
       "name": "Travis Bazzana",
       "team": "CLE",
@@ -304,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 23,
       "playerId": 671289,
       "name": "Tyler Freeman",
       "team": "COL",
@@ -317,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 24,
       "playerId": 650490,
       "name": "Yandy Díaz",
       "team": "TB",
@@ -330,7 +343,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 25,
       "playerId": 678218,
       "name": "Brandon Valenzuela",
       "team": "TOR",
@@ -339,19 +352,6 @@
       "startDate": "2026-06-09",
       "lastHitDate": "2026-06-20",
       "lastGameDate": "2026-06-20",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
-      "playerId": 702332,
-      "name": "Caleb Durbin",
-      "team": "BOS",
-      "teamName": "Red Sox",
-      "streak": 5,
-      "startDate": "2026-06-18",
-      "lastHitDate": "2026-06-22",
-      "lastGameDate": "2026-06-22",
       "gamesToRecord": 51,
       "nextMilestone": 20
     }
