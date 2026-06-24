@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T23:30:05.922Z",
+  "generatedAt": "2026-06-24T01:06:57.306Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -45,6 +45,19 @@
     },
     {
       "rank": 2,
+      "playerId": 695600,
+      "name": "Carter Jensen",
+      "team": "KC",
+      "teamName": "Royals",
+      "streak": 14,
+      "startDate": "2026-06-06",
+      "lastHitDate": "2026-06-23",
+      "lastGameDate": "2026-06-23",
+      "gamesToRecord": 42,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 3,
       "playerId": 668804,
       "name": "Bryan Reynolds",
       "team": "PIT",
@@ -57,7 +70,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 3,
+      "rank": 4,
       "playerId": 664983,
       "name": "Jake McCarthy",
       "team": "COL",
@@ -65,12 +78,38 @@
       "streak": 11,
       "startDate": "2026-06-05",
       "lastHitDate": "2026-06-22",
-      "lastGameDate": "2026-06-22",
+      "lastGameDate": "2026-06-23",
       "gamesToRecord": 45,
       "nextMilestone": 20
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "playerId": 691718,
+      "name": "Pete Crow-Armstrong",
+      "team": "CHC",
+      "teamName": "Cubs",
+      "streak": 11,
+      "startDate": "2026-06-10",
+      "lastHitDate": "2026-06-23",
+      "lastGameDate": "2026-06-23",
+      "gamesToRecord": 45,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 6,
+      "playerId": 683083,
+      "name": "Nasim Nuñez",
+      "team": "WSH",
+      "teamName": "Nationals",
+      "streak": 9,
+      "startDate": "2026-06-14",
+      "lastHitDate": "2026-06-23",
+      "lastGameDate": "2026-06-23",
+      "gamesToRecord": 47,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 7,
       "playerId": 622268,
       "name": "Donovan Walton",
       "team": "LAA",
@@ -83,7 +122,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 5,
+      "rank": 8,
       "playerId": 670623,
       "name": "Isaac Paredes",
       "team": "HOU",
@@ -96,7 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 6,
+      "rank": 9,
       "playerId": 664040,
       "name": "Brandon Lowe",
       "team": "PIT",
@@ -109,7 +148,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 7,
+      "rank": 10,
+      "playerId": 607043,
+      "name": "Brandon Nimmo",
+      "team": "TEX",
+      "teamName": "Rangers",
+      "streak": 7,
+      "startDate": "2026-06-16",
+      "lastHitDate": "2026-06-23",
+      "lastGameDate": "2026-06-23",
+      "gamesToRecord": 49,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 11,
       "playerId": 669477,
       "name": "Casey Schmitt",
       "team": "SF",
@@ -122,20 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 8,
-      "playerId": 672515,
-      "name": "Gabriel Moreno",
-      "team": "AZ",
-      "teamName": "D-backs",
-      "streak": 7,
-      "startDate": "2026-06-12",
-      "lastHitDate": "2026-06-21",
-      "lastGameDate": "2026-06-21",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 9,
+      "rank": 12,
       "playerId": 691026,
       "name": "Masyn Winn",
       "team": "STL",
@@ -148,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 13,
       "playerId": 671739,
       "name": "Michael Harris II",
       "team": "ATL",
@@ -161,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 14,
       "playerId": 663368,
       "name": "Blake Perkins",
       "team": "MIL",
@@ -174,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 15,
       "playerId": 682928,
       "name": "CJ Abrams",
       "team": "WSH",
@@ -187,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 16,
       "playerId": 666018,
       "name": "Jonathan Aranda",
       "team": "TB",
@@ -200,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 17,
       "playerId": 678391,
       "name": "Jorbit Vivas",
       "team": "WSH",
@@ -213,33 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
-      "playerId": 681198,
-      "name": "TJ Rumfield",
-      "team": "COL",
-      "teamName": "Rockies",
-      "streak": 6,
-      "startDate": "2026-06-16",
-      "lastHitDate": "2026-06-22",
-      "lastGameDate": "2026-06-22",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 16,
-      "playerId": 683953,
-      "name": "Travis Bazzana",
-      "team": "CLE",
-      "teamName": "Guardians",
-      "streak": 6,
-      "startDate": "2026-06-17",
-      "lastHitDate": "2026-06-22",
-      "lastGameDate": "2026-06-22",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 17,
+      "rank": 18,
       "playerId": 671289,
       "name": "Tyler Freeman",
       "team": "COL",
@@ -247,25 +260,25 @@
       "streak": 6,
       "startDate": "2026-06-14",
       "lastHitDate": "2026-06-22",
-      "lastGameDate": "2026-06-22",
+      "lastGameDate": "2026-06-23",
       "gamesToRecord": 50,
       "nextMilestone": 20
     },
     {
-      "rank": 18,
-      "playerId": 702332,
-      "name": "Caleb Durbin",
-      "team": "BOS",
-      "teamName": "Red Sox",
+      "rank": 19,
+      "playerId": 621439,
+      "name": "Byron Buxton",
+      "team": "MIN",
+      "teamName": "Twins",
       "streak": 5,
-      "startDate": "2026-06-18",
-      "lastHitDate": "2026-06-22",
-      "lastGameDate": "2026-06-22",
+      "startDate": "2026-06-19",
+      "lastHitDate": "2026-06-23",
+      "lastGameDate": "2026-06-23",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 20,
       "playerId": 553869,
       "name": "Elias Díaz",
       "team": "TEX",
@@ -278,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 21,
       "playerId": 543807,
       "name": "George Springer",
       "team": "TOR",
@@ -291,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 22,
       "playerId": 703607,
       "name": "Henry Bolte",
       "team": "ATH",
@@ -304,20 +317,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
-      "playerId": 665742,
-      "name": "Juan Soto",
-      "team": "NYM",
-      "teamName": "Mets",
+      "rank": 23,
+      "playerId": 664023,
+      "name": "Ian Happ",
+      "team": "CHC",
+      "teamName": "Cubs",
       "streak": 5,
       "startDate": "2026-06-16",
-      "lastHitDate": "2026-06-21",
+      "lastHitDate": "2026-06-23",
       "lastGameDate": "2026-06-23",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 24,
       "playerId": 701675,
       "name": "Nathan Church",
       "team": "STL",
@@ -330,7 +343,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 25,
       "playerId": 694384,
       "name": "Nolan Schanuel",
       "team": "LAA",
@@ -339,19 +352,6 @@
       "startDate": "2026-06-16",
       "lastHitDate": "2026-06-22",
       "lastGameDate": "2026-06-22",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
-      "playerId": 672640,
-      "name": "Otto Lopez",
-      "team": "MIA",
-      "teamName": "Marlins",
-      "streak": 5,
-      "startDate": "2026-06-19",
-      "lastHitDate": "2026-06-23",
-      "lastGameDate": "2026-06-23",
       "gamesToRecord": 51,
       "nextMilestone": 20
     }
