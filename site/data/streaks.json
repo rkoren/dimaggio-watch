@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T20:42:19.871Z",
+  "generatedAt": "2026-06-24T21:36:22.578Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -279,6 +279,19 @@
     },
     {
       "rank": 20,
+      "playerId": 694249,
+      "name": "Cole Carrigg",
+      "team": "COL",
+      "teamName": "Rockies",
+      "streak": 5,
+      "startDate": "2026-06-19",
+      "lastHitDate": "2026-06-24",
+      "lastGameDate": "2026-06-24",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 21,
       "playerId": 621020,
       "name": "Dansby Swanson",
       "team": "CHC",
@@ -291,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 22,
       "playerId": 543807,
       "name": "George Springer",
       "team": "TOR",
@@ -304,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 23,
       "playerId": 668904,
       "name": "Royce Lewis",
       "team": "MIN",
@@ -317,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 24,
       "playerId": 687263,
       "name": "Zach Neto",
       "team": "LAA",
@@ -330,24 +343,11 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 25,
       "playerId": 676475,
       "name": "Alec Burleson",
       "team": "STL",
       "teamName": "Cardinals",
-      "streak": 4,
-      "startDate": "2026-06-19",
-      "lastHitDate": "2026-06-23",
-      "lastGameDate": "2026-06-23",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
-      "playerId": 665926,
-      "name": "Andrés Giménez",
-      "team": "TOR",
-      "teamName": "Blue Jays",
       "streak": 4,
       "startDate": "2026-06-19",
       "lastHitDate": "2026-06-23",
