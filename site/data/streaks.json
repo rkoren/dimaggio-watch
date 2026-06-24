@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T16:52:47.073Z",
+  "generatedAt": "2026-06-24T17:43:20.915Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -71,19 +71,6 @@
     },
     {
       "rank": 4,
-      "playerId": 691718,
-      "name": "Pete Crow-Armstrong",
-      "team": "CHC",
-      "teamName": "Cubs",
-      "streak": 11,
-      "startDate": "2026-06-10",
-      "lastHitDate": "2026-06-23",
-      "lastGameDate": "2026-06-23",
-      "gamesToRecord": 45,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 5,
       "playerId": 683083,
       "name": "Nasim Nuñez",
       "team": "WSH",
@@ -96,7 +83,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 6,
+      "rank": 5,
       "playerId": 669477,
       "name": "Casey Schmitt",
       "team": "SF",
@@ -109,7 +96,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 7,
+      "rank": 6,
       "playerId": 622268,
       "name": "Donovan Walton",
       "team": "LAA",
@@ -122,7 +109,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 8,
+      "rank": 7,
       "playerId": 672515,
       "name": "Gabriel Moreno",
       "team": "AZ",
@@ -135,7 +122,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 8,
       "playerId": 670623,
       "name": "Isaac Paredes",
       "team": "HOU",
@@ -148,7 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 9,
       "playerId": 671739,
       "name": "Michael Harris II",
       "team": "ATL",
@@ -161,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 10,
       "playerId": 664040,
       "name": "Brandon Lowe",
       "team": "PIT",
@@ -174,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 11,
       "playerId": 691026,
       "name": "Masyn Winn",
       "team": "STL",
@@ -187,7 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 12,
       "playerId": 681198,
       "name": "TJ Rumfield",
       "team": "COL",
@@ -200,20 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
-      "playerId": 663368,
-      "name": "Blake Perkins",
-      "team": "MIL",
-      "teamName": "Brewers",
-      "streak": 6,
-      "startDate": "2026-06-07",
-      "lastHitDate": "2026-06-20",
-      "lastGameDate": "2026-06-23",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 15,
+      "rank": 13,
       "playerId": 702332,
       "name": "Caleb Durbin",
       "team": "BOS",
@@ -226,7 +200,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 14,
+      "playerId": 701807,
+      "name": "Carson Benge",
+      "team": "NYM",
+      "teamName": "Mets",
+      "streak": 6,
+      "startDate": "2026-06-17",
+      "lastHitDate": "2026-06-24",
+      "lastGameDate": "2026-06-24",
+      "gamesToRecord": 50,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 15,
       "playerId": 682928,
       "name": "CJ Abrams",
       "team": "WSH",
@@ -235,6 +222,19 @@
       "startDate": "2026-06-16",
       "lastHitDate": "2026-06-22",
       "lastGameDate": "2026-06-22",
+      "gamesToRecord": 50,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 16,
+      "playerId": 664023,
+      "name": "Ian Happ",
+      "team": "CHC",
+      "teamName": "Cubs",
+      "streak": 6,
+      "startDate": "2026-06-16",
+      "lastHitDate": "2026-06-24",
+      "lastGameDate": "2026-06-24",
       "gamesToRecord": 50,
       "nextMilestone": 20
     },
@@ -305,19 +305,6 @@
     },
     {
       "rank": 22,
-      "playerId": 701807,
-      "name": "Carson Benge",
-      "team": "NYM",
-      "teamName": "Mets",
-      "streak": 5,
-      "startDate": "2026-06-17",
-      "lastHitDate": "2026-06-23",
-      "lastGameDate": "2026-06-23",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 23,
       "playerId": 543807,
       "name": "George Springer",
       "team": "TOR",
@@ -330,20 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
-      "playerId": 664023,
-      "name": "Ian Happ",
-      "team": "CHC",
-      "teamName": "Cubs",
-      "streak": 5,
-      "startDate": "2026-06-16",
-      "lastHitDate": "2026-06-23",
-      "lastGameDate": "2026-06-23",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
+      "rank": 23,
       "playerId": 668904,
       "name": "Royce Lewis",
       "team": "MIN",
@@ -353,6 +327,32 @@
       "lastHitDate": "2026-06-23",
       "lastGameDate": "2026-06-23",
       "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 24,
+      "playerId": 687263,
+      "name": "Zach Neto",
+      "team": "LAA",
+      "teamName": "Angels",
+      "streak": 5,
+      "startDate": "2026-06-19",
+      "lastHitDate": "2026-06-23",
+      "lastGameDate": "2026-06-23",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 676475,
+      "name": "Alec Burleson",
+      "team": "STL",
+      "teamName": "Cardinals",
+      "streak": 4,
+      "startDate": "2026-06-19",
+      "lastHitDate": "2026-06-23",
+      "lastGameDate": "2026-06-23",
+      "gamesToRecord": 52,
       "nextMilestone": 20
     }
   ]
