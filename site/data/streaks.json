@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T22:37:46.034Z",
+  "generatedAt": "2026-06-25T23:35:54.919Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -58,25 +58,25 @@
     },
     {
       "rank": 3,
+      "playerId": 691718,
+      "name": "Pete Crow-Armstrong",
+      "team": "CHC",
+      "teamName": "Cubs",
+      "streak": 14,
+      "startDate": "2026-06-10",
+      "lastHitDate": "2026-06-25",
+      "lastGameDate": "2026-06-25",
+      "gamesToRecord": 42,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 4,
       "playerId": 664983,
       "name": "Jake McCarthy",
       "team": "COL",
       "teamName": "Rockies",
       "streak": 13,
       "startDate": "2026-06-05",
-      "lastHitDate": "2026-06-24",
-      "lastGameDate": "2026-06-24",
-      "gamesToRecord": 43,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 4,
-      "playerId": 691718,
-      "name": "Pete Crow-Armstrong",
-      "team": "CHC",
-      "teamName": "Cubs",
-      "streak": 13,
-      "startDate": "2026-06-10",
       "lastHitDate": "2026-06-24",
       "lastGameDate": "2026-06-24",
       "gamesToRecord": 43,
@@ -123,19 +123,6 @@
     },
     {
       "rank": 8,
-      "playerId": 670623,
-      "name": "Isaac Paredes",
-      "team": "HOU",
-      "teamName": "Astros",
-      "streak": 9,
-      "startDate": "2026-06-15",
-      "lastHitDate": "2026-06-24",
-      "lastGameDate": "2026-06-24",
-      "gamesToRecord": 47,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 9,
       "playerId": 666018,
       "name": "Jonathan Aranda",
       "team": "TB",
@@ -148,7 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 9,
       "playerId": 691026,
       "name": "Masyn Winn",
       "team": "STL",
@@ -161,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 10,
       "playerId": 681198,
       "name": "TJ Rumfield",
       "team": "COL",
@@ -174,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 11,
       "playerId": 682928,
       "name": "CJ Abrams",
       "team": "WSH",
@@ -187,20 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
-      "playerId": 678391,
-      "name": "Jorbit Vivas",
-      "team": "WSH",
-      "teamName": "Nationals",
-      "streak": 7,
-      "startDate": "2026-06-10",
-      "lastHitDate": "2026-06-24",
-      "lastGameDate": "2026-06-24",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 14,
+      "rank": 12,
       "playerId": 621020,
       "name": "Dansby Swanson",
       "team": "CHC",
@@ -208,25 +182,12 @@
       "streak": 6,
       "startDate": "2026-06-17",
       "lastHitDate": "2026-06-24",
-      "lastGameDate": "2026-06-24",
+      "lastGameDate": "2026-06-25",
       "gamesToRecord": 50,
       "nextMilestone": 20
     },
     {
-      "rank": 15,
-      "playerId": 664023,
-      "name": "Ian Happ",
-      "team": "CHC",
-      "teamName": "Cubs",
-      "streak": 6,
-      "startDate": "2026-06-16",
-      "lastHitDate": "2026-06-24",
-      "lastGameDate": "2026-06-24",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 16,
+      "rank": 13,
       "playerId": 672640,
       "name": "Otto Lopez",
       "team": "MIA",
@@ -239,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 14,
       "playerId": 668904,
       "name": "Royce Lewis",
       "team": "MIN",
@@ -252,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 15,
       "playerId": 670764,
       "name": "Taylor Walls",
       "team": "TB",
@@ -265,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 16,
       "playerId": 676475,
       "name": "Alec Burleson",
       "team": "STL",
@@ -278,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 17,
       "playerId": 694249,
       "name": "Cole Carrigg",
       "team": "COL",
@@ -291,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 18,
       "playerId": 656537,
       "name": "Derek Hill",
       "team": "PHI",
@@ -304,7 +265,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 19,
+      "playerId": 696030,
+      "name": "Alejandro Osuna",
+      "team": "TEX",
+      "teamName": "Rangers",
+      "streak": 4,
+      "startDate": "2026-06-22",
+      "lastHitDate": "2026-06-25",
+      "lastGameDate": "2026-06-25",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 20,
       "playerId": 668930,
       "name": "Brice Turang",
       "team": "MIL",
@@ -317,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 21,
       "playerId": 608348,
       "name": "Carson Kelly",
       "team": "CHC",
@@ -330,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 22,
       "playerId": 662139,
       "name": "Daulton Varsho",
       "team": "TOR",
@@ -343,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 25,
+      "rank": 23,
       "playerId": 518692,
       "name": "Freddie Freeman",
       "team": "LAD",
@@ -352,6 +326,32 @@
       "startDate": "2026-06-21",
       "lastHitDate": "2026-06-24",
       "lastGameDate": "2026-06-24",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 24,
+      "playerId": 641487,
+      "name": "J.P. Crawford",
+      "team": "SEA",
+      "teamName": "Mariners",
+      "streak": 4,
+      "startDate": "2026-06-21",
+      "lastHitDate": "2026-06-25",
+      "lastGameDate": "2026-06-25",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 592626,
+      "name": "Joc Pederson",
+      "team": "TEX",
+      "teamName": "Rangers",
+      "streak": 4,
+      "startDate": "2026-06-22",
+      "lastHitDate": "2026-06-25",
+      "lastGameDate": "2026-06-25",
       "gamesToRecord": 52,
       "nextMilestone": 20
     }
