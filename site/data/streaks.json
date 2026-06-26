@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T23:35:54.919Z",
+  "generatedAt": "2026-06-26T01:14:13.069Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -175,15 +175,15 @@
     },
     {
       "rank": 12,
-      "playerId": 621020,
-      "name": "Dansby Swanson",
+      "playerId": 664023,
+      "name": "Ian Happ",
       "team": "CHC",
       "teamName": "Cubs",
-      "streak": 6,
-      "startDate": "2026-06-17",
-      "lastHitDate": "2026-06-24",
+      "streak": 7,
+      "startDate": "2026-06-16",
+      "lastHitDate": "2026-06-25",
       "lastGameDate": "2026-06-25",
-      "gamesToRecord": 50,
+      "gamesToRecord": 49,
       "nextMilestone": 20
     },
     {
@@ -253,14 +253,14 @@
     },
     {
       "rank": 18,
-      "playerId": 656537,
-      "name": "Derek Hill",
-      "team": "PHI",
-      "teamName": "Phillies",
+      "playerId": 701678,
+      "name": "Hao-Yu Lee",
+      "team": "DET",
+      "teamName": "Tigers",
       "streak": 5,
-      "startDate": "2026-06-18",
-      "lastHitDate": "2026-06-24",
-      "lastGameDate": "2026-06-24",
+      "startDate": "2026-06-21",
+      "lastHitDate": "2026-06-25",
+      "lastGameDate": "2026-06-25",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
@@ -279,6 +279,32 @@
     },
     {
       "rank": 20,
+      "playerId": 666182,
+      "name": "Bo Bichette",
+      "team": "NYM",
+      "teamName": "Mets",
+      "streak": 4,
+      "startDate": "2026-06-23",
+      "lastHitDate": "2026-06-25",
+      "lastGameDate": "2026-06-25",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 21,
+      "playerId": 669016,
+      "name": "Brandon Marsh",
+      "team": "PHI",
+      "teamName": "Phillies",
+      "streak": 4,
+      "startDate": "2026-06-22",
+      "lastHitDate": "2026-06-25",
+      "lastGameDate": "2026-06-25",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 22,
       "playerId": 668930,
       "name": "Brice Turang",
       "team": "MIL",
@@ -291,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 23,
       "playerId": 608348,
       "name": "Carson Kelly",
       "team": "CHC",
@@ -304,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 24,
       "playerId": 662139,
       "name": "Daulton Varsho",
       "team": "TOR",
@@ -317,7 +343,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 25,
       "playerId": 518692,
       "name": "Freddie Freeman",
       "team": "LAD",
@@ -326,32 +352,6 @@
       "startDate": "2026-06-21",
       "lastHitDate": "2026-06-24",
       "lastGameDate": "2026-06-24",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 24,
-      "playerId": 641487,
-      "name": "J.P. Crawford",
-      "team": "SEA",
-      "teamName": "Mariners",
-      "streak": 4,
-      "startDate": "2026-06-21",
-      "lastHitDate": "2026-06-25",
-      "lastGameDate": "2026-06-25",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
-      "playerId": 592626,
-      "name": "Joc Pederson",
-      "team": "TEX",
-      "teamName": "Rangers",
-      "streak": 4,
-      "startDate": "2026-06-22",
-      "lastHitDate": "2026-06-25",
-      "lastGameDate": "2026-06-25",
       "gamesToRecord": 52,
       "nextMilestone": 20
     }
