@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T01:14:13.069Z",
+  "generatedAt": "2026-06-26T03:19:47.038Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -162,19 +162,6 @@
     },
     {
       "rank": 11,
-      "playerId": 682928,
-      "name": "CJ Abrams",
-      "team": "WSH",
-      "teamName": "Nationals",
-      "streak": 7,
-      "startDate": "2026-06-16",
-      "lastHitDate": "2026-06-24",
-      "lastGameDate": "2026-06-24",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 12,
       "playerId": 664023,
       "name": "Ian Happ",
       "team": "CHC",
@@ -184,6 +171,19 @@
       "lastHitDate": "2026-06-25",
       "lastGameDate": "2026-06-25",
       "gamesToRecord": 49,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 12,
+      "playerId": 656537,
+      "name": "Derek Hill",
+      "team": "PHI",
+      "teamName": "Phillies",
+      "streak": 6,
+      "startDate": "2026-06-18",
+      "lastHitDate": "2026-06-25",
+      "lastGameDate": "2026-06-25",
+      "gamesToRecord": 50,
       "nextMilestone": 20
     },
     {
@@ -318,19 +318,6 @@
     },
     {
       "rank": 23,
-      "playerId": 608348,
-      "name": "Carson Kelly",
-      "team": "CHC",
-      "teamName": "Cubs",
-      "streak": 4,
-      "startDate": "2026-06-17",
-      "lastHitDate": "2026-06-24",
-      "lastGameDate": "2026-06-24",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 24,
       "playerId": 662139,
       "name": "Daulton Varsho",
       "team": "TOR",
@@ -343,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 25,
+      "rank": 24,
       "playerId": 518692,
       "name": "Freddie Freeman",
       "team": "LAD",
@@ -352,6 +339,19 @@
       "startDate": "2026-06-21",
       "lastHitDate": "2026-06-24",
       "lastGameDate": "2026-06-24",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 641487,
+      "name": "J.P. Crawford",
+      "team": "SEA",
+      "teamName": "Mariners",
+      "streak": 4,
+      "startDate": "2026-06-21",
+      "lastHitDate": "2026-06-25",
+      "lastGameDate": "2026-06-25",
       "gamesToRecord": 52,
       "nextMilestone": 20
     }
