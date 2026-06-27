@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T03:18:02.461Z",
+  "generatedAt": "2026-06-27T05:26:18.357Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -162,6 +162,19 @@
     },
     {
       "rank": 11,
+      "playerId": 518692,
+      "name": "Freddie Freeman",
+      "team": "LAD",
+      "teamName": "Dodgers",
+      "streak": 5,
+      "startDate": "2026-06-21",
+      "lastHitDate": "2026-06-26",
+      "lastGameDate": "2026-06-26",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 12,
       "playerId": 701678,
       "name": "Hao-Yu Lee",
       "team": "DET",
@@ -174,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 13,
       "playerId": 641487,
       "name": "J.P. Crawford",
       "team": "SEA",
@@ -187,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 14,
       "playerId": 666139,
       "name": "Josh Lowe",
       "team": "LAA",
@@ -200,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 15,
       "playerId": 804606,
       "name": "Konnor Griffin",
       "team": "PIT",
@@ -213,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 16,
       "playerId": 669065,
       "name": "Kyle Stowers",
       "team": "MIA",
@@ -226,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 17,
       "playerId": 643289,
       "name": "Mauricio Dubón",
       "team": "ATL",
@@ -239,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 18,
       "playerId": 571448,
       "name": "Nolan Arenado",
       "team": "AZ",
@@ -252,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 19,
       "playerId": 650489,
       "name": "Willi Castro",
       "team": "COL",
@@ -265,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 20,
       "playerId": 669364,
       "name": "Xavier Edwards",
       "team": "MIA",
@@ -278,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 21,
       "playerId": 678011,
       "name": "Anthony Seigler",
       "team": "BOS",
@@ -291,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 22,
       "playerId": 668885,
       "name": "Austin Martin",
       "team": "MIN",
@@ -304,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 23,
       "playerId": 691176,
       "name": "Jasson Domínguez",
       "team": "NYY",
@@ -317,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 24,
       "playerId": 592626,
       "name": "Joc Pederson",
       "team": "TEX",
@@ -330,26 +343,13 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 25,
       "playerId": 696135,
       "name": "Kahlil Watson",
       "team": "CLE",
       "teamName": "Guardians",
       "streak": 4,
       "startDate": "2026-06-22",
-      "lastHitDate": "2026-06-26",
-      "lastGameDate": "2026-06-26",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
-      "playerId": 691720,
-      "name": "Kyle Karros",
-      "team": "COL",
-      "teamName": "Rockies",
-      "streak": 4,
-      "startDate": "2026-06-21",
       "lastHitDate": "2026-06-26",
       "lastGameDate": "2026-06-26",
       "gamesToRecord": 52,
