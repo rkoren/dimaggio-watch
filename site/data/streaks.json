@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T18:34:35.425Z",
+  "generatedAt": "2026-06-27T19:35:16.464Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -331,19 +331,6 @@
     },
     {
       "rank": 24,
-      "playerId": 592626,
-      "name": "Joc Pederson",
-      "team": "TEX",
-      "teamName": "Rangers",
-      "streak": 4,
-      "startDate": "2026-06-22",
-      "lastHitDate": "2026-06-25",
-      "lastGameDate": "2026-06-25",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
       "playerId": 696135,
       "name": "Kahlil Watson",
       "team": "CLE",
@@ -352,6 +339,19 @@
       "startDate": "2026-06-22",
       "lastHitDate": "2026-06-26",
       "lastGameDate": "2026-06-26",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 805808,
+      "name": "Kevin McGonigle",
+      "team": "DET",
+      "teamName": "Tigers",
+      "streak": 4,
+      "startDate": "2026-06-24",
+      "lastHitDate": "2026-06-27",
+      "lastGameDate": "2026-06-27",
       "gamesToRecord": 52,
       "nextMilestone": 20
     }
