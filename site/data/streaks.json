@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T01:15:51.372Z",
+  "generatedAt": "2026-06-28T03:20:37.224Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -84,19 +84,6 @@
     },
     {
       "rank": 5,
-      "playerId": 622268,
-      "name": "Donovan Walton",
-      "team": "LAA",
-      "teamName": "Angels",
-      "streak": 10,
-      "startDate": "2026-06-10",
-      "lastHitDate": "2026-06-26",
-      "lastGameDate": "2026-06-26",
-      "gamesToRecord": 46,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 6,
       "playerId": 666018,
       "name": "Jonathan Aranda",
       "team": "TB",
@@ -109,7 +96,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 7,
+      "rank": 6,
       "playerId": 681198,
       "name": "TJ Rumfield",
       "team": "COL",
@@ -122,7 +109,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 8,
+      "rank": 7,
       "playerId": 656537,
       "name": "Derek Hill",
       "team": "PHI",
@@ -135,13 +122,26 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 8,
       "playerId": 666182,
       "name": "Bo Bichette",
       "team": "NYM",
       "teamName": "Mets",
       "streak": 6,
       "startDate": "2026-06-23",
+      "lastHitDate": "2026-06-27",
+      "lastGameDate": "2026-06-27",
+      "gamesToRecord": 50,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 9,
+      "playerId": 518692,
+      "name": "Freddie Freeman",
+      "team": "LAD",
+      "teamName": "Dodgers",
+      "streak": 6,
+      "startDate": "2026-06-21",
       "lastHitDate": "2026-06-27",
       "lastGameDate": "2026-06-27",
       "gamesToRecord": 50,
@@ -175,6 +175,19 @@
     },
     {
       "rank": 12,
+      "playerId": 643289,
+      "name": "Mauricio Dubón",
+      "team": "ATL",
+      "teamName": "Braves",
+      "streak": 6,
+      "startDate": "2026-06-21",
+      "lastHitDate": "2026-06-27",
+      "lastGameDate": "2026-06-27",
+      "gamesToRecord": 50,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 13,
       "playerId": 571448,
       "name": "Nolan Arenado",
       "team": "AZ",
@@ -187,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 14,
       "playerId": 669364,
       "name": "Xavier Edwards",
       "team": "MIA",
@@ -200,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 15,
       "playerId": 678011,
       "name": "Anthony Seigler",
       "team": "BOS",
@@ -209,19 +222,6 @@
       "startDate": "2026-06-23",
       "lastHitDate": "2026-06-27",
       "lastGameDate": "2026-06-27",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 15,
-      "playerId": 666139,
-      "name": "Josh Lowe",
-      "team": "LAA",
-      "teamName": "Angels",
-      "streak": 5,
-      "startDate": "2026-05-19",
-      "lastHitDate": "2026-06-26",
-      "lastGameDate": "2026-06-26",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
@@ -253,19 +253,32 @@
     },
     {
       "rank": 18,
-      "playerId": 643289,
-      "name": "Mauricio Dubón",
-      "team": "ATL",
-      "teamName": "Braves",
+      "playerId": 691720,
+      "name": "Kyle Karros",
+      "team": "COL",
+      "teamName": "Rockies",
       "streak": 5,
       "startDate": "2026-06-21",
-      "lastHitDate": "2026-06-26",
+      "lastHitDate": "2026-06-27",
       "lastGameDate": "2026-06-27",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
     {
       "rank": 19,
+      "playerId": 650333,
+      "name": "Luis Arraez",
+      "team": "SF",
+      "teamName": "Giants",
+      "streak": 5,
+      "startDate": "2026-06-20",
+      "lastHitDate": "2026-06-27",
+      "lastGameDate": "2026-06-27",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 20,
       "playerId": 678246,
       "name": "Miguel Vargas",
       "team": "CWS",
@@ -278,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 21,
       "playerId": 805999,
       "name": "A.J. Ewing",
       "team": "NYM",
@@ -287,19 +300,6 @@
       "startDate": "2026-06-24",
       "lastHitDate": "2026-06-27",
       "lastGameDate": "2026-06-27",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 21,
-      "playerId": 668885,
-      "name": "Austin Martin",
-      "team": "MIN",
-      "teamName": "Twins",
-      "streak": 4,
-      "startDate": "2026-06-22",
-      "lastHitDate": "2026-06-26",
-      "lastGameDate": "2026-06-26",
       "gamesToRecord": 52,
       "nextMilestone": 20
     },
