@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T23:30:11.180Z",
+  "generatedAt": "2026-06-29T01:16:05.439Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -188,19 +188,6 @@
     },
     {
       "rank": 13,
-      "playerId": 678011,
-      "name": "Anthony Seigler",
-      "team": "BOS",
-      "teamName": "Red Sox",
-      "streak": 5,
-      "startDate": "2026-06-23",
-      "lastHitDate": "2026-06-27",
-      "lastGameDate": "2026-06-28",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 14,
       "playerId": 686797,
       "name": "Brooks Lee",
       "team": "MIN",
@@ -213,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 14,
       "playerId": 656775,
       "name": "Cedric Mullins",
       "team": "TB",
@@ -226,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 15,
       "playerId": 694192,
       "name": "Jackson Chourio",
       "team": "MIL",
@@ -239,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 16,
       "playerId": 665161,
       "name": "Jeremy Peña",
       "team": "HOU",
@@ -252,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 17,
       "playerId": 677594,
       "name": "Julio Rodríguez",
       "team": "SEA",
@@ -265,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 18,
       "playerId": 605141,
       "name": "Mookie Betts",
       "team": "LAD",
@@ -278,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 19,
       "playerId": 670032,
       "name": "Nicky Lopez",
       "team": "TEX",
@@ -291,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 20,
       "playerId": 650490,
       "name": "Yandy Díaz",
       "team": "TB",
@@ -304,13 +291,26 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 21,
       "playerId": 677587,
       "name": "Brayan Rocchio",
       "team": "CLE",
       "teamName": "Guardians",
       "streak": 4,
       "startDate": "2026-06-24",
+      "lastHitDate": "2026-06-28",
+      "lastGameDate": "2026-06-28",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 22,
+      "playerId": 702332,
+      "name": "Caleb Durbin",
+      "team": "BOS",
+      "teamName": "Red Sox",
+      "streak": 4,
+      "startDate": "2026-06-25",
       "lastHitDate": "2026-06-28",
       "lastGameDate": "2026-06-28",
       "gamesToRecord": 52,
