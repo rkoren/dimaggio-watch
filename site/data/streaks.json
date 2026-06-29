@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T22:29:57.747Z",
+  "generatedAt": "2026-06-29T23:27:56.920Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -58,32 +58,6 @@
     },
     {
       "rank": 3,
-      "playerId": 666182,
-      "name": "Bo Bichette",
-      "team": "NYM",
-      "teamName": "Mets",
-      "streak": 7,
-      "startDate": "2026-06-23",
-      "lastHitDate": "2026-06-28",
-      "lastGameDate": "2026-06-28",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 4,
-      "playerId": 800050,
-      "name": "Chase DeLauter",
-      "team": "CLE",
-      "teamName": "Guardians",
-      "streak": 7,
-      "startDate": "2026-06-06",
-      "lastHitDate": "2026-06-28",
-      "lastGameDate": "2026-06-28",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 5,
       "playerId": 666139,
       "name": "Josh Lowe",
       "team": "LAA",
@@ -96,7 +70,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 6,
+      "rank": 4,
+      "playerId": 804606,
+      "name": "Konnor Griffin",
+      "team": "PIT",
+      "teamName": "Pirates",
+      "streak": 7,
+      "startDate": "2026-05-26",
+      "lastHitDate": "2026-06-29",
+      "lastGameDate": "2026-06-29",
+      "gamesToRecord": 49,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 5,
       "playerId": 643289,
       "name": "Mauricio Dubón",
       "team": "ATL",
@@ -105,6 +92,19 @@
       "startDate": "2026-06-21",
       "lastHitDate": "2026-06-28",
       "lastGameDate": "2026-06-28",
+      "gamesToRecord": 49,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 6,
+      "playerId": 678246,
+      "name": "Miguel Vargas",
+      "team": "CWS",
+      "teamName": "White Sox",
+      "streak": 7,
+      "startDate": "2026-06-22",
+      "lastHitDate": "2026-06-29",
+      "lastGameDate": "2026-06-29",
       "gamesToRecord": 49,
       "nextMilestone": 20
     },
@@ -149,19 +149,6 @@
     },
     {
       "rank": 10,
-      "playerId": 804606,
-      "name": "Konnor Griffin",
-      "team": "PIT",
-      "teamName": "Pirates",
-      "streak": 6,
-      "startDate": "2026-05-26",
-      "lastHitDate": "2026-06-28",
-      "lastGameDate": "2026-06-28",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 11,
       "playerId": 650333,
       "name": "Luis Arraez",
       "team": "SF",
@@ -174,20 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
-      "playerId": 678246,
-      "name": "Miguel Vargas",
-      "team": "CWS",
-      "teamName": "White Sox",
-      "streak": 6,
-      "startDate": "2026-06-22",
-      "lastHitDate": "2026-06-28",
-      "lastGameDate": "2026-06-28",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 13,
+      "rank": 11,
       "playerId": 805999,
       "name": "A.J. Ewing",
       "team": "NYM",
@@ -195,12 +169,25 @@
       "streak": 5,
       "startDate": "2026-06-24",
       "lastHitDate": "2026-06-28",
-      "lastGameDate": "2026-06-28",
+      "lastGameDate": "2026-06-29",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 12,
+      "playerId": 677587,
+      "name": "Brayan Rocchio",
+      "team": "CLE",
+      "teamName": "Guardians",
+      "streak": 5,
+      "startDate": "2026-06-24",
+      "lastHitDate": "2026-06-29",
+      "lastGameDate": "2026-06-29",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 13,
       "playerId": 686797,
       "name": "Brooks Lee",
       "team": "MIN",
@@ -213,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 14,
       "playerId": 656775,
       "name": "Cedric Mullins",
       "team": "TB",
@@ -226,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 15,
       "playerId": 694192,
       "name": "Jackson Chourio",
       "team": "MIL",
@@ -239,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 16,
       "playerId": 665161,
       "name": "Jeremy Peña",
       "team": "HOU",
@@ -252,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 17,
       "playerId": 677594,
       "name": "Julio Rodríguez",
       "team": "SEA",
@@ -265,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 18,
       "playerId": 605141,
       "name": "Mookie Betts",
       "team": "LAD",
@@ -278,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 19,
       "playerId": 670032,
       "name": "Nicky Lopez",
       "team": "TEX",
@@ -291,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 20,
       "playerId": 650490,
       "name": "Yandy Díaz",
       "team": "TB",
@@ -304,20 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
-      "playerId": 677587,
-      "name": "Brayan Rocchio",
-      "team": "CLE",
-      "teamName": "Guardians",
-      "streak": 4,
-      "startDate": "2026-06-24",
-      "lastHitDate": "2026-06-28",
-      "lastGameDate": "2026-06-28",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 23,
+      "rank": 21,
       "playerId": 702332,
       "name": "Caleb Durbin",
       "team": "BOS",
@@ -330,20 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
-      "playerId": 701807,
-      "name": "Carson Benge",
-      "team": "NYM",
-      "teamName": "Mets",
-      "streak": 4,
-      "startDate": "2026-06-25",
-      "lastHitDate": "2026-06-28",
-      "lastGameDate": "2026-06-28",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
+      "rank": 22,
       "playerId": 802415,
       "name": "Chandler Simpson",
       "team": "TB",
@@ -352,6 +313,45 @@
       "startDate": "2026-06-24",
       "lastHitDate": "2026-06-28",
       "lastGameDate": "2026-06-28",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 23,
+      "playerId": 657136,
+      "name": "Connor Wong",
+      "team": "BOS",
+      "teamName": "Red Sox",
+      "streak": 4,
+      "startDate": "2026-06-23",
+      "lastHitDate": "2026-06-28",
+      "lastGameDate": "2026-06-28",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 24,
+      "playerId": 672695,
+      "name": "Geraldo Perdomo",
+      "team": "AZ",
+      "teamName": "D-backs",
+      "streak": 4,
+      "startDate": "2026-06-24",
+      "lastHitDate": "2026-06-28",
+      "lastGameDate": "2026-06-28",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 691023,
+      "name": "Jordan Walker",
+      "team": "STL",
+      "teamName": "Cardinals",
+      "streak": 4,
+      "startDate": "2026-06-23",
+      "lastHitDate": "2026-06-27",
+      "lastGameDate": "2026-06-27",
       "gamesToRecord": 52,
       "nextMilestone": 20
     }
