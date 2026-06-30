@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T19:40:44.081Z",
+  "generatedAt": "2026-06-30T20:46:36.236Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -292,19 +292,6 @@
     },
     {
       "rank": 21,
-      "playerId": 665161,
-      "name": "Jeremy Peña",
-      "team": "HOU",
-      "teamName": "Astros",
-      "streak": 5,
-      "startDate": "2026-06-24",
-      "lastHitDate": "2026-06-28",
-      "lastGameDate": "2026-06-28",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 22,
       "playerId": 668952,
       "name": "Ryan Kreidler",
       "team": "MIN",
@@ -317,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 22,
       "playerId": 686217,
       "name": "Sal Frelick",
       "team": "MIL",
@@ -330,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 23,
       "playerId": 701398,
       "name": "Sal Stewart",
       "team": "CIN",
@@ -343,11 +330,24 @@
       "nextMilestone": 20
     },
     {
-      "rank": 25,
+      "rank": 24,
       "playerId": 803011,
       "name": "Sam Antonacci",
       "team": "CWS",
       "teamName": "White Sox",
+      "streak": 5,
+      "startDate": "2026-06-24",
+      "lastHitDate": "2026-06-29",
+      "lastGameDate": "2026-06-29",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 660271,
+      "name": "Shohei Ohtani",
+      "team": "LAD",
+      "teamName": "Dodgers",
       "streak": 5,
       "startDate": "2026-06-24",
       "lastHitDate": "2026-06-29",
