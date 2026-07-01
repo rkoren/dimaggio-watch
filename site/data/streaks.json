@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T16:54:03.480Z",
+  "generatedAt": "2026-07-01T17:41:49.899Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -75,11 +75,11 @@
       "name": "Chase DeLauter",
       "team": "CLE",
       "teamName": "Guardians",
-      "streak": 9,
+      "streak": 10,
       "startDate": "2026-06-06",
-      "lastHitDate": "2026-06-30",
-      "lastGameDate": "2026-06-30",
-      "gamesToRecord": 47,
+      "lastHitDate": "2026-07-01",
+      "lastGameDate": "2026-07-01",
+      "gamesToRecord": 46,
       "nextMilestone": 20
     },
     {
@@ -188,19 +188,6 @@
     },
     {
       "rank": 13,
-      "playerId": 670032,
-      "name": "Nicky Lopez",
-      "team": "TEX",
-      "teamName": "Rangers",
-      "streak": 7,
-      "startDate": "2026-06-24",
-      "lastHitDate": "2026-06-30",
-      "lastGameDate": "2026-06-30",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 14,
       "playerId": 702332,
       "name": "Caleb Durbin",
       "team": "BOS",
@@ -213,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 14,
       "playerId": 701807,
       "name": "Carson Benge",
       "team": "NYM",
@@ -226,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 15,
       "playerId": 668952,
       "name": "Ryan Kreidler",
       "team": "MIN",
@@ -239,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 16,
       "playerId": 686217,
       "name": "Sal Frelick",
       "team": "MIL",
@@ -252,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 17,
       "playerId": 701398,
       "name": "Sal Stewart",
       "team": "CIN",
@@ -265,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 18,
       "playerId": 803011,
       "name": "Sam Antonacci",
       "team": "CWS",
@@ -278,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 19,
       "playerId": 660271,
       "name": "Shohei Ohtani",
       "team": "LAD",
@@ -291,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 20,
       "playerId": 650490,
       "name": "Yandy Díaz",
       "team": "TB",
@@ -304,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 21,
       "playerId": 656775,
       "name": "Cedric Mullins",
       "team": "TB",
@@ -317,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 22,
       "playerId": 802415,
       "name": "Chandler Simpson",
       "team": "TB",
@@ -330,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 23,
       "playerId": 702284,
       "name": "Cole Young",
       "team": "SEA",
@@ -343,11 +330,24 @@
       "nextMilestone": 20
     },
     {
-      "rank": 25,
+      "rank": 24,
       "playerId": 699013,
       "name": "Esmerlyn Valdez",
       "team": "PIT",
       "teamName": "Pirates",
+      "streak": 5,
+      "startDate": "2026-06-26",
+      "lastHitDate": "2026-06-30",
+      "lastGameDate": "2026-06-30",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 665487,
+      "name": "Fernando Tatis Jr.",
+      "team": "SD",
+      "teamName": "Padres",
       "streak": 5,
       "startDate": "2026-06-26",
       "lastHitDate": "2026-06-30",
