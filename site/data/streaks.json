@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T18:40:13.791Z",
+  "generatedAt": "2026-07-02T20:24:02.844Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -36,11 +36,11 @@
       "name": "Liam Hicks",
       "team": "MIA",
       "teamName": "Marlins",
-      "streak": 12,
+      "streak": 13,
       "startDate": "2026-06-09",
-      "lastHitDate": "2026-07-01",
-      "lastGameDate": "2026-07-01",
-      "gamesToRecord": 44,
+      "lastHitDate": "2026-07-02",
+      "lastGameDate": "2026-07-02",
+      "gamesToRecord": 43,
       "nextMilestone": 20
     },
     {
@@ -266,6 +266,32 @@
     },
     {
       "rank": 19,
+      "playerId": 668930,
+      "name": "Brice Turang",
+      "team": "MIL",
+      "teamName": "Brewers",
+      "streak": 5,
+      "startDate": "2026-06-28",
+      "lastHitDate": "2026-07-02",
+      "lastGameDate": "2026-07-02",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 20,
+      "playerId": 681082,
+      "name": "Bryson Stott",
+      "team": "PHI",
+      "teamName": "Phillies",
+      "streak": 5,
+      "startDate": "2026-06-28",
+      "lastHitDate": "2026-07-02",
+      "lastGameDate": "2026-07-02",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 21,
       "playerId": 702284,
       "name": "Cole Young",
       "team": "SEA",
@@ -278,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 22,
       "playerId": 657136,
       "name": "Connor Wong",
       "team": "BOS",
@@ -291,7 +317,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 23,
+      "playerId": 682829,
+      "name": "Elly De La Cruz",
+      "team": "CIN",
+      "teamName": "Reds",
+      "streak": 5,
+      "startDate": "2026-06-28",
+      "lastHitDate": "2026-07-02",
+      "lastGameDate": "2026-07-02",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 24,
       "playerId": 606466,
       "name": "Ketel Marte",
       "team": "AZ",
@@ -304,52 +343,13 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 25,
       "playerId": 671277,
       "name": "Luis García Jr.",
       "team": "WSH",
       "teamName": "Nationals",
       "streak": 5,
       "startDate": "2026-06-27",
-      "lastHitDate": "2026-07-01",
-      "lastGameDate": "2026-07-01",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 23,
-      "playerId": 656811,
-      "name": "Ryan O'Hearn",
-      "team": "PIT",
-      "teamName": "Pirates",
-      "streak": 5,
-      "startDate": "2026-06-27",
-      "lastHitDate": "2026-07-02",
-      "lastGameDate": "2026-07-02",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 24,
-      "playerId": 607208,
-      "name": "Trea Turner",
-      "team": "PHI",
-      "teamName": "Phillies",
-      "streak": 5,
-      "startDate": "2026-06-28",
-      "lastHitDate": "2026-07-02",
-      "lastGameDate": "2026-07-02",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
-      "playerId": 664034,
-      "name": "Ty France",
-      "team": "SD",
-      "teamName": "Padres",
-      "streak": 5,
-      "startDate": "2026-06-24",
       "lastHitDate": "2026-07-01",
       "lastGameDate": "2026-07-01",
       "gamesToRecord": 51,
