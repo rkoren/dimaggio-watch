@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T03:17:30.876Z",
+  "generatedAt": "2026-07-02T07:37:57.203Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -214,6 +214,19 @@
     },
     {
       "rank": 15,
+      "playerId": 646240,
+      "name": "Rafael Devers",
+      "team": "SF",
+      "teamName": "Giants",
+      "streak": 6,
+      "startDate": "2026-06-26",
+      "lastHitDate": "2026-07-01",
+      "lastGameDate": "2026-07-01",
+      "gamesToRecord": 50,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 16,
       "playerId": 686217,
       "name": "Sal Frelick",
       "team": "MIL",
@@ -226,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 17,
       "playerId": 803011,
       "name": "Sam Antonacci",
       "team": "CWS",
@@ -239,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 18,
       "playerId": 673548,
       "name": "Seiya Suzuki",
       "team": "CHC",
@@ -252,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 19,
       "playerId": 682674,
       "name": "Victor Bericoto",
       "team": "SF",
@@ -265,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 20,
       "playerId": 702284,
       "name": "Cole Young",
       "team": "SEA",
@@ -278,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 21,
       "playerId": 657136,
       "name": "Connor Wong",
       "team": "BOS",
@@ -291,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 22,
       "playerId": 702222,
       "name": "Justin Crawford",
       "team": "PHI",
@@ -304,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 23,
       "playerId": 606466,
       "name": "Ketel Marte",
       "team": "AZ",
@@ -317,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 24,
       "playerId": 671277,
       "name": "Luis García Jr.",
       "team": "WSH",
@@ -330,7 +343,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 25,
       "playerId": 664034,
       "name": "Ty France",
       "team": "SD",
@@ -340,19 +353,6 @@
       "lastHitDate": "2026-07-01",
       "lastGameDate": "2026-07-01",
       "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
-      "playerId": 668930,
-      "name": "Brice Turang",
-      "team": "MIL",
-      "teamName": "Brewers",
-      "streak": 4,
-      "startDate": "2026-06-28",
-      "lastHitDate": "2026-07-01",
-      "lastGameDate": "2026-07-01",
-      "gamesToRecord": 52,
       "nextMilestone": 20
     }
   ]
