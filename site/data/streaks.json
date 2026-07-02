@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T01:11:35.670Z",
+  "generatedAt": "2026-07-02T03:17:30.876Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -71,32 +71,19 @@
     },
     {
       "rank": 4,
-      "playerId": 669364,
-      "name": "Xavier Edwards",
-      "team": "MIA",
-      "teamName": "Marlins",
-      "streak": 9,
-      "startDate": "2026-06-21",
-      "lastHitDate": "2026-06-30",
-      "lastGameDate": "2026-06-30",
-      "gamesToRecord": 47,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 5,
-      "playerId": 650333,
-      "name": "Luis Arraez",
-      "team": "SF",
-      "teamName": "Giants",
+      "playerId": 686797,
+      "name": "Brooks Lee",
+      "team": "MIN",
+      "teamName": "Twins",
       "streak": 8,
-      "startDate": "2026-06-20",
-      "lastHitDate": "2026-06-30",
-      "lastGameDate": "2026-06-30",
+      "startDate": "2026-06-23",
+      "lastHitDate": "2026-07-01",
+      "lastGameDate": "2026-07-01",
       "gamesToRecord": 48,
       "nextMilestone": 20
     },
     {
-      "rank": 6,
+      "rank": 5,
       "playerId": 670032,
       "name": "Nicky Lopez",
       "team": "TEX",
@@ -109,7 +96,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 7,
+      "rank": 6,
       "playerId": 701807,
       "name": "Carson Benge",
       "team": "NYM",
@@ -122,7 +109,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 8,
+      "rank": 7,
       "playerId": 677594,
       "name": "Julio Rodríguez",
       "team": "SEA",
@@ -135,7 +122,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 8,
       "playerId": 605141,
       "name": "Mookie Betts",
       "team": "LAD",
@@ -148,7 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 9,
       "playerId": 701398,
       "name": "Sal Stewart",
       "team": "CIN",
@@ -161,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 10,
       "playerId": 656775,
       "name": "Cedric Mullins",
       "team": "TB",
@@ -174,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 11,
       "playerId": 802415,
       "name": "Chandler Simpson",
       "team": "TB",
@@ -187,7 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 12,
       "playerId": 699013,
       "name": "Esmerlyn Valdez",
       "team": "PIT",
@@ -200,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 13,
       "playerId": 691406,
       "name": "Junior Caminero",
       "team": "TB",
@@ -213,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 14,
       "playerId": 681481,
       "name": "Kerry Carpenter",
       "team": "DET",
@@ -226,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 15,
       "playerId": 686217,
       "name": "Sal Frelick",
       "team": "MIL",
@@ -239,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 16,
       "playerId": 803011,
       "name": "Sam Antonacci",
       "team": "CWS",
@@ -252,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 17,
       "playerId": 673548,
       "name": "Seiya Suzuki",
       "team": "CHC",
@@ -265,20 +252,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
-      "playerId": 660271,
-      "name": "Shohei Ohtani",
-      "team": "LAD",
-      "teamName": "Dodgers",
+      "rank": 18,
+      "playerId": 682674,
+      "name": "Victor Bericoto",
+      "team": "SF",
+      "teamName": "Giants",
       "streak": 6,
       "startDate": "2026-06-24",
-      "lastHitDate": "2026-06-30",
-      "lastGameDate": "2026-06-30",
+      "lastHitDate": "2026-07-01",
+      "lastGameDate": "2026-07-01",
       "gamesToRecord": 50,
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 19,
       "playerId": 702284,
       "name": "Cole Young",
       "team": "SEA",
@@ -291,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 20,
       "playerId": 657136,
       "name": "Connor Wong",
       "team": "BOS",
@@ -304,11 +291,24 @@
       "nextMilestone": 20
     },
     {
+      "rank": 21,
+      "playerId": 702222,
+      "name": "Justin Crawford",
+      "team": "PHI",
+      "teamName": "Phillies",
+      "streak": 5,
+      "startDate": "2026-06-27",
+      "lastHitDate": "2026-07-01",
+      "lastGameDate": "2026-07-01",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
       "rank": 22,
-      "playerId": 671277,
-      "name": "Luis García Jr.",
-      "team": "WSH",
-      "teamName": "Nationals",
+      "playerId": 606466,
+      "name": "Ketel Marte",
+      "team": "AZ",
+      "teamName": "D-backs",
       "streak": 5,
       "startDate": "2026-06-27",
       "lastHitDate": "2026-07-01",
@@ -318,14 +318,14 @@
     },
     {
       "rank": 23,
-      "playerId": 646240,
-      "name": "Rafael Devers",
-      "team": "SF",
-      "teamName": "Giants",
+      "playerId": 671277,
+      "name": "Luis García Jr.",
+      "team": "WSH",
+      "teamName": "Nationals",
       "streak": 5,
-      "startDate": "2026-06-26",
-      "lastHitDate": "2026-06-30",
-      "lastGameDate": "2026-06-30",
+      "startDate": "2026-06-27",
+      "lastHitDate": "2026-07-01",
+      "lastGameDate": "2026-07-01",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
@@ -344,15 +344,15 @@
     },
     {
       "rank": 25,
-      "playerId": 682674,
-      "name": "Victor Bericoto",
-      "team": "SF",
-      "teamName": "Giants",
-      "streak": 5,
-      "startDate": "2026-06-24",
-      "lastHitDate": "2026-06-29",
-      "lastGameDate": "2026-06-29",
-      "gamesToRecord": 51,
+      "playerId": 668930,
+      "name": "Brice Turang",
+      "team": "MIL",
+      "teamName": "Brewers",
+      "streak": 4,
+      "startDate": "2026-06-28",
+      "lastHitDate": "2026-07-01",
+      "lastGameDate": "2026-07-01",
+      "gamesToRecord": 52,
       "nextMilestone": 20
     }
   ]
