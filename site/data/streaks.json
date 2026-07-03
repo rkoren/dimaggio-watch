@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T00:13:49.954Z",
+  "generatedAt": "2026-07-03T04:49:23.810Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -58,14 +58,14 @@
     },
     {
       "rank": 3,
-      "playerId": 666139,
-      "name": "Josh Lowe",
-      "team": "LAA",
-      "teamName": "Angels",
+      "playerId": 670032,
+      "name": "Nicky Lopez",
+      "team": "TEX",
+      "teamName": "Rangers",
       "streak": 9,
-      "startDate": "2026-05-19",
-      "lastHitDate": "2026-06-30",
-      "lastGameDate": "2026-06-30",
+      "startDate": "2026-06-24",
+      "lastHitDate": "2026-07-02",
+      "lastGameDate": "2026-07-02",
       "gamesToRecord": 47,
       "nextMilestone": 20
     },
@@ -84,14 +84,14 @@
     },
     {
       "rank": 5,
-      "playerId": 670032,
-      "name": "Nicky Lopez",
-      "team": "TEX",
-      "teamName": "Rangers",
+      "playerId": 605141,
+      "name": "Mookie Betts",
+      "team": "LAD",
+      "teamName": "Dodgers",
       "streak": 8,
-      "startDate": "2026-06-24",
-      "lastHitDate": "2026-07-01",
-      "lastGameDate": "2026-07-01",
+      "startDate": "2026-06-23",
+      "lastHitDate": "2026-07-02",
+      "lastGameDate": "2026-07-02",
       "gamesToRecord": 48,
       "nextMilestone": 20
     },
@@ -123,6 +123,19 @@
     },
     {
       "rank": 8,
+      "playerId": 656775,
+      "name": "Cedric Mullins",
+      "team": "TB",
+      "teamName": "Rays",
+      "streak": 7,
+      "startDate": "2026-06-23",
+      "lastHitDate": "2026-07-02",
+      "lastGameDate": "2026-07-02",
+      "gamesToRecord": 49,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 9,
       "playerId": 802415,
       "name": "Chandler Simpson",
       "team": "TB",
@@ -135,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 10,
       "playerId": 699013,
       "name": "Esmerlyn Valdez",
       "team": "PIT",
@@ -148,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 11,
       "playerId": 677594,
       "name": "Julio Rodríguez",
       "team": "SEA",
@@ -156,20 +169,7 @@
       "streak": 7,
       "startDate": "2026-06-24",
       "lastHitDate": "2026-06-30",
-      "lastGameDate": "2026-06-30",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 11,
-      "playerId": 605141,
-      "name": "Mookie Betts",
-      "team": "LAD",
-      "teamName": "Dodgers",
-      "streak": 7,
-      "startDate": "2026-06-23",
-      "lastHitDate": "2026-06-30",
-      "lastGameDate": "2026-06-30",
+      "lastGameDate": "2026-07-02",
       "gamesToRecord": 49,
       "nextMilestone": 20
     },
@@ -188,19 +188,6 @@
     },
     {
       "rank": 13,
-      "playerId": 681481,
-      "name": "Kerry Carpenter",
-      "team": "DET",
-      "teamName": "Tigers",
-      "streak": 6,
-      "startDate": "2026-06-26",
-      "lastHitDate": "2026-07-01",
-      "lastGameDate": "2026-07-01",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 14,
       "playerId": 646240,
       "name": "Rafael Devers",
       "team": "SF",
@@ -213,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 14,
       "playerId": 673548,
       "name": "Seiya Suzuki",
       "team": "CHC",
@@ -222,6 +209,19 @@
       "startDate": "2026-06-26",
       "lastHitDate": "2026-07-01",
       "lastGameDate": "2026-07-01",
+      "gamesToRecord": 50,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 15,
+      "playerId": 664034,
+      "name": "Ty France",
+      "team": "SD",
+      "teamName": "Padres",
+      "streak": 6,
+      "startDate": "2026-06-24",
+      "lastHitDate": "2026-07-02",
+      "lastGameDate": "2026-07-02",
       "gamesToRecord": 50,
       "nextMilestone": 20
     },
@@ -266,19 +266,6 @@
     },
     {
       "rank": 19,
-      "playerId": 702284,
-      "name": "Cole Young",
-      "team": "SEA",
-      "teamName": "Mariners",
-      "streak": 5,
-      "startDate": "2026-06-26",
-      "lastHitDate": "2026-06-30",
-      "lastGameDate": "2026-06-30",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 20,
       "playerId": 657136,
       "name": "Connor Wong",
       "team": "BOS",
@@ -287,6 +274,19 @@
       "startDate": "2026-06-23",
       "lastHitDate": "2026-07-01",
       "lastGameDate": "2026-07-01",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 20,
+      "playerId": 694203,
+      "name": "Denzer Guzman",
+      "team": "LAA",
+      "teamName": "Angels",
+      "streak": 5,
+      "startDate": "2026-06-26",
+      "lastHitDate": "2026-07-02",
+      "lastGameDate": "2026-07-02",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
@@ -305,6 +305,19 @@
     },
     {
       "rank": 22,
+      "playerId": 686555,
+      "name": "Isaac Collins",
+      "team": "KC",
+      "teamName": "Royals",
+      "streak": 5,
+      "startDate": "2026-06-26",
+      "lastHitDate": "2026-07-02",
+      "lastGameDate": "2026-07-02",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 23,
       "playerId": 606466,
       "name": "Ketel Marte",
       "team": "AZ",
@@ -317,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 24,
       "playerId": 671277,
       "name": "Luis García Jr.",
       "team": "WSH",
@@ -330,26 +343,13 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 25,
       "playerId": 656811,
       "name": "Ryan O'Hearn",
       "team": "PIT",
       "teamName": "Pirates",
       "streak": 5,
       "startDate": "2026-06-27",
-      "lastHitDate": "2026-07-02",
-      "lastGameDate": "2026-07-02",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
-      "playerId": 680757,
-      "name": "Steven Kwan",
-      "team": "CLE",
-      "teamName": "Guardians",
-      "streak": 5,
-      "startDate": "2026-06-28",
       "lastHitDate": "2026-07-02",
       "lastGameDate": "2026-07-02",
       "gamesToRecord": 51,
