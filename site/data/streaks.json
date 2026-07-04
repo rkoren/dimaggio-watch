@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T16:09:50.588Z",
+  "generatedAt": "2026-07-04T18:07:49.503Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -71,19 +71,6 @@
     },
     {
       "rank": 4,
-      "playerId": 663757,
-      "name": "Trent Grisham",
-      "team": "NYY",
-      "teamName": "Yankees",
-      "streak": 8,
-      "startDate": "2026-06-04",
-      "lastHitDate": "2026-07-03",
-      "lastGameDate": "2026-07-03",
-      "gamesToRecord": 48,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 5,
       "playerId": 802415,
       "name": "Chandler Simpson",
       "team": "TB",
@@ -96,7 +83,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 6,
+      "rank": 5,
       "playerId": 646240,
       "name": "Rafael Devers",
       "team": "SF",
@@ -109,7 +96,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 7,
+      "rank": 6,
       "playerId": 668930,
       "name": "Brice Turang",
       "team": "MIL",
@@ -122,7 +109,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 8,
+      "rank": 7,
       "playerId": 682829,
       "name": "Elly De La Cruz",
       "team": "CIN",
@@ -135,7 +122,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 8,
       "playerId": 695578,
       "name": "James Wood",
       "team": "WSH",
@@ -148,7 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 9,
       "playerId": 606466,
       "name": "Ketel Marte",
       "team": "AZ",
@@ -161,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 10,
       "playerId": 680757,
       "name": "Steven Kwan",
       "team": "CLE",
@@ -174,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 11,
       "playerId": 671976,
       "name": "Tristan Peters",
       "team": "CWS",
@@ -187,7 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 12,
       "playerId": 675961,
       "name": "Alika Williams",
       "team": "ATH",
@@ -200,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 13,
       "playerId": 681082,
       "name": "Bryson Stott",
       "team": "PHI",
@@ -213,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 14,
       "playerId": 694249,
       "name": "Cole Carrigg",
       "team": "COL",
@@ -226,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 15,
       "playerId": 657136,
       "name": "Connor Wong",
       "team": "BOS",
@@ -239,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 16,
       "playerId": 518692,
       "name": "Freddie Freeman",
       "team": "LAD",
@@ -252,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 17,
       "playerId": 686555,
       "name": "Isaac Collins",
       "team": "KC",
@@ -265,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 18,
       "playerId": 693304,
       "name": "Nick Gonzales",
       "team": "PIT",
@@ -278,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 19,
       "playerId": 682622,
       "name": "Noelvi Marte",
       "team": "CIN",
@@ -291,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 20,
       "playerId": 607208,
       "name": "Trea Turner",
       "team": "PHI",
@@ -304,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 21,
       "playerId": 595978,
       "name": "Austin Hedges",
       "team": "CLE",
@@ -317,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 22,
       "playerId": 664040,
       "name": "Brandon Lowe",
       "team": "PIT",
@@ -330,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 23,
       "playerId": 668804,
       "name": "Bryan Reynolds",
       "team": "PIT",
@@ -343,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 25,
+      "rank": 24,
       "playerId": 547180,
       "name": "Bryce Harper",
       "team": "PHI",
@@ -352,6 +339,19 @@
       "startDate": "2026-06-29",
       "lastHitDate": "2026-07-02",
       "lastGameDate": "2026-07-02",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 701358,
+      "name": "Cam Smith",
+      "team": "HOU",
+      "teamName": "Astros",
+      "streak": 4,
+      "startDate": "2026-06-29",
+      "lastHitDate": "2026-07-03",
+      "lastGameDate": "2026-07-03",
       "gamesToRecord": 52,
       "nextMilestone": 20
     }
