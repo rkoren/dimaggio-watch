@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T21:10:58.631Z",
+  "generatedAt": "2026-07-05T23:08:51.511Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -123,19 +123,6 @@
     },
     {
       "rank": 8,
-      "playerId": 694249,
-      "name": "Cole Carrigg",
-      "team": "COL",
-      "teamName": "Rockies",
-      "streak": 6,
-      "startDate": "2026-06-28",
-      "lastHitDate": "2026-07-04",
-      "lastGameDate": "2026-07-04",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 9,
       "playerId": 657136,
       "name": "Connor Wong",
       "team": "BOS",
@@ -148,7 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 9,
       "playerId": 518692,
       "name": "Freddie Freeman",
       "team": "LAD",
@@ -161,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 10,
       "playerId": 694192,
       "name": "Jackson Chourio",
       "team": "MIL",
@@ -174,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 11,
       "playerId": 691594,
       "name": "Javier Sanoja",
       "team": "MIA",
@@ -187,7 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 12,
       "playerId": 693304,
       "name": "Nick Gonzales",
       "team": "PIT",
@@ -200,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 13,
       "playerId": 672640,
       "name": "Otto Lopez",
       "team": "MIA",
@@ -213,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 14,
       "playerId": 691718,
       "name": "Pete Crow-Armstrong",
       "team": "CHC",
@@ -226,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 15,
       "playerId": 595978,
       "name": "Austin Hedges",
       "team": "CLE",
@@ -234,16 +221,29 @@
       "streak": 5,
       "startDate": "2026-06-28",
       "lastHitDate": "2026-07-04",
-      "lastGameDate": "2026-07-04",
+      "lastGameDate": "2026-07-05",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 16,
+      "playerId": 664040,
+      "name": "Brandon Lowe",
+      "team": "PIT",
+      "teamName": "Pirates",
+      "streak": 5,
+      "startDate": "2026-07-01",
+      "lastHitDate": "2026-07-05",
+      "lastGameDate": "2026-07-05",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
     {
       "rank": 17,
-      "playerId": 664040,
-      "name": "Brandon Lowe",
-      "team": "PIT",
-      "teamName": "Pirates",
+      "playerId": 677587,
+      "name": "Brayan Rocchio",
+      "team": "CLE",
+      "teamName": "Guardians",
       "streak": 5,
       "startDate": "2026-07-01",
       "lastHitDate": "2026-07-05",
