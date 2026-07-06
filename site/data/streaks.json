@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T16:56:11.372Z",
+  "generatedAt": "2026-07-06T19:01:47.732Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -110,19 +110,6 @@
     },
     {
       "rank": 7,
-      "playerId": 681082,
-      "name": "Bryson Stott",
-      "team": "PHI",
-      "teamName": "Phillies",
-      "streak": 7,
-      "startDate": "2026-06-28",
-      "lastHitDate": "2026-07-05",
-      "lastGameDate": "2026-07-05",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 8,
       "playerId": 657136,
       "name": "Connor Wong",
       "team": "BOS",
@@ -135,7 +122,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 8,
       "playerId": 657757,
       "name": "Gavin Sheets",
       "team": "SD",
@@ -148,7 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 9,
       "playerId": 694192,
       "name": "Jackson Chourio",
       "team": "MIL",
@@ -161,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 10,
       "playerId": 691594,
       "name": "Javier Sanoja",
       "team": "MIA",
@@ -174,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 11,
       "playerId": 693304,
       "name": "Nick Gonzales",
       "team": "PIT",
@@ -187,7 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 12,
       "playerId": 672640,
       "name": "Otto Lopez",
       "team": "MIA",
@@ -200,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 13,
       "playerId": 691718,
       "name": "Pete Crow-Armstrong",
       "team": "CHC",
@@ -213,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 14,
       "playerId": 595978,
       "name": "Austin Hedges",
       "team": "CLE",
@@ -226,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 15,
       "playerId": 664040,
       "name": "Brandon Lowe",
       "team": "PIT",
@@ -239,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 16,
       "playerId": 677587,
       "name": "Brayan Rocchio",
       "team": "CLE",
@@ -252,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 17,
       "playerId": 683146,
       "name": "Brett Baty",
       "team": "NYM",
@@ -265,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 18,
       "playerId": 668804,
       "name": "Bryan Reynolds",
       "team": "PIT",
@@ -278,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 19,
       "playerId": 691023,
       "name": "Jordan Walker",
       "team": "STL",
@@ -291,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 20,
       "playerId": 671739,
       "name": "Michael Harris II",
       "team": "ATL",
@@ -304,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 21,
       "playerId": 500743,
       "name": "Miguel Rojas",
       "team": "LAD",
@@ -317,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 22,
       "playerId": 668939,
       "name": "Adley Rutschman",
       "team": "BAL",
@@ -330,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 23,
       "playerId": 676475,
       "name": "Alec Burleson",
       "team": "STL",
@@ -343,11 +330,24 @@
       "nextMilestone": 20
     },
     {
-      "rank": 25,
+      "rank": 24,
       "playerId": 678882,
       "name": "Ceddanne Rafaela",
       "team": "BOS",
       "teamName": "Red Sox",
+      "streak": 4,
+      "startDate": "2026-07-01",
+      "lastHitDate": "2026-07-05",
+      "lastGameDate": "2026-07-05",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 596019,
+      "name": "Francisco Lindor",
+      "team": "NYM",
+      "teamName": "Mets",
       "streak": 4,
       "startDate": "2026-07-01",
       "lastHitDate": "2026-07-05",
