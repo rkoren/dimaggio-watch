@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T23:08:51.511Z",
+  "generatedAt": "2026-07-06T04:16:03.834Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -136,14 +136,14 @@
     },
     {
       "rank": 9,
-      "playerId": 518692,
-      "name": "Freddie Freeman",
-      "team": "LAD",
-      "teamName": "Dodgers",
+      "playerId": 657757,
+      "name": "Gavin Sheets",
+      "team": "SD",
+      "teamName": "Padres",
       "streak": 6,
-      "startDate": "2026-06-29",
-      "lastHitDate": "2026-07-04",
-      "lastGameDate": "2026-07-04",
+      "startDate": "2026-06-30",
+      "lastHitDate": "2026-07-05",
+      "lastGameDate": "2026-07-05",
       "gamesToRecord": 50,
       "nextMilestone": 20
     },
@@ -279,19 +279,6 @@
     },
     {
       "rank": 20,
-      "playerId": 657757,
-      "name": "Gavin Sheets",
-      "team": "SD",
-      "teamName": "Padres",
-      "streak": 5,
-      "startDate": "2026-06-30",
-      "lastHitDate": "2026-07-04",
-      "lastGameDate": "2026-07-04",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 21,
       "playerId": 691023,
       "name": "Jordan Walker",
       "team": "STL",
@@ -304,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 21,
       "playerId": 671739,
       "name": "Michael Harris II",
       "team": "ATL",
@@ -317,20 +304,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
-      "playerId": 677800,
-      "name": "Wilyer Abreu",
-      "team": "BOS",
-      "teamName": "Red Sox",
+      "rank": 22,
+      "playerId": 500743,
+      "name": "Miguel Rojas",
+      "team": "LAD",
+      "teamName": "Dodgers",
       "streak": 5,
       "startDate": "2026-06-29",
-      "lastHitDate": "2026-07-04",
-      "lastGameDate": "2026-07-04",
+      "lastHitDate": "2026-07-05",
+      "lastGameDate": "2026-07-05",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 23,
       "playerId": 668939,
       "name": "Adley Rutschman",
       "team": "BAL",
@@ -343,13 +330,26 @@
       "nextMilestone": 20
     },
     {
-      "rank": 25,
+      "rank": 24,
       "playerId": 676475,
       "name": "Alec Burleson",
       "team": "STL",
       "teamName": "Cardinals",
       "streak": 4,
       "startDate": "2026-07-02",
+      "lastHitDate": "2026-07-05",
+      "lastGameDate": "2026-07-05",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 678882,
+      "name": "Ceddanne Rafaela",
+      "team": "BOS",
+      "teamName": "Red Sox",
+      "streak": 4,
+      "startDate": "2026-07-01",
       "lastHitDate": "2026-07-05",
       "lastGameDate": "2026-07-05",
       "gamesToRecord": 52,
