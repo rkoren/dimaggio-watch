@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T18:06:58.168Z",
+  "generatedAt": "2026-07-07T20:52:46.891Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -45,19 +45,6 @@
     },
     {
       "rank": 2,
-      "playerId": 668930,
-      "name": "Brice Turang",
-      "team": "MIL",
-      "teamName": "Brewers",
-      "streak": 9,
-      "startDate": "2026-06-28",
-      "lastHitDate": "2026-07-06",
-      "lastGameDate": "2026-07-06",
-      "gamesToRecord": 47,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 3,
       "playerId": 802415,
       "name": "Chandler Simpson",
       "team": "TB",
@@ -70,7 +57,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 4,
+      "rank": 3,
       "playerId": 681082,
       "name": "Bryson Stott",
       "team": "PHI",
@@ -83,7 +70,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 5,
+      "rank": 4,
       "playerId": 680757,
       "name": "Steven Kwan",
       "team": "CLE",
@@ -96,7 +83,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 6,
+      "rank": 5,
       "playerId": 671976,
       "name": "Tristan Peters",
       "team": "CWS",
@@ -109,7 +96,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 7,
+      "rank": 6,
       "playerId": 657757,
       "name": "Gavin Sheets",
       "team": "SD",
@@ -122,7 +109,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 8,
+      "rank": 7,
       "playerId": 683146,
       "name": "Brett Baty",
       "team": "NYM",
@@ -135,7 +122,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 8,
       "playerId": 657136,
       "name": "Connor Wong",
       "team": "BOS",
@@ -148,7 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 9,
       "playerId": 691594,
       "name": "Javier Sanoja",
       "team": "MIA",
@@ -161,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 10,
       "playerId": 671739,
       "name": "Michael Harris II",
       "team": "ATL",
@@ -174,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 11,
       "playerId": 693304,
       "name": "Nick Gonzales",
       "team": "PIT",
@@ -187,7 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 12,
       "playerId": 672640,
       "name": "Otto Lopez",
       "team": "MIA",
@@ -200,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 13,
       "playerId": 691718,
       "name": "Pete Crow-Armstrong",
       "team": "CHC",
@@ -213,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 14,
       "playerId": 595978,
       "name": "Austin Hedges",
       "team": "CLE",
@@ -226,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 15,
       "playerId": 664040,
       "name": "Brandon Lowe",
       "team": "PIT",
@@ -239,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 16,
       "playerId": 677587,
       "name": "Brayan Rocchio",
       "team": "CLE",
@@ -252,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 17,
       "playerId": 668804,
       "name": "Bryan Reynolds",
       "team": "PIT",
@@ -265,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 18,
       "playerId": 671218,
       "name": "Heliot Ramos",
       "team": "SF",
@@ -278,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 19,
       "playerId": 664983,
       "name": "Jake McCarthy",
       "team": "COL",
@@ -291,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 20,
       "playerId": 808982,
       "name": "Jung Hoo Lee",
       "team": "SF",
@@ -304,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 21,
       "playerId": 668939,
       "name": "Adley Rutschman",
       "team": "BAL",
@@ -317,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 22,
       "playerId": 666182,
       "name": "Bo Bichette",
       "team": "NYM",
@@ -330,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 23,
       "playerId": 678882,
       "name": "Ceddanne Rafaela",
       "team": "BOS",
@@ -343,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 25,
+      "rank": 24,
       "playerId": 678554,
       "name": "Curtis Mead",
       "team": "WSH",
@@ -352,6 +339,19 @@
       "startDate": "2026-07-01",
       "lastHitDate": "2026-07-06",
       "lastGameDate": "2026-07-06",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 677588,
+      "name": "José Tena",
+      "team": "WSH",
+      "teamName": "Nationals",
+      "streak": 4,
+      "startDate": "2026-06-30",
+      "lastHitDate": "2026-07-05",
+      "lastGameDate": "2026-07-05",
       "gamesToRecord": 52,
       "nextMilestone": 20
     }
