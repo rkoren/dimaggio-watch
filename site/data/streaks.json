@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T19:45:24.214Z",
+  "generatedAt": "2026-07-08T21:16:29.630Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -32,6 +32,19 @@
   "streaks": [
     {
       "rank": 1,
+      "playerId": 545361,
+      "name": "Mike Trout",
+      "team": "LAA",
+      "teamName": "Angels",
+      "streak": 8,
+      "startDate": "2026-06-09",
+      "lastHitDate": "2026-06-17",
+      "lastGameDate": "2026-06-17",
+      "gamesToRecord": 48,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 2,
       "playerId": 683146,
       "name": "Brett Baty",
       "team": "NYM",
@@ -44,7 +57,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 2,
+      "rank": 3,
       "playerId": 657136,
       "name": "Connor Wong",
       "team": "BOS",
@@ -57,7 +70,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 3,
+      "rank": 4,
       "playerId": 691594,
       "name": "Javier Sanoja",
       "team": "MIA",
@@ -70,7 +83,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 4,
+      "rank": 5,
       "playerId": 671739,
       "name": "Michael Harris II",
       "team": "ATL",
@@ -83,7 +96,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 5,
+      "rank": 6,
       "playerId": 693304,
       "name": "Nick Gonzales",
       "team": "PIT",
@@ -96,7 +109,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 6,
+      "rank": 7,
       "playerId": 672640,
       "name": "Otto Lopez",
       "team": "MIA",
@@ -109,7 +122,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 7,
+      "rank": 8,
       "playerId": 691718,
       "name": "Pete Crow-Armstrong",
       "team": "CHC",
@@ -122,24 +135,11 @@
       "nextMilestone": 20
     },
     {
-      "rank": 8,
+      "rank": 9,
       "playerId": 664040,
       "name": "Brandon Lowe",
       "team": "PIT",
       "teamName": "Pirates",
-      "streak": 6,
-      "startDate": "2026-07-01",
-      "lastHitDate": "2026-07-07",
-      "lastGameDate": "2026-07-07",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 9,
-      "playerId": 671218,
-      "name": "Heliot Ramos",
-      "team": "SF",
-      "teamName": "Giants",
       "streak": 6,
       "startDate": "2026-07-01",
       "lastHitDate": "2026-07-07",
