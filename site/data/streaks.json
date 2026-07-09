@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T18:04:00.678Z",
+  "generatedAt": "2026-07-09T20:52:24.685Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -32,6 +32,19 @@
   "streaks": [
     {
       "rank": 1,
+      "playerId": 683146,
+      "name": "Brett Baty",
+      "team": "NYM",
+      "teamName": "Mets",
+      "streak": 9,
+      "startDate": "2026-06-30",
+      "lastHitDate": "2026-07-09",
+      "lastGameDate": "2026-07-09",
+      "gamesToRecord": 47,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 2,
       "playerId": 671739,
       "name": "Michael Harris II",
       "team": "ATL",
@@ -44,7 +57,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 2,
+      "rank": 3,
       "playerId": 545361,
       "name": "Mike Trout",
       "team": "LAA",
@@ -57,7 +70,33 @@
       "nextMilestone": 20
     },
     {
-      "rank": 3,
+      "rank": 4,
+      "playerId": 691718,
+      "name": "Pete Crow-Armstrong",
+      "team": "CHC",
+      "teamName": "Cubs",
+      "streak": 9,
+      "startDate": "2026-06-29",
+      "lastHitDate": "2026-07-09",
+      "lastGameDate": "2026-07-09",
+      "gamesToRecord": 47,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 5,
+      "playerId": 657136,
+      "name": "Connor Wong",
+      "team": "BOS",
+      "teamName": "Red Sox",
+      "streak": 8,
+      "startDate": "2026-06-23",
+      "lastHitDate": "2026-07-09",
+      "lastGameDate": "2026-07-09",
+      "gamesToRecord": 48,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 6,
       "playerId": 691594,
       "name": "Javier Sanoja",
       "team": "MIA",
@@ -70,7 +109,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 4,
+      "rank": 7,
       "playerId": 672640,
       "name": "Otto Lopez",
       "team": "MIA",
@@ -83,20 +122,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 5,
-      "playerId": 657136,
-      "name": "Connor Wong",
-      "team": "BOS",
-      "teamName": "Red Sox",
-      "streak": 7,
-      "startDate": "2026-06-23",
-      "lastHitDate": "2026-07-07",
-      "lastGameDate": "2026-07-07",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 6,
+      "rank": 8,
       "playerId": 671218,
       "name": "Heliot Ramos",
       "team": "SF",
@@ -109,7 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 7,
+      "rank": 9,
       "playerId": 657041,
       "name": "Lane Thomas",
       "team": "KC",
@@ -122,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 8,
+      "rank": 10,
       "playerId": 645277,
       "name": "Ozzie Albies",
       "team": "ATL",
@@ -135,7 +161,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 11,
+      "playerId": 663853,
+      "name": "Romy Gonzalez",
+      "team": "BOS",
+      "teamName": "Red Sox",
+      "streak": 7,
+      "startDate": "2026-06-30",
+      "lastHitDate": "2026-07-09",
+      "lastGameDate": "2026-07-09",
+      "gamesToRecord": 49,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 12,
       "playerId": 595978,
       "name": "Austin Hedges",
       "team": "CLE",
@@ -148,52 +187,13 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
-      "playerId": 678882,
-      "name": "Ceddanne Rafaela",
-      "team": "BOS",
-      "teamName": "Red Sox",
-      "streak": 6,
-      "startDate": "2026-07-01",
-      "lastHitDate": "2026-07-08",
-      "lastGameDate": "2026-07-08",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 11,
+      "rank": 13,
       "playerId": 811965,
       "name": "Joshua Kuroda-Grauer",
       "team": "ATH",
       "teamName": "Athletics",
       "streak": 6,
       "startDate": "2026-07-01",
-      "lastHitDate": "2026-07-08",
-      "lastGameDate": "2026-07-08",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 12,
-      "playerId": 807712,
-      "name": "Luke Keaschall",
-      "team": "MIN",
-      "teamName": "Twins",
-      "streak": 6,
-      "startDate": "2026-07-01",
-      "lastHitDate": "2026-07-08",
-      "lastGameDate": "2026-07-09",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 13,
-      "playerId": 663853,
-      "name": "Romy Gonzalez",
-      "team": "BOS",
-      "teamName": "Red Sox",
-      "streak": 6,
-      "startDate": "2026-06-30",
       "lastHitDate": "2026-07-08",
       "lastGameDate": "2026-07-08",
       "gamesToRecord": 50,
@@ -227,6 +227,19 @@
     },
     {
       "rank": 16,
+      "playerId": 800050,
+      "name": "Chase DeLauter",
+      "team": "CLE",
+      "teamName": "Guardians",
+      "streak": 5,
+      "startDate": "2026-07-04",
+      "lastHitDate": "2026-07-09",
+      "lastGameDate": "2026-07-09",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 17,
       "playerId": 572233,
       "name": "Christian Walker",
       "team": "HOU",
@@ -239,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 18,
       "playerId": 807799,
       "name": "Masataka Yoshida",
       "team": "BOS",
@@ -252,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 19,
       "playerId": 668715,
       "name": "Spencer Steer",
       "team": "CIN",
@@ -265,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 20,
       "playerId": 605170,
       "name": "Victor Caratini",
       "team": "MIN",
@@ -275,19 +288,6 @@
       "lastHitDate": "2026-07-08",
       "lastGameDate": "2026-07-08",
       "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 20,
-      "playerId": 677942,
-      "name": "Blaze Alexander",
-      "team": "BAL",
-      "teamName": "Orioles",
-      "streak": 4,
-      "startDate": "2026-07-04",
-      "lastHitDate": "2026-07-08",
-      "lastGameDate": "2026-07-09",
-      "gamesToRecord": 52,
       "nextMilestone": 20
     },
     {
@@ -318,6 +318,19 @@
     },
     {
       "rank": 23,
+      "playerId": 701807,
+      "name": "Carson Benge",
+      "team": "NYM",
+      "teamName": "Mets",
+      "streak": 4,
+      "startDate": "2026-07-06",
+      "lastHitDate": "2026-07-09",
+      "lastGameDate": "2026-07-09",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 24,
       "playerId": 543877,
       "name": "Christian Vázquez",
       "team": "HOU",
@@ -330,26 +343,13 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 25,
       "playerId": 682928,
       "name": "CJ Abrams",
       "team": "WSH",
       "teamName": "Nationals",
       "streak": 4,
       "startDate": "2026-07-05",
-      "lastHitDate": "2026-07-08",
-      "lastGameDate": "2026-07-08",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
-      "playerId": 694203,
-      "name": "Denzer Guzman",
-      "team": "LAA",
-      "teamName": "Angels",
-      "streak": 4,
-      "startDate": "2026-07-04",
       "lastHitDate": "2026-07-08",
       "lastGameDate": "2026-07-08",
       "gamesToRecord": 52,
