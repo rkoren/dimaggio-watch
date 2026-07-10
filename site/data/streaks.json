@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T00:12:23.773Z",
+  "generatedAt": "2026-07-10T04:59:16.427Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -97,6 +97,19 @@
     },
     {
       "rank": 6,
+      "playerId": 671218,
+      "name": "Heliot Ramos",
+      "team": "SF",
+      "teamName": "Giants",
+      "streak": 8,
+      "startDate": "2026-07-01",
+      "lastHitDate": "2026-07-09",
+      "lastGameDate": "2026-07-09",
+      "gamesToRecord": 48,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 7,
       "playerId": 691594,
       "name": "Javier Sanoja",
       "team": "MIA",
@@ -104,21 +117,8 @@
       "streak": 8,
       "startDate": "2026-06-29",
       "lastHitDate": "2026-07-08",
-      "lastGameDate": "2026-07-08",
+      "lastGameDate": "2026-07-09",
       "gamesToRecord": 48,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 7,
-      "playerId": 671218,
-      "name": "Heliot Ramos",
-      "team": "SF",
-      "teamName": "Giants",
-      "streak": 7,
-      "startDate": "2026-07-01",
-      "lastHitDate": "2026-07-08",
-      "lastGameDate": "2026-07-08",
-      "gamesToRecord": 49,
       "nextMilestone": 20
     },
     {
@@ -266,6 +266,19 @@
     },
     {
       "rank": 19,
+      "playerId": 694671,
+      "name": "Wyatt Langford",
+      "team": "TEX",
+      "teamName": "Rangers",
+      "streak": 5,
+      "startDate": "2026-06-23",
+      "lastHitDate": "2026-07-09",
+      "lastGameDate": "2026-07-09",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 20,
       "playerId": 669364,
       "name": "Xavier Edwards",
       "team": "MIA",
@@ -278,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 21,
       "playerId": 666126,
       "name": "Carlos Cortes",
       "team": "ATH",
@@ -291,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 22,
       "playerId": 701807,
       "name": "Carson Benge",
       "team": "NYM",
@@ -304,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 23,
       "playerId": 543877,
       "name": "Christian Vázquez",
       "team": "HOU",
@@ -317,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 24,
       "playerId": 682928,
       "name": "CJ Abrams",
       "team": "WSH",
@@ -330,7 +343,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 25,
       "playerId": 621020,
       "name": "Dansby Swanson",
       "team": "CHC",
@@ -339,19 +352,6 @@
       "startDate": "2026-07-05",
       "lastHitDate": "2026-07-09",
       "lastGameDate": "2026-07-09",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
-      "playerId": 694203,
-      "name": "Denzer Guzman",
-      "team": "LAA",
-      "teamName": "Angels",
-      "streak": 4,
-      "startDate": "2026-07-04",
-      "lastHitDate": "2026-07-08",
-      "lastGameDate": "2026-07-08",
       "gamesToRecord": 52,
       "nextMilestone": 20
     }
