@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T17:52:39.537Z",
+  "generatedAt": "2026-07-10T19:43:37.152Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -123,6 +123,19 @@
     },
     {
       "rank": 8,
+      "playerId": 686469,
+      "name": "Vinnie Pasquantino",
+      "team": "KC",
+      "teamName": "Royals",
+      "streak": 8,
+      "startDate": "2026-06-05",
+      "lastHitDate": "2026-06-13",
+      "lastGameDate": "2026-06-13",
+      "gamesToRecord": 48,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 9,
       "playerId": 657041,
       "name": "Lane Thomas",
       "team": "KC",
@@ -135,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 9,
+      "rank": 10,
       "playerId": 645277,
       "name": "Ozzie Albies",
       "team": "ATL",
@@ -148,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
+      "rank": 11,
       "playerId": 663853,
       "name": "Romy Gonzalez",
       "team": "BOS",
@@ -161,7 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 11,
+      "rank": 12,
       "playerId": 595978,
       "name": "Austin Hedges",
       "team": "CLE",
@@ -174,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 13,
       "playerId": 700250,
       "name": "Ben Rice",
       "team": "NYY",
@@ -187,7 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 14,
       "playerId": 677951,
       "name": "Bobby Witt Jr.",
       "team": "KC",
@@ -200,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 15,
       "playerId": 800050,
       "name": "Chase DeLauter",
       "team": "CLE",
@@ -213,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 16,
       "playerId": 572233,
       "name": "Christian Walker",
       "team": "HOU",
@@ -226,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 17,
       "playerId": 647304,
       "name": "Josh Naylor",
       "team": "SEA",
@@ -239,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 18,
       "playerId": 807799,
       "name": "Masataka Yoshida",
       "team": "BOS",
@@ -252,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 19,
       "playerId": 605170,
       "name": "Victor Caratini",
       "team": "MIN",
@@ -265,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 20,
       "playerId": 694671,
       "name": "Wyatt Langford",
       "team": "TEX",
@@ -278,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 21,
       "playerId": 669364,
       "name": "Xavier Edwards",
       "team": "MIA",
@@ -291,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 22,
       "playerId": 666126,
       "name": "Carlos Cortes",
       "team": "ATH",
@@ -304,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 23,
       "playerId": 701807,
       "name": "Carson Benge",
       "team": "NYM",
@@ -317,7 +330,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 24,
       "playerId": 543877,
       "name": "Christian Vázquez",
       "team": "HOU",
@@ -330,7 +343,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 25,
       "playerId": 682928,
       "name": "CJ Abrams",
       "team": "WSH",
@@ -339,19 +352,6 @@
       "startDate": "2026-07-05",
       "lastHitDate": "2026-07-08",
       "lastGameDate": "2026-07-08",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 25,
-      "playerId": 621020,
-      "name": "Dansby Swanson",
-      "team": "CHC",
-      "teamName": "Cubs",
-      "streak": 4,
-      "startDate": "2026-07-05",
-      "lastHitDate": "2026-07-09",
-      "lastGameDate": "2026-07-09",
       "gamesToRecord": 52,
       "nextMilestone": 20
     }
