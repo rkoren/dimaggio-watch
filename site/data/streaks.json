@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T17:05:20.155Z",
+  "generatedAt": "2026-07-11T19:15:05.387Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -331,14 +331,14 @@
     },
     {
       "rank": 24,
-      "playerId": 666126,
-      "name": "Carlos Cortes",
-      "team": "ATH",
-      "teamName": "Athletics",
+      "playerId": 805367,
+      "name": "Chase Meidroth",
+      "team": "CWS",
+      "teamName": "White Sox",
       "streak": 4,
-      "startDate": "2026-07-03",
-      "lastHitDate": "2026-07-08",
-      "lastGameDate": "2026-07-10",
+      "startDate": "2026-07-08",
+      "lastHitDate": "2026-07-11",
+      "lastGameDate": "2026-07-11",
       "gamesToRecord": 52,
       "nextMilestone": 20
     },
