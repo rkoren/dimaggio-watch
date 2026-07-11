@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T20:59:01.500Z",
+  "generatedAt": "2026-07-11T21:59:59.288Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -32,19 +32,6 @@
   "streaks": [
     {
       "rank": 1,
-      "playerId": 683146,
-      "name": "Brett Baty",
-      "team": "NYM",
-      "teamName": "Mets",
-      "streak": 10,
-      "startDate": "2026-06-30",
-      "lastHitDate": "2026-07-10",
-      "lastGameDate": "2026-07-11",
-      "gamesToRecord": 46,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 2,
       "playerId": 686469,
       "name": "Vinnie Pasquantino",
       "team": "KC",
@@ -57,7 +44,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 3,
+      "rank": 2,
       "playerId": 595978,
       "name": "Austin Hedges",
       "team": "CLE",
@@ -70,13 +57,26 @@
       "nextMilestone": 20
     },
     {
-      "rank": 4,
+      "rank": 3,
       "playerId": 700250,
       "name": "Ben Rice",
       "team": "NYY",
       "teamName": "Yankees",
       "streak": 7,
       "startDate": "2026-07-05",
+      "lastHitDate": "2026-07-11",
+      "lastGameDate": "2026-07-11",
+      "gamesToRecord": 49,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 4,
+      "playerId": 669364,
+      "name": "Xavier Edwards",
+      "team": "MIA",
+      "teamName": "Marlins",
+      "streak": 7,
+      "startDate": "2026-07-04",
       "lastHitDate": "2026-07-11",
       "lastGameDate": "2026-07-11",
       "gamesToRecord": 49,
@@ -97,13 +97,13 @@
     },
     {
       "rank": 6,
-      "playerId": 800050,
-      "name": "Chase DeLauter",
-      "team": "CLE",
-      "teamName": "Guardians",
+      "playerId": 682928,
+      "name": "CJ Abrams",
+      "team": "WSH",
+      "teamName": "Nationals",
       "streak": 6,
-      "startDate": "2026-07-04",
-      "lastHitDate": "2026-07-10",
+      "startDate": "2026-07-05",
+      "lastHitDate": "2026-07-11",
       "lastGameDate": "2026-07-11",
       "gamesToRecord": 50,
       "nextMilestone": 20
@@ -123,19 +123,6 @@
     },
     {
       "rank": 8,
-      "playerId": 807799,
-      "name": "Masataka Yoshida",
-      "team": "BOS",
-      "teamName": "Red Sox",
-      "streak": 6,
-      "startDate": "2026-06-27",
-      "lastHitDate": "2026-07-10",
-      "lastGameDate": "2026-07-11",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 9,
       "playerId": 694671,
       "name": "Wyatt Langford",
       "team": "TEX",
@@ -148,20 +135,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 10,
-      "playerId": 701807,
-      "name": "Carson Benge",
-      "team": "NYM",
-      "teamName": "Mets",
-      "streak": 5,
-      "startDate": "2026-07-06",
-      "lastHitDate": "2026-07-10",
-      "lastGameDate": "2026-07-11",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 11,
+      "rank": 9,
       "playerId": 621020,
       "name": "Dansby Swanson",
       "team": "CHC",
@@ -174,7 +148,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
+      "rank": 10,
       "playerId": 676391,
       "name": "Ernie Clement",
       "team": "TOR",
@@ -187,7 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 13,
+      "rank": 11,
       "playerId": 672515,
       "name": "Gabriel Moreno",
       "team": "AZ",
@@ -200,7 +174,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 12,
       "playerId": 543807,
       "name": "George Springer",
       "team": "TOR",
@@ -213,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 13,
       "playerId": 695506,
       "name": "Jac Caglianone",
       "team": "KC",
@@ -226,7 +200,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
+      "rank": 14,
+      "playerId": 691176,
+      "name": "Jasson Domínguez",
+      "team": "NYY",
+      "teamName": "Yankees",
+      "streak": 5,
+      "startDate": "2026-07-07",
+      "lastHitDate": "2026-07-11",
+      "lastGameDate": "2026-07-11",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 15,
       "playerId": 691023,
       "name": "Jordan Walker",
       "team": "STL",
@@ -239,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 16,
       "playerId": 805808,
       "name": "Kevin McGonigle",
       "team": "DET",
@@ -252,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 17,
       "playerId": 686681,
       "name": "Michael Massey",
       "team": "KC",
@@ -265,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 18,
       "playerId": 677587,
       "name": "Brayan Rocchio",
       "team": "CLE",
@@ -278,11 +265,24 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 19,
       "playerId": 702332,
       "name": "Caleb Durbin",
       "team": "BOS",
       "teamName": "Red Sox",
+      "streak": 4,
+      "startDate": "2026-07-08",
+      "lastHitDate": "2026-07-11",
+      "lastGameDate": "2026-07-11",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 20,
+      "playerId": 802415,
+      "name": "Chandler Simpson",
+      "team": "TB",
+      "teamName": "Rays",
       "streak": 4,
       "startDate": "2026-07-08",
       "lastHitDate": "2026-07-11",
