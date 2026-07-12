@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T19:15:23.957Z",
+  "generatedAt": "2026-07-12T20:59:34.645Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -32,6 +32,19 @@
   "streaks": [
     {
       "rank": 1,
+      "playerId": 700250,
+      "name": "Ben Rice",
+      "team": "NYY",
+      "teamName": "Yankees",
+      "streak": 8,
+      "startDate": "2026-07-05",
+      "lastHitDate": "2026-07-12",
+      "lastGameDate": "2026-07-12",
+      "gamesToRecord": 48,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 2,
       "playerId": 647304,
       "name": "Josh Naylor",
       "team": "SEA",
@@ -44,7 +57,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 2,
+      "rank": 3,
       "playerId": 669364,
       "name": "Xavier Edwards",
       "team": "MIA",
@@ -57,7 +70,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 3,
+      "rank": 4,
       "playerId": 595978,
       "name": "Austin Hedges",
       "team": "CLE",
@@ -70,7 +83,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 4,
+      "rank": 5,
       "playerId": 682928,
       "name": "CJ Abrams",
       "team": "WSH",
@@ -83,7 +96,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 5,
+      "rank": 6,
+      "playerId": 672515,
+      "name": "Gabriel Moreno",
+      "team": "AZ",
+      "teamName": "D-backs",
+      "streak": 7,
+      "startDate": "2026-07-06",
+      "lastHitDate": "2026-07-12",
+      "lastGameDate": "2026-07-12",
+      "gamesToRecord": 49,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 7,
       "playerId": 695506,
       "name": "Jac Caglianone",
       "team": "KC",
@@ -96,42 +122,16 @@
       "nextMilestone": 20
     },
     {
-      "rank": 6,
-      "playerId": 807799,
-      "name": "Masataka Yoshida",
-      "team": "BOS",
-      "teamName": "Red Sox",
-      "streak": 7,
-      "startDate": "2026-06-27",
-      "lastHitDate": "2026-07-11",
-      "lastGameDate": "2026-07-11",
-      "gamesToRecord": 49,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 7,
-      "playerId": 676391,
-      "name": "Ernie Clement",
-      "team": "TOR",
-      "teamName": "Blue Jays",
-      "streak": 6,
-      "startDate": "2026-07-05",
-      "lastHitDate": "2026-07-11",
-      "lastGameDate": "2026-07-11",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
       "rank": 8,
-      "playerId": 672515,
-      "name": "Gabriel Moreno",
-      "team": "AZ",
-      "teamName": "D-backs",
-      "streak": 6,
-      "startDate": "2026-07-06",
-      "lastHitDate": "2026-07-11",
-      "lastGameDate": "2026-07-11",
-      "gamesToRecord": 50,
+      "playerId": 691023,
+      "name": "Jordan Walker",
+      "team": "STL",
+      "teamName": "Cardinals",
+      "streak": 7,
+      "startDate": "2026-07-07",
+      "lastHitDate": "2026-07-12",
+      "lastGameDate": "2026-07-12",
+      "gamesToRecord": 49,
       "nextMilestone": 20
     },
     {
@@ -149,19 +149,6 @@
     },
     {
       "rank": 10,
-      "playerId": 691023,
-      "name": "Jordan Walker",
-      "team": "STL",
-      "teamName": "Cardinals",
-      "streak": 6,
-      "startDate": "2026-07-07",
-      "lastHitDate": "2026-07-11",
-      "lastGameDate": "2026-07-12",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 11,
       "playerId": 677587,
       "name": "Brayan Rocchio",
       "team": "CLE",
@@ -174,20 +161,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 12,
-      "playerId": 543877,
-      "name": "Christian Vázquez",
-      "team": "HOU",
-      "teamName": "Astros",
-      "streak": 5,
-      "startDate": "2026-06-27",
-      "lastHitDate": "2026-07-11",
-      "lastGameDate": "2026-07-12",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 13,
+      "rank": 11,
       "playerId": 669003,
       "name": "Garrett Mitchell",
       "team": "MIL",
@@ -200,7 +174,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 14,
+      "rank": 12,
+      "playerId": 666018,
+      "name": "Jonathan Aranda",
+      "team": "TB",
+      "teamName": "Rays",
+      "streak": 5,
+      "startDate": "2026-07-08",
+      "lastHitDate": "2026-07-12",
+      "lastGameDate": "2026-07-12",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 13,
       "playerId": 694384,
       "name": "Nolan Schanuel",
       "team": "LAA",
@@ -213,13 +200,26 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 14,
       "playerId": 680777,
       "name": "Ryan Jeffers",
       "team": "MIN",
       "teamName": "Twins",
       "streak": 5,
       "startDate": "2026-05-16",
+      "lastHitDate": "2026-07-12",
+      "lastGameDate": "2026-07-12",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 15,
+      "playerId": 673548,
+      "name": "Seiya Suzuki",
+      "team": "CHC",
+      "teamName": "Cubs",
+      "streak": 5,
+      "startDate": "2026-07-08",
       "lastHitDate": "2026-07-12",
       "lastGameDate": "2026-07-12",
       "gamesToRecord": 51,
@@ -234,12 +234,25 @@
       "streak": 5,
       "startDate": "2026-07-04",
       "lastHitDate": "2026-07-11",
-      "lastGameDate": "2026-07-11",
+      "lastGameDate": "2026-07-12",
       "gamesToRecord": 51,
       "nextMilestone": 20
     },
     {
       "rank": 17,
+      "playerId": 669477,
+      "name": "Casey Schmitt",
+      "team": "SF",
+      "teamName": "Giants",
+      "streak": 4,
+      "startDate": "2026-07-09",
+      "lastHitDate": "2026-07-12",
+      "lastGameDate": "2026-07-12",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 18,
       "playerId": 592885,
       "name": "Christian Yelich",
       "team": "MIL",
@@ -252,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 19,
       "playerId": 641355,
       "name": "Cody Bellinger",
       "team": "NYY",
@@ -265,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 20,
       "playerId": 699013,
       "name": "Esmerlyn Valdez",
       "team": "PIT",
@@ -278,7 +291,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 21,
+      "playerId": 696100,
+      "name": "Hunter Goodman",
+      "team": "COL",
+      "teamName": "Rockies",
+      "streak": 4,
+      "startDate": "2026-07-09",
+      "lastHitDate": "2026-07-12",
+      "lastGameDate": "2026-07-12",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 22,
       "playerId": 805779,
       "name": "Jacob Wilson",
       "team": "ATH",
@@ -291,7 +317,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 23,
       "playerId": 800325,
       "name": "Luis Lara",
       "team": "MIL",
@@ -299,16 +325,16 @@
       "streak": 4,
       "startDate": "2026-07-07",
       "lastHitDate": "2026-07-11",
-      "lastGameDate": "2026-07-11",
+      "lastGameDate": "2026-07-12",
       "gamesToRecord": 52,
       "nextMilestone": 20
     },
     {
-      "rank": 22,
-      "playerId": 668227,
-      "name": "Randy Arozarena",
-      "team": "SEA",
-      "teamName": "Mariners",
+      "rank": 24,
+      "playerId": 592518,
+      "name": "Manny Machado",
+      "team": "SD",
+      "teamName": "Padres",
       "streak": 4,
       "startDate": "2026-07-09",
       "lastHitDate": "2026-07-12",
@@ -317,41 +343,15 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
-      "playerId": 669242,
-      "name": "Tommy Edman",
-      "team": "LAD",
-      "teamName": "Dodgers",
-      "streak": 4,
-      "startDate": "2026-07-07",
-      "lastHitDate": "2026-07-11",
-      "lastGameDate": "2026-07-11",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 24,
-      "playerId": 665489,
-      "name": "Vladimir Guerrero Jr.",
-      "team": "TOR",
-      "teamName": "Blue Jays",
-      "streak": 4,
-      "startDate": "2026-07-07",
-      "lastHitDate": "2026-07-11",
-      "lastGameDate": "2026-07-11",
-      "gamesToRecord": 52,
-      "nextMilestone": 20
-    },
-    {
       "rank": 25,
-      "playerId": 685133,
-      "name": "Wade Meckler",
-      "team": "LAA",
-      "teamName": "Angels",
+      "playerId": 668227,
+      "name": "Randy Arozarena",
+      "team": "SEA",
+      "teamName": "Mariners",
       "streak": 4,
-      "startDate": "2026-07-07",
-      "lastHitDate": "2026-07-11",
-      "lastGameDate": "2026-07-11",
+      "startDate": "2026-07-09",
+      "lastHitDate": "2026-07-12",
+      "lastGameDate": "2026-07-12",
       "gamesToRecord": 52,
       "nextMilestone": 20
     }
