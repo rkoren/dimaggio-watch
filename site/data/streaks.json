@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T15:04:21.420Z",
+  "generatedAt": "2026-07-12T17:07:49.674Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -331,27 +331,27 @@
     },
     {
       "rank": 24,
-      "playerId": 669003,
-      "name": "Garrett Mitchell",
+      "playerId": 592885,
+      "name": "Christian Yelich",
       "team": "MIL",
       "teamName": "Brewers",
       "streak": 4,
       "startDate": "2026-07-08",
-      "lastHitDate": "2026-07-11",
-      "lastGameDate": "2026-07-11",
+      "lastHitDate": "2026-07-12",
+      "lastGameDate": "2026-07-12",
       "gamesToRecord": 52,
       "nextMilestone": 20
     },
     {
       "rank": 25,
-      "playerId": 664023,
-      "name": "Ian Happ",
-      "team": "CHC",
-      "teamName": "Cubs",
+      "playerId": 699013,
+      "name": "Esmerlyn Valdez",
+      "team": "PIT",
+      "teamName": "Pirates",
       "streak": 4,
-      "startDate": "2026-07-08",
-      "lastHitDate": "2026-07-11",
-      "lastGameDate": "2026-07-11",
+      "startDate": "2026-07-09",
+      "lastHitDate": "2026-07-12",
+      "lastGameDate": "2026-07-12",
       "gamesToRecord": 52,
       "nextMilestone": 20
     }
