@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T18:11:20.425Z",
+  "generatedAt": "2026-07-17T20:11:11.175Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -214,19 +214,6 @@
     },
     {
       "rank": 15,
-      "playerId": 666018,
-      "name": "Jonathan Aranda",
-      "team": "TB",
-      "teamName": "Rays",
-      "streak": 5,
-      "startDate": "2026-07-08",
-      "lastHitDate": "2026-07-12",
-      "lastGameDate": "2026-07-17",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 16,
       "playerId": 694384,
       "name": "Nolan Schanuel",
       "team": "LAA",
@@ -239,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 17,
+      "rank": 16,
       "playerId": 680777,
       "name": "Ryan Jeffers",
       "team": "MIN",
@@ -252,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 17,
       "playerId": 673548,
       "name": "Seiya Suzuki",
       "team": "CHC",
@@ -265,7 +252,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 18,
       "playerId": 669242,
       "name": "Tommy Edman",
       "team": "LAD",
@@ -278,7 +265,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 19,
       "playerId": 669477,
       "name": "Casey Schmitt",
       "team": "SF",
@@ -287,6 +274,19 @@
       "startDate": "2026-07-09",
       "lastHitDate": "2026-07-12",
       "lastGameDate": "2026-07-12",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 20,
+      "playerId": 678882,
+      "name": "Ceddanne Rafaela",
+      "team": "BOS",
+      "teamName": "Red Sox",
+      "streak": 4,
+      "startDate": "2026-07-10",
+      "lastHitDate": "2026-07-17",
+      "lastGameDate": "2026-07-17",
       "gamesToRecord": 52,
       "nextMilestone": 20
     },
