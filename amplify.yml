@@ -1,6 +1,7 @@
 # AWS Amplify Hosting build spec.
-# The data script runs at build time, so every deploy ships fresh streaks.
-# If the script fails, the build fails (no stale data is published).
+# Live data is published to S3 by the refresher Lambda (see infra/), so site
+# deploys don't depend on it. build:data only refreshes the bundled fallback
+# copy; if the MLB API hiccups, ship the committed fallback rather than fail.
 version: 1
 frontend:
   phases:
@@ -9,7 +10,7 @@ frontend:
         - node --version
     build:
       commands:
-        - npm run build:data
+        - npm run build:data || echo "data build failed; shipping committed fallback copy"
   artifacts:
     baseDirectory: site
     files:

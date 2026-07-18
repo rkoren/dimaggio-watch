@@ -1,5 +1,10 @@
-// DiMaggio Watch — renders the active hitting streaks from data/streaks.json.
+// DiMaggio Watch — renders the active hitting streaks.
+// Data comes from the live S3 URL (published by the refresher Lambda every few
+// minutes; see config.js), with the bundled ./data/streaks.json as a fallback.
+// The page polls for updates so a long-lived tab stays current.
 const RECORD = 56;
+const POLL_MS = 60_000; // refetch cadence
+const DATA_SOURCES = [window.STREAKS_DATA_URL, "./data/streaks.json"].filter(Boolean);
 
 const $ = (id) => document.getElementById(id);
 
@@ -23,6 +28,16 @@ function fmtUpdated(iso) {
     minute: "2-digit",
     timeZoneName: "short",
   });
+}
+
+function fmtAgo(iso) {
+  const secs = Math.max(0, Math.round((Date.now() - new Date(iso).getTime()) / 1000));
+  if (secs < 60) return "just now";
+  const mins = Math.round(secs / 60);
+  if (mins < 60) return `${mins}m ago`;
+  const hours = Math.round(mins / 60);
+  if (hours < 24) return `${hours}h ago`;
+  return fmtUpdated(iso);
 }
 
 function verdict(streak) {
@@ -100,30 +115,79 @@ function escapeHtml(str) {
   );
 }
 
-async function main() {
-  try {
-    const res = await fetch("./data/streaks.json", { cache: "no-cache" });
-    if (!res.ok) throw new Error("HTTP " + res.status);
-    const data = await res.json();
-
-    $("loading").hidden = true;
-    renderRecordMilestones(data.milestones || []);
-    $("updated").textContent = data.generatedAt
-      ? `Updated ${fmtUpdated(data.generatedAt)} · ${data.season} season`
-      : "";
-
-    if (!data.streaks || data.streaks.length === 0) {
-      $("empty").hidden = false;
-      return;
+// Try the live URL first, then the bundled fallback copy.
+async function loadData() {
+  let lastErr;
+  for (const url of DATA_SOURCES) {
+    try {
+      const res = await fetch(url, { cache: "no-cache" });
+      if (!res.ok) throw new Error("HTTP " + res.status + " for " + url);
+      return await res.json();
+    } catch (err) {
+      lastErr = err;
     }
+  }
+  throw lastErr;
+}
 
-    renderHero(data.streaks[0], data.milestones || []);
-    renderBoard(data.streaks);
+let lastGeneratedAt = null;
+
+function renderUpdatedLine(data) {
+  if (!data.generatedAt) {
+    $("updated").textContent = "";
+    return;
+  }
+  $("updated").textContent =
+    `Updated ${fmtAgo(data.generatedAt)} · ${data.season} season`;
+  $("updated").title = fmtUpdated(data.generatedAt);
+}
+
+function render(data) {
+  $("loading").hidden = true;
+  $("error").hidden = true;
+  renderRecordMilestones(data.milestones || []);
+  renderUpdatedLine(data);
+
+  const hasStreaks = data.streaks && data.streaks.length > 0;
+  $("empty").hidden = hasStreaks;
+  if (!hasStreaks) {
+    $("hero").hidden = true;
+    $("board").hidden = true;
+    return;
+  }
+
+  renderHero(data.streaks[0], data.milestones || []);
+  renderBoard(data.streaks);
+}
+
+let latestData = null;
+
+async function refresh({ firstLoad = false } = {}) {
+  try {
+    const data = await loadData();
+    latestData = data;
+    // Re-render only when the payload actually changed.
+    if (data.generatedAt !== lastGeneratedAt) {
+      lastGeneratedAt = data.generatedAt;
+      render(data);
+    }
   } catch (err) {
     console.error(err);
-    $("loading").hidden = true;
-    $("error").hidden = false;
+    if (firstLoad) {
+      $("loading").hidden = true;
+      $("error").hidden = false;
+    }
+    // On a background poll failure, keep showing the last good data.
   }
+}
+
+async function main() {
+  await refresh({ firstLoad: true });
+  setInterval(refresh, POLL_MS);
+  // Keep the relative "updated Xm ago" line ticking between polls.
+  setInterval(() => {
+    if (latestData) renderUpdatedLine(latestData);
+  }, 30_000);
 }
 
 main();

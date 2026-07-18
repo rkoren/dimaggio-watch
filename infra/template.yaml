@@ -1,0 +1,118 @@
+# CloudFormation stack for the AWS-native data refresh pipeline.
+#
+#   EventBridge (every 5 min) -> Lambda (build streaks) -> S3 (streaks.json)
+#                                                            ^
+#                                            site polls this URL directly
+#
+# Deploy with infra/deploy.sh. The site itself stays on Amplify Hosting;
+# this stack only owns the data path, so data updates never require a
+# site rebuild.
+AWSTemplateFormatVersion: "2010-09-09"
+Description: DiMaggio Watch - streak data refresh (S3 + Lambda + EventBridge)
+
+Parameters:
+  CodeBucket:
+    Type: String
+    Description: S3 bucket holding the packaged Lambda code zip
+  CodeKey:
+    Type: String
+    Description: S3 key of the packaged Lambda code zip (content-hashed)
+  RefreshRate:
+    Type: String
+    Default: rate(5 minutes)
+    Description: EventBridge schedule expression for the refresh
+
+Resources:
+  DataBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub dimaggio-watch-data-${AWS::AccountId}
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true # policy-based public read only; no ACLs
+        IgnorePublicAcls: true
+        BlockPublicPolicy: false
+        RestrictPublicBuckets: false
+      CorsConfiguration:
+        CorsRules:
+          - AllowedMethods: [GET, HEAD]
+            AllowedOrigins: ["*"] # public data; site + local dev both fetch it
+            AllowedHeaders: ["*"]
+            MaxAge: 300
+
+  DataBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref DataBucket
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: PublicReadData
+            Effect: Allow
+            Principal: "*"
+            Action: s3:GetObject
+            Resource: !Sub ${DataBucket.Arn}/*
+
+  RefreshFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: dimaggio-watch-refresh-role
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal: { Service: lambda.amazonaws.com }
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: write-data-bucket
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: s3:PutObject
+                Resource: !Sub ${DataBucket.Arn}/*
+
+  RefreshFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: dimaggio-watch-refresh
+      Description: Rebuilds MLB hitting-streak data and publishes it to S3
+      Runtime: nodejs22.x
+      Architectures: [arm64]
+      Handler: handler.handler
+      Role: !GetAtt RefreshFunctionRole.Arn
+      Code:
+        S3Bucket: !Ref CodeBucket
+        S3Key: !Ref CodeKey
+      MemorySize: 512
+      Timeout: 600 # full-league scan takes a couple of minutes
+      Environment:
+        Variables:
+          DATA_BUCKET: !Ref DataBucket
+
+  RefreshSchedule:
+    Type: AWS::Events::Rule
+    Properties:
+      Name: dimaggio-watch-refresh-schedule
+      Description: Periodic streak-data refresh
+      ScheduleExpression: !Ref RefreshRate
+      State: ENABLED
+      Targets:
+        - Id: refresh-lambda
+          Arn: !GetAtt RefreshFunction.Arn
+
+  RefreshSchedulePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref RefreshFunction
+      Action: lambda:InvokeFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt RefreshSchedule.Arn
+
+Outputs:
+  DataUrl:
+    Description: Public URL of the live streaks payload
+    Value: !Sub https://${DataBucket.RegionalDomainName}/streaks.json
+  FunctionName:
+    Value: !Ref RefreshFunction
