@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T17:04:16.236Z",
+  "generatedAt": "2026-07-18T19:14:12.740Z",
   "season": 2026,
   "record": {
     "holder": "Joe DiMaggio",
@@ -175,32 +175,6 @@
     },
     {
       "rank": 12,
-      "playerId": 680777,
-      "name": "Ryan Jeffers",
-      "team": "MIN",
-      "teamName": "Twins",
-      "streak": 6,
-      "startDate": "2026-05-16",
-      "lastHitDate": "2026-07-17",
-      "lastGameDate": "2026-07-17",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 13,
-      "playerId": 673548,
-      "name": "Seiya Suzuki",
-      "team": "CHC",
-      "teamName": "Cubs",
-      "streak": 6,
-      "startDate": "2026-07-08",
-      "lastHitDate": "2026-07-17",
-      "lastGameDate": "2026-07-17",
-      "gamesToRecord": 50,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 14,
       "playerId": 669242,
       "name": "Tommy Edman",
       "team": "LAD",
@@ -213,7 +187,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 15,
+      "rank": 13,
       "playerId": 673237,
       "name": "Yainer Diaz",
       "team": "HOU",
@@ -226,20 +200,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 16,
-      "playerId": 677587,
-      "name": "Brayan Rocchio",
-      "team": "CLE",
-      "teamName": "Guardians",
-      "streak": 5,
-      "startDate": "2026-07-08",
-      "lastHitDate": "2026-07-12",
-      "lastGameDate": "2026-07-12",
-      "gamesToRecord": 51,
-      "nextMilestone": 20
-    },
-    {
-      "rank": 17,
+      "rank": 14,
       "playerId": 669477,
       "name": "Casey Schmitt",
       "team": "SF",
@@ -252,7 +213,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 18,
+      "rank": 15,
       "playerId": 678882,
       "name": "Ceddanne Rafaela",
       "team": "BOS",
@@ -265,7 +226,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 19,
+      "rank": 16,
       "playerId": 592885,
       "name": "Christian Yelich",
       "team": "MIL",
@@ -278,7 +239,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 20,
+      "rank": 17,
       "playerId": 641355,
       "name": "Cody Bellinger",
       "team": "NYY",
@@ -291,7 +252,20 @@
       "nextMilestone": 20
     },
     {
-      "rank": 21,
+      "rank": 18,
+      "playerId": 699013,
+      "name": "Esmerlyn Valdez",
+      "team": "PIT",
+      "teamName": "Pirates",
+      "streak": 5,
+      "startDate": "2026-07-09",
+      "lastHitDate": "2026-07-18",
+      "lastGameDate": "2026-07-18",
+      "gamesToRecord": 51,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 19,
       "playerId": 805779,
       "name": "Jacob Wilson",
       "team": "ATH",
@@ -304,7 +278,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 22,
+      "rank": 20,
       "playerId": 800325,
       "name": "Luis Lara",
       "team": "MIL",
@@ -317,7 +291,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 23,
+      "rank": 21,
       "playerId": 664034,
       "name": "Ty France",
       "team": "SD",
@@ -330,7 +304,7 @@
       "nextMilestone": 20
     },
     {
-      "rank": 24,
+      "rank": 22,
       "playerId": 672386,
       "name": "Alejandro Kirk",
       "team": "TOR",
@@ -343,11 +317,37 @@
       "nextMilestone": 20
     },
     {
-      "rank": 25,
+      "rank": 23,
+      "playerId": 664040,
+      "name": "Brandon Lowe",
+      "team": "PIT",
+      "teamName": "Pirates",
+      "streak": 4,
+      "startDate": "2026-07-11",
+      "lastHitDate": "2026-07-18",
+      "lastGameDate": "2026-07-18",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 24,
       "playerId": 678554,
       "name": "Curtis Mead",
       "team": "WSH",
       "teamName": "Nationals",
+      "streak": 4,
+      "startDate": "2026-07-10",
+      "lastHitDate": "2026-07-17",
+      "lastGameDate": "2026-07-17",
+      "gamesToRecord": 52,
+      "nextMilestone": 20
+    },
+    {
+      "rank": 25,
+      "playerId": 553993,
+      "name": "Eugenio Suárez",
+      "team": "CIN",
+      "teamName": "Reds",
       "streak": 4,
       "startDate": "2026-07-10",
       "lastHitDate": "2026-07-17",
