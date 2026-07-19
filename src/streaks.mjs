@@ -85,6 +85,29 @@ async function getHitters(team) {
     }));
 }
 
+// Today's schedule, for live-game awareness. MLB "dates" run on US Eastern
+// time, so derive today accordingly (a 9pm ET game is tomorrow in UTC).
+export function mlbToday() {
+  return new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
+}
+
+// Returns which teams are mid-game right now (their in-progress stats are
+// provisional) and the live games themselves, for boxscore polling.
+export async function getLiveContext() {
+  const date = mlbToday();
+  const data = await getJSON(`${API}/schedule?sportId=${SPORT_ID}&date=${date}`);
+  const games = data?.dates?.[0]?.games ?? [];
+  const live = games.filter((g) => g.status?.abstractGameState === "Live");
+  return {
+    date,
+    liveTeamIds: new Set(live.flatMap((g) => [g.teams.away.team.id, g.teams.home.team.id])),
+    liveGames: live.map((g) => ({
+      gamePk: g.gamePk,
+      teamIds: [g.teams.away.team.id, g.teams.home.team.id],
+    })),
+  };
+}
+
 async function getGameLog(playerId, season) {
   const url =
     `${API}/people/${playerId}/stats` +
@@ -97,30 +120,45 @@ async function getGameLog(playerId, season) {
       date: s.date,
       atBats: Number(s.stat?.atBats ?? 0),
       hits: Number(s.stat?.hits ?? 0),
+      sacFlies: Number(s.stat?.sacFlies ?? 0),
     }))
     .sort((a, b) => a.date.localeCompare(b.date));
 }
 
 // Walk a game log backward to compute the current active hitting streak.
-function computeStreak(games) {
+//
+// `pendingDate` (optional, YYYY-MM-DD): the player's game on this date is
+// in progress, so its stats are provisional — a hit already banked extends
+// the streak (flagged `provisional`), but a hitless line must NOT break it
+// yet (the player may still hit); it's flagged `inJeopardy` instead.
+function computeStreak(games, pendingDate = null) {
   let streak = 0;
   let startDate = null;
   let lastHitDate = null;
+  let provisional = false;
+  let inJeopardy = false;
   const lastGameDate = games.length ? games[games.length - 1].date : null;
 
   for (let i = games.length - 1; i >= 0; i--) {
     const g = games[i];
+    const pending = g.date === pendingDate;
     if (g.hits >= 1) {
       streak++;
       startDate = g.date;
       if (!lastHitDate) lastHitDate = g.date;
-    } else if (g.atBats >= 1) {
-      break; // hitless game with an official at-bat ends the streak
+      if (pending) provisional = true;
+    } else if (pending) {
+      if (g.atBats >= 1) inJeopardy = true; // hitless so far, but not final
+      // in-progress game never breaks the streak; keep walking
+    } else if (g.atBats >= 1 || g.sacFlies >= 1) {
+      // Official rule: a hitless game with an at-bat ends the streak, and so
+      // does the rare sac-fly-only game (0 AB, >=1 SF) — the v1 known gap.
+      break;
     }
-    // atBats === 0 && hits === 0  -> game does not affect the streak
+    // otherwise (0 AB, 0 SF, no hit: all walks/HBP) -> no effect on streak
   }
 
-  return { streak, startDate, lastHitDate, lastGameDate };
+  return { streak, startDate, lastHitDate, lastGameDate, provisional, inJeopardy };
 }
 
 function nextMilestone(streak) {
@@ -135,17 +173,24 @@ export function takeApiCallCount() {
   return n;
 }
 
-async function computePlayerRecord({ playerId, name, team, teamName }, season) {
+// `liveCtx` (from getLiveContext) marks the player's in-progress game as
+// pending so a mid-game hitless line doesn't falsely break the streak.
+export async function computePlayerRecord({ playerId, name, team, teamId, teamName }, season, liveCtx = null) {
   const games = await getGameLog(playerId, season);
-  const { streak, startDate, lastHitDate, lastGameDate } = computeStreak(games);
-  return { playerId, name, team, teamName, streak, startDate, lastHitDate, lastGameDate };
+  const pendingDate = liveCtx?.liveTeamIds.has(teamId) ? liveCtx.date : null;
+  const { streak, startDate, lastHitDate, lastGameDate, provisional, inJeopardy } =
+    computeStreak(games, pendingDate);
+  return {
+    playerId, name, team, teamId, teamName,
+    streak, startDate, lastHitDate, lastGameDate, provisional, inJeopardy,
+  };
 }
 
 // --- scans -------------------------------------------------------------------
 // Full-league scan: every active roster, every position player (~430 API
 // calls). Returns computed records for ALL players, unfiltered, so the result
 // can serve as the baseline the quick scan merges over.
-export async function scanLeague({ season, log = () => {} } = {}) {
+export async function scanLeague({ season, liveCtx = null, log = () => {} } = {}) {
   season = season || new Date().getUTCFullYear();
 
   const teams = await getTeams(season);
@@ -157,8 +202,9 @@ export async function scanLeague({ season, log = () => {} } = {}) {
 
   const players = await mapLimit(hitters, CONCURRENCY, (p) =>
     computePlayerRecord(
-      { playerId: p.id, name: p.name, team: p.team.abbreviation, teamName: p.team.name },
-      season
+      { playerId: p.id, name: p.name, team: p.team.abbreviation, teamId: p.team.id, teamName: p.team.name },
+      season,
+      liveCtx
     )
   );
   return { season, players };
@@ -166,10 +212,10 @@ export async function scanLeague({ season, log = () => {} } = {}) {
 
 // Watchlist scan: refetch only the given players' game logs (one API call
 // each). `players` are records from a previous scan.
-export async function rescanPlayers(players, { season, log = () => {} } = {}) {
+export async function rescanPlayers(players, { season, liveCtx = null, log = () => {} } = {}) {
   season = season || new Date().getUTCFullYear();
   log(`Rescanning ${players.length} watched players...`);
-  return mapLimit(players, CONCURRENCY, (p) => computePlayerRecord(p, season));
+  return mapLimit(players, CONCURRENCY, (p) => computePlayerRecord(p, season, liveCtx));
 }
 
 // Pick the players worth watching between full scans: the top `count` by
@@ -204,6 +250,9 @@ export function buildPayload(players, season) {
         ...p,
         gamesToRecord: Math.max(0, DIMAGGIO.length - p.streak),
         nextMilestone: next ? next.length : null,
+        // "hitToday": streak count includes a hit from an in-progress game.
+        // "inJeopardy": hitless with >=1 AB in an in-progress game.
+        liveStatus: p.provisional ? "hitToday" : p.inJeopardy ? "inJeopardy" : null,
       };
     });
 
@@ -218,6 +267,25 @@ export function buildPayload(players, season) {
 
 // Convenience: full scan straight to payload (local CLI path).
 export async function buildStreaksPayload({ season, log = () => {} } = {}) {
-  const scan = await scanLeague({ season, log });
+  const liveCtx = await getLiveContext();
+  const scan = await scanLeague({ season, liveCtx, log });
   return buildPayload(scan.players, scan.season);
+}
+
+// Current batting line for everyone in a game, from its boxscore:
+// playerId -> "AB/H/SF". A change in a watched player's line means a
+// completed plate appearance that could affect their streak.
+export async function getBoxscoreLines(gamePk) {
+  const data = await getJSON(`${API}/game/${gamePk}/boxscore`);
+  const lines = new Map();
+  for (const side of ["away", "home"]) {
+    const players = data?.teams?.[side]?.players ?? {};
+    for (const entry of Object.values(players)) {
+      const b = entry?.stats?.batting;
+      if (b && Object.keys(b).length && entry.person?.id) {
+        lines.set(entry.person.id, `${b.atBats ?? 0}/${b.hits ?? 0}/${b.sacFlies ?? 0}`);
+      }
+    }
+  }
+  return lines;
 }

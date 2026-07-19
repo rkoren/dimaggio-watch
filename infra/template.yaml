@@ -24,6 +24,10 @@ Parameters:
     Type: String
     Default: cron(0/2 * * * ? *) # every even minute
     Description: Schedule for the quick (watchlist-only) refresh
+  LiveRate:
+    Type: String
+    Default: rate(1 minute)
+    Description: Schedule for the live-game watcher (exits fast when idle)
   FullRate:
     Type: String
     # Minute 1 past every 3rd hour — an odd minute, so it never lands on the
@@ -140,6 +144,26 @@ Resources:
       Action: lambda:InvokeFunction
       Principal: events.amazonaws.com
       SourceArn: !GetAtt FullSchedule.Arn
+
+  LiveSchedule:
+    Type: AWS::Events::Rule
+    Properties:
+      Name: dimaggio-watch-refresh-live
+      Description: Live-game watcher; publishes within seconds of a watched at-bat
+      ScheduleExpression: !Ref LiveRate
+      State: ENABLED
+      Targets:
+        - Id: refresh-lambda-live
+          Arn: !GetAtt RefreshFunction.Arn
+          Input: '{"mode": "live"}'
+
+  LiveSchedulePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref RefreshFunction
+      Action: lambda:InvokeFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt LiveSchedule.Arn
 
 Outputs:
   DataUrl:

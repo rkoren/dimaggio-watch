@@ -322,6 +322,31 @@ section {
   vertical-align: middle;
 }
 
+/* player currently in a live game */
+.tag--live {
+  background: var(--red);
+  color: var(--cream);
+}
+
+.tag--jeopardy {
+  background: var(--navy);
+}
+
+.live-dot {
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  margin-right: 0.35em;
+  border-radius: 50%;
+  background: currentColor;
+  animation: live-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
 /* ---------- record card ---------- */
 .record {
   display: grid;
