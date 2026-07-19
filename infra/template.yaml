@@ -28,12 +28,22 @@ Parameters:
     Type: String
     Default: rate(1 minute)
     Description: Schedule for the live-game watcher (exits fast when idle)
+  AlarmEmail:
+    Type: String
+    Default: ""
+    Description: >-
+      Email for refresh-failure alerts (empty = topic without subscription).
+      Set once via ALARM_EMAIL env on deploy; later deploys keep the value.
+
   FullRate:
     Type: String
     # Minute 1 past every 3rd hour — an odd minute, so it never lands on the
     # quick rule's even-minute grid and races it publishing streaks.json.
     Default: cron(1 0/3 * * ? *)
     Description: Schedule for the full-league rescan
+
+Conditions:
+  HasAlarmEmail: !Not [!Equals [!Ref AlarmEmail, ""]]
 
 Resources:
   DataBucket:
@@ -164,6 +174,41 @@ Resources:
       Action: lambda:InvokeFunction
       Principal: events.amazonaws.com
       SourceArn: !GetAtt LiveSchedule.Arn
+
+  AlertTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: dimaggio-watch-alerts
+
+  AlertEmailSubscription:
+    Type: AWS::SNS::Subscription
+    Condition: HasAlarmEmail
+    Properties:
+      TopicArn: !Ref AlertTopic
+      Protocol: email
+      Endpoint: !Ref AlarmEmail
+
+  RefreshErrorsAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmName: dimaggio-watch-refresh-errors
+      AlarmDescription: >-
+        The streak refresher has been failing for ~15 minutes; the site is
+        serving stale data. Check the dimaggio-watch-refresh Lambda logs
+        (a likely cause is an MLB Stats API change or outage).
+      Namespace: AWS/Lambda
+      MetricName: Errors
+      Dimensions:
+        - Name: FunctionName
+          Value: !Ref RefreshFunction
+      Statistic: Sum
+      Period: 300
+      EvaluationPeriods: 3
+      Threshold: 2 # quick scans alone failing (every 2 min) must still trip it
+      ComparisonOperator: GreaterThanOrEqualToThreshold
+      TreatMissingData: notBreaching
+      AlarmActions: [!Ref AlertTopic]
+      OKActions: [!Ref AlertTopic]
 
 Outputs:
   DataUrl:

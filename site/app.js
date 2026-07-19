@@ -3,7 +3,11 @@
 // minutes; see config.js), with the bundled ./data/streaks.json as a fallback.
 // The page polls for updates so a long-lived tab stays current.
 const RECORD = 56;
-const POLL_MS = 60_000; // refetch cadence
+// Adaptive refetch cadence: the pipeline republishes within seconds of an
+// at-bat while watched players are in live games, so poll fast when the
+// payload has live rows and settle down when nothing is happening.
+const POLL_LIVE_MS = 15_000;
+const POLL_IDLE_MS = 60_000;
 const DATA_SOURCES = [window.STREAKS_DATA_URL, "./data/streaks.json"].filter(Boolean);
 
 const $ = (id) => document.getElementById(id);
@@ -195,9 +199,19 @@ async function refresh({ firstLoad = false } = {}) {
   }
 }
 
+function nextPollDelay() {
+  const anyLive = latestData?.streaks?.some((s) => s.liveStatus);
+  return anyLive ? POLL_LIVE_MS : POLL_IDLE_MS;
+}
+
+async function pollLoop() {
+  await refresh();
+  setTimeout(pollLoop, nextPollDelay());
+}
+
 async function main() {
   await refresh({ firstLoad: true });
-  setInterval(refresh, POLL_MS);
+  setTimeout(pollLoop, nextPollDelay());
   // Keep the relative "updated Xm ago" line ticking between polls.
   setInterval(() => {
     if (latestData) renderUpdatedLine(latestData);

@@ -34,6 +34,13 @@ HASH=$(shasum -a 256 "$BUILD_DIR/code.zip" | cut -c1-16)
 CODE_KEY="lambda/refresh-$HASH.zip"
 aws s3 cp --quiet "$BUILD_DIR/code.zip" "s3://$CODE_BUCKET/$CODE_KEY"
 
+PARAMS=(CodeBucket="$CODE_BUCKET" CodeKey="$CODE_KEY")
+# Alert email is sticky: set it once with ALARM_EMAIL=you@example.com;
+# later deploys without the env var keep the stack's current value.
+if [ -n "${ALARM_EMAIL:-}" ]; then
+  PARAMS+=(AlarmEmail="$ALARM_EMAIL")
+fi
+
 echo "Deploying stack $STACK (code: $CODE_KEY)..."
 aws cloudformation deploy \
   --region "$REGION" \
@@ -41,7 +48,7 @@ aws cloudformation deploy \
   --template-file infra/template.yaml \
   --capabilities CAPABILITY_NAMED_IAM \
   --no-fail-on-empty-changeset \
-  --parameter-overrides CodeBucket="$CODE_BUCKET" CodeKey="$CODE_KEY"
+  --parameter-overrides "${PARAMS[@]}"
 
 aws cloudformation describe-stacks \
   --region "$REGION" --stack-name "$STACK" \
