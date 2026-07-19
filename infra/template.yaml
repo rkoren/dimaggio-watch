@@ -1,12 +1,15 @@
 # CloudFormation stack for the AWS-native data refresh pipeline.
 #
-#   EventBridge (every 5 min) -> Lambda (build streaks) -> S3 (streaks.json)
-#                                                            ^
-#                                            site polls this URL directly
+#   EventBridge quick rule (every 2 min) ─┐
+#                                         ├-> Lambda (build streaks) -> S3
+#   EventBridge full rule  (every 3 h)  ──┘                              ^
+#                                                site polls streaks.json │
 #
-# Deploy with infra/deploy.sh. The site itself stays on Amplify Hosting;
-# this stack only owns the data path, so data updates never require a
-# site rebuild.
+# The full rule rescans the whole league and refreshes the watchlist
+# baseline; the quick rule rescans only the top ~40 streaks (see
+# lambda/handler.mjs). Deploy with infra/deploy.sh. The site itself stays
+# on Amplify Hosting; this stack only owns the data path, so data updates
+# never require a site rebuild.
 AWSTemplateFormatVersion: "2010-09-09"
 Description: DiMaggio Watch - streak data refresh (S3 + Lambda + EventBridge)
 
@@ -17,10 +20,16 @@ Parameters:
   CodeKey:
     Type: String
     Description: S3 key of the packaged Lambda code zip (content-hashed)
-  RefreshRate:
+  QuickRate:
     Type: String
-    Default: rate(5 minutes)
-    Description: EventBridge schedule expression for the refresh
+    Default: cron(0/2 * * * ? *) # every even minute
+    Description: Schedule for the quick (watchlist-only) refresh
+  FullRate:
+    Type: String
+    # Minute 1 past every 3rd hour — an odd minute, so it never lands on the
+    # quick rule's even-minute grid and races it publishing streaks.json.
+    Default: cron(1 0/3 * * ? *)
+    Description: Schedule for the full-league rescan
 
 Resources:
   DataBucket:
@@ -70,7 +79,7 @@ Resources:
             Version: "2012-10-17"
             Statement:
               - Effect: Allow
-                Action: s3:PutObject
+                Action: [s3:PutObject, s3:GetObject] # Get: quick scan reads state/full-scan.json
                 Resource: !Sub ${DataBucket.Arn}/*
 
   RefreshFunction:
@@ -90,25 +99,47 @@ Resources:
       Environment:
         Variables:
           DATA_BUCKET: !Ref DataBucket
+          WATCH_COUNT: "40"
 
-  RefreshSchedule:
+  QuickSchedule:
     Type: AWS::Events::Rule
     Properties:
-      Name: dimaggio-watch-refresh-schedule
-      Description: Periodic streak-data refresh
-      ScheduleExpression: !Ref RefreshRate
+      Name: dimaggio-watch-refresh-quick
+      Description: Watchlist-only streak refresh (top streaks, ~40 API calls)
+      ScheduleExpression: !Ref QuickRate
       State: ENABLED
       Targets:
-        - Id: refresh-lambda
+        - Id: refresh-lambda-quick
           Arn: !GetAtt RefreshFunction.Arn
+          Input: '{"mode": "quick"}'
 
-  RefreshSchedulePermission:
+  QuickSchedulePermission:
     Type: AWS::Lambda::Permission
     Properties:
       FunctionName: !Ref RefreshFunction
       Action: lambda:InvokeFunction
       Principal: events.amazonaws.com
-      SourceArn: !GetAtt RefreshSchedule.Arn
+      SourceArn: !GetAtt QuickSchedule.Arn
+
+  FullSchedule:
+    Type: AWS::Events::Rule
+    Properties:
+      Name: dimaggio-watch-refresh-full
+      Description: Full-league rescan; rebuilds the watchlist baseline
+      ScheduleExpression: !Ref FullRate
+      State: ENABLED
+      Targets:
+        - Id: refresh-lambda-full
+          Arn: !GetAtt RefreshFunction.Arn
+          Input: '{"mode": "full"}'
+
+  FullSchedulePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref RefreshFunction
+      Action: lambda:InvokeFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt FullSchedule.Arn
 
 Outputs:
   DataUrl:

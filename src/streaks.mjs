@@ -19,6 +19,9 @@ const CONCURRENCY = 8;
 const TOP_N = 25; // how many streaks to publish
 const MIN_STREAK = 1; // only publish streaks of at least this many games
 
+// How many MLB API requests the current scan has made (see takeApiCallCount).
+let apiCalls = 0;
+
 export const DIMAGGIO = { holder: "Joe DiMaggio", length: 56, year: 1941, team: "New York Yankees" };
 // Milestones along the way to 56. Each is a meaningful marker in streak lore.
 export const MILESTONES = [
@@ -31,6 +34,7 @@ export const MILESTONES = [
 
 // --- tiny fetch helper with retry on 5xx / network errors --------------------
 async function getJSON(url, attempt = 1) {
+  if (attempt === 1) apiCalls++;
   try {
     const res = await fetch(url, { headers: { Accept: "application/json" } });
     if (res.status >= 500) throw new Error(`HTTP ${res.status}`);
@@ -123,9 +127,25 @@ function nextMilestone(streak) {
   return MILESTONES.find((m) => m.length > streak) ?? null;
 }
 
-// --- main entry point --------------------------------------------------------
-// Scans the league and returns the full streaks.json payload object.
-export async function buildStreaksPayload({ season, log = () => {} } = {}) {
+// Returns the number of MLB API calls made since the last take, and resets
+// the counter. Call once per scan for logging/cost visibility.
+export function takeApiCallCount() {
+  const n = apiCalls;
+  apiCalls = 0;
+  return n;
+}
+
+async function computePlayerRecord({ playerId, name, team, teamName }, season) {
+  const games = await getGameLog(playerId, season);
+  const { streak, startDate, lastHitDate, lastGameDate } = computeStreak(games);
+  return { playerId, name, team, teamName, streak, startDate, lastHitDate, lastGameDate };
+}
+
+// --- scans -------------------------------------------------------------------
+// Full-league scan: every active roster, every position player (~430 API
+// calls). Returns computed records for ALL players, unfiltered, so the result
+// can serve as the baseline the quick scan merges over.
+export async function scanLeague({ season, log = () => {} } = {}) {
   season = season || new Date().getUTCFullYear();
 
   const teams = await getTeams(season);
@@ -135,22 +155,45 @@ export async function buildStreaksPayload({ season, log = () => {} } = {}) {
   const hitters = rosterLists.flat();
   log(`Scanning ${hitters.length} position players...`);
 
-  const computed = await mapLimit(hitters, CONCURRENCY, async (player) => {
-    const games = await getGameLog(player.id, season);
-    const { streak, startDate, lastHitDate, lastGameDate } = computeStreak(games);
-    return {
-      playerId: player.id,
-      name: player.name,
-      team: player.team.abbreviation,
-      teamName: player.team.name,
-      streak,
-      startDate,
-      lastHitDate,
-      lastGameDate,
-    };
-  });
+  const players = await mapLimit(hitters, CONCURRENCY, (p) =>
+    computePlayerRecord(
+      { playerId: p.id, name: p.name, team: p.team.abbreviation, teamName: p.team.name },
+      season
+    )
+  );
+  return { season, players };
+}
 
-  const streaks = computed
+// Watchlist scan: refetch only the given players' game logs (one API call
+// each). `players` are records from a previous scan.
+export async function rescanPlayers(players, { season, log = () => {} } = {}) {
+  season = season || new Date().getUTCFullYear();
+  log(`Rescanning ${players.length} watched players...`);
+  return mapLimit(players, CONCURRENCY, (p) => computePlayerRecord(p, season));
+}
+
+// Pick the players worth watching between full scans: the top `count` by
+// streak, extended to include ties at the cutoff. Bottom-of-board players
+// outside this set may show stale until the next full scan.
+export function pickWatchlist(players, count = 40) {
+  const ranked = [...players]
+    .filter((p) => p.streak >= 1)
+    .sort((a, b) => b.streak - a.streak || a.name.localeCompare(b.name));
+  let end = Math.min(count, ranked.length);
+  while (end < ranked.length && ranked[end].streak === ranked[count - 1]?.streak) end++;
+  return ranked.slice(0, end);
+}
+
+// Overlay freshly-rescanned records onto a baseline full-scan list.
+export function mergePlayers(baseline, fresh) {
+  const byId = new Map(fresh.map((p) => [p.playerId, p]));
+  return baseline.map((p) => byId.get(p.playerId) ?? p);
+}
+
+// --- payload -----------------------------------------------------------------
+// Builds the published streaks.json payload from computed player records.
+export function buildPayload(players, season) {
+  const streaks = players
     .filter((p) => p.streak >= MIN_STREAK && p.startDate)
     .sort((a, b) => b.streak - a.streak || a.name.localeCompare(b.name))
     .slice(0, TOP_N)
@@ -171,4 +214,10 @@ export async function buildStreaksPayload({ season, log = () => {} } = {}) {
     milestones: MILESTONES,
     streaks,
   };
+}
+
+// Convenience: full scan straight to payload (local CLI path).
+export async function buildStreaksPayload({ season, log = () => {} } = {}) {
+  const scan = await scanLeague({ season, log });
+  return buildPayload(scan.players, scan.season);
 }
