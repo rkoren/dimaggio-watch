@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "build:data": "node scripts/build-data.mjs",
-    "dev": "node scripts/build-data.mjs && node scripts/serve.mjs"
+    "dev": "node scripts/build-data.mjs && node scripts/serve.mjs",
+    "analytics": "node scripts/analytics.mjs"
   },
   "engines": {
     "node": ">=20"

@@ -61,6 +61,43 @@ Resources:
             AllowedOrigins: ["*"] # public data; site + local dev both fetch it
             AllowedHeaders: ["*"]
             MaxAge: 300
+      # Lightweight analytics: every visitor polls streaks.json from this
+      # bucket, so its server access logs double as a visitor log — no
+      # client-side tracking needed. Summarize with scripts/analytics.mjs.
+      LoggingConfiguration:
+        DestinationBucketName: !Ref LogsBucket
+        LogFilePrefix: s3-access/
+
+  LogsBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub dimaggio-watch-logs-${AWS::AccountId}
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: true
+        RestrictPublicBuckets: true
+      LifecycleConfiguration:
+        Rules:
+          - Id: expire-old-logs
+            Status: Enabled
+            ExpirationInDays: 90 # keeps storage cost at pennies
+
+  LogsBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref LogsBucket
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: S3ServerAccessLogDelivery
+            Effect: Allow
+            Principal: { Service: logging.s3.amazonaws.com }
+            Action: s3:PutObject
+            Resource: !Sub ${LogsBucket.Arn}/s3-access/*
+            Condition:
+              StringEquals:
+                aws:SourceAccount: !Ref AWS::AccountId
 
   DataBucketPolicy:
     Type: AWS::S3::BucketPolicy

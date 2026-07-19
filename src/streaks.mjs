@@ -101,6 +101,10 @@ export async function getLiveContext() {
   return {
     date,
     liveTeamIds: new Set(live.flatMap((g) => [g.teams.away.team.id, g.teams.home.team.id])),
+    // Pending detection is by gamePk, not date: in a doubleheader, a final
+    // game 1 must count normally (a hitless one breaks the streak) while
+    // only the in-progress game 2 is provisional.
+    liveGamePks: new Set(live.map((g) => g.gamePk)),
     liveGames: live.map((g) => ({
       gamePk: g.gamePk,
       teamIds: [g.teams.away.team.id, g.teams.home.team.id],
@@ -114,24 +118,29 @@ async function getGameLog(playerId, season) {
     `?stats=gameLog&group=hitting&season=${season}&sportId=${SPORT_ID}&gameType=R`;
   const data = await getJSON(url);
   const splits = data?.stats?.[0]?.splits ?? [];
-  // Ascending by date already, but sort defensively.
+  // Ascending already, but sort defensively — including gameNumber, so the
+  // two ends of a doubleheader stay in played order (walking a streak
+  // backward through a doubleheader depends on it).
   return splits
     .map((s) => ({
       date: s.date,
+      gamePk: s.game?.gamePk ?? null,
+      gameNumber: s.game?.gameNumber ?? 1,
       atBats: Number(s.stat?.atBats ?? 0),
       hits: Number(s.stat?.hits ?? 0),
       sacFlies: Number(s.stat?.sacFlies ?? 0),
     }))
-    .sort((a, b) => a.date.localeCompare(b.date));
+    .sort((a, b) => a.date.localeCompare(b.date) || a.gameNumber - b.gameNumber);
 }
 
 // Walk a game log backward to compute the current active hitting streak.
 //
-// `pendingDate` (optional, YYYY-MM-DD): the player's game on this date is
-// in progress, so its stats are provisional — a hit already banked extends
-// the streak (flagged `provisional`), but a hitless line must NOT break it
-// yet (the player may still hit); it's flagged `inJeopardy` instead.
-function computeStreak(games, pendingDate = null) {
+// `pendingGamePks` (optional, Set): these games are in progress, so their
+// stats are provisional — a hit already banked extends the streak (flagged
+// `provisional`), but a hitless line must NOT break it yet (the player may
+// still hit); it's flagged `inJeopardy` instead. Keyed by gamePk so a
+// doubleheader's finished game 1 counts normally while game 2 is live.
+export function computeStreak(games, pendingGamePks = null) {
   let streak = 0;
   let startDate = null;
   let lastHitDate = null;
@@ -141,7 +150,7 @@ function computeStreak(games, pendingDate = null) {
 
   for (let i = games.length - 1; i >= 0; i--) {
     const g = games[i];
-    const pending = g.date === pendingDate;
+    const pending = pendingGamePks?.has(g.gamePk) ?? false;
     if (g.hits >= 1) {
       streak++;
       startDate = g.date;
@@ -173,13 +182,13 @@ export function takeApiCallCount() {
   return n;
 }
 
-// `liveCtx` (from getLiveContext) marks the player's in-progress game as
-// pending so a mid-game hitless line doesn't falsely break the streak.
+// `liveCtx` (from getLiveContext) marks in-progress games as pending so a
+// mid-game hitless line doesn't falsely break the streak. Matching is by
+// gamePk, so only the actually-live game of a doubleheader is provisional.
 export async function computePlayerRecord({ playerId, name, team, teamId, teamName }, season, liveCtx = null) {
   const games = await getGameLog(playerId, season);
-  const pendingDate = liveCtx?.liveTeamIds.has(teamId) ? liveCtx.date : null;
   const { streak, startDate, lastHitDate, lastGameDate, provisional, inJeopardy } =
-    computeStreak(games, pendingDate);
+    computeStreak(games, liveCtx?.liveGamePks ?? null);
   return {
     playerId, name, team, teamId, teamName,
     streak, startDate, lastHitDate, lastGameDate, provisional, inJeopardy,
@@ -238,13 +247,16 @@ export function mergePlayers(baseline, fresh) {
 
 // --- payload -----------------------------------------------------------------
 // Builds the published streaks.json payload from computed player records.
-export function buildPayload(players, season) {
+// `liveCtx` (optional) clears stale live flags on players whose team is no
+// longer mid-game (baseline records can carry flags from an earlier scan).
+export function buildPayload(players, season, liveCtx = null) {
   const streaks = players
     .filter((p) => p.streak >= MIN_STREAK && p.startDate)
     .sort((a, b) => b.streak - a.streak || a.name.localeCompare(b.name))
     .slice(0, TOP_N)
     .map((p, idx) => {
       const next = nextMilestone(p.streak);
+      const teamLive = liveCtx ? liveCtx.liveTeamIds.has(p.teamId) : true;
       return {
         rank: idx + 1,
         ...p,
@@ -252,7 +264,8 @@ export function buildPayload(players, season) {
         nextMilestone: next ? next.length : null,
         // "hitToday": streak count includes a hit from an in-progress game.
         // "inJeopardy": hitless with >=1 AB in an in-progress game.
-        liveStatus: p.provisional ? "hitToday" : p.inJeopardy ? "inJeopardy" : null,
+        liveStatus:
+          teamLive && p.provisional ? "hitToday" : teamLive && p.inJeopardy ? "inJeopardy" : null,
       };
     });
 
@@ -269,7 +282,7 @@ export function buildPayload(players, season) {
 export async function buildStreaksPayload({ season, log = () => {} } = {}) {
   const liveCtx = await getLiveContext();
   const scan = await scanLeague({ season, liveCtx, log });
-  return buildPayload(scan.players, scan.season);
+  return buildPayload(scan.players, scan.season, liveCtx);
 }
 
 // Current batting line for everyone in a game, from its boxscore:

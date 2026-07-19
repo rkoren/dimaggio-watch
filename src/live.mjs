@@ -84,7 +84,7 @@ export async function runLiveCycle({
 
     const fresh = await rescanPlayers(changed, { season: state.season, liveCtx, log });
     players = mergePlayers(players, fresh);
-    await publish(buildPayload(players, state.season));
+    await publish(buildPayload(players, state.season, liveCtx));
     publishes++;
   }
 

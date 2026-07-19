@@ -118,7 +118,7 @@ export async function handler(event = {}) {
     await putJSON(STATE_KEY, { scannedAt: new Date().toISOString(), season: seasonUsed, players }, "no-cache");
   }
 
-  const payload = buildPayload(players, seasonUsed);
+  const payload = buildPayload(players, seasonUsed, liveCtx);
 
   // no-cache => browsers revalidate with If-None-Match and get a cheap 304
   // from S3 when the data hasn't changed.
