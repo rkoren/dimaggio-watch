@@ -50,7 +50,9 @@ function verdict(streak) {
 
 function renderHero(leader, milestones) {
   $("hero-name").textContent = leader.name;
-  $("hero-team").textContent = `${leader.teamName} · streak began ${fmtDate(leader.startDate)}`;
+  $("hero-team").innerHTML =
+    `${escapeHtml(leader.teamName)} · streak began ${fmtDate(leader.startDate)}` +
+    liveBadge(leader.liveStatus);
   $("hero-num").textContent = leader.streak;
   $("hero-verdict").innerHTML = verdict(leader.streak);
 
@@ -80,12 +82,13 @@ function renderBoard(streaks) {
     li.className = "row";
 
     const milestone = s.streak >= 20 ? `<span class="tag">${milestoneTag(s.streak)}</span>` : "";
+    const live = liveBadge(s.liveStatus);
     const barPct = Math.max(4, (s.streak / Math.max(max, RECORD * 0.4)) * 100);
 
     li.innerHTML = `
       <div class="row__rank">${s.rank}</div>
       <div>
-        <div class="row__name">${escapeHtml(s.name)}${milestone}</div>
+        <div class="row__name">${escapeHtml(s.name)}${milestone}${live}</div>
         <div class="row__meta">${escapeHtml(s.teamName)} · since ${fmtDate(s.startDate)} · last game ${fmtDate(s.lastGameDate)}</div>
       </div>
       <div class="row__streak">${s.streak}<span>GAMES</span></div>
@@ -94,6 +97,17 @@ function renderBoard(streaks) {
     list.appendChild(li);
   }
   $("board").hidden = false;
+}
+
+// Badge for a player currently in a live game. "hitToday" means the shown
+// streak count already includes a hit from the in-progress game; "inJeopardy"
+// means they're hitless with at least one at-bat so far.
+function liveBadge(liveStatus) {
+  if (liveStatus === "hitToday")
+    return `<span class="tag tag--live"><i class="live-dot"></i>live · hit today</span>`;
+  if (liveStatus === "inJeopardy")
+    return `<span class="tag tag--live tag--jeopardy"><i class="live-dot"></i>live · hitless so far</span>`;
+  return "";
 }
 
 function milestoneTag(streak) {

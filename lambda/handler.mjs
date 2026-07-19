@@ -1,7 +1,7 @@
 // Refresher Lambda: rebuilds the streaks payload and publishes it to S3,
 // where the site fetches it directly (no Amplify rebuild needed).
 //
-// Two modes, selected by the EventBridge rule's input ({"mode": "..."}):
+// Three modes, selected by the EventBridge rule's input ({"mode": "..."}):
 //
 //   full  (every few hours) — scan the whole league (~430 MLB API calls),
 //         publish the board, and save the complete result to
@@ -10,6 +10,10 @@
 //         streaks from the last full scan, merge over that baseline, publish.
 //         Falls back to a full scan if the state is missing or stale, so the
 //         pipeline self-heals from an empty bucket.
+//   live  (every minute) — if watched players are in live games, poll those
+//         games' boxscores every ~18s and republish within seconds of a
+//         watched player's completed plate appearance (src/live.mjs).
+//         Exits after a single schedule call when nothing is live.
 //
 // Published objects:
 //   streaks.json            — the live payload the site polls
@@ -26,8 +30,10 @@ import {
   pickWatchlist,
   mergePlayers,
   buildPayload,
+  getLiveContext,
   takeApiCallCount,
 } from "./src/streaks.mjs";
+import { runLiveCycle } from "./src/live.mjs";
 
 const s3 = new S3Client({});
 const BUCKET = process.env.DATA_BUCKET;
@@ -57,12 +63,37 @@ function putJSON(key, value, cacheControl) {
   );
 }
 
+// Survives warm invocations so the live loop only reacts to NEW plate
+// appearances instead of re-syncing every watched player each minute.
+const liveLastSeen = new Map();
+
 export async function handler(event = {}) {
   if (!BUCKET) throw new Error("DATA_BUCKET env var is not set");
 
   const startedAt = Date.now();
   const season = Number(process.env.SEASON) || undefined;
-  let mode = event.mode === "full" ? "full" : "quick";
+  let mode = ["full", "live"].includes(event.mode) ? event.mode : "quick";
+
+  if (mode === "live") {
+    const result = await runLiveCycle({
+      getState: readState,
+      publish: (payload) => putJSON("streaks.json", payload, "no-cache"),
+      watchCount: WATCH_COUNT,
+      lastSeen: liveLastSeen,
+      log: console.log,
+    });
+    const secs = ((Date.now() - startedAt) / 1000).toFixed(1);
+    const apiCalls = takeApiCallCount();
+    console.log(
+      `[live] ${result.liveGames} live games, ${result.watched} watched, ` +
+        `${result.publishes} publishes in ${secs}s using ${apiCalls} MLB API calls.`
+    );
+    return { ok: true, mode, apiCalls, ...result };
+  }
+
+  // The player's in-progress game (if any) must not break their streak
+  // mid-game; quick/full scans need the same live awareness.
+  const liveCtx = await getLiveContext();
 
   let players;
   let seasonUsed = season || new Date().getUTCFullYear();
@@ -75,13 +106,13 @@ export async function handler(event = {}) {
     } else {
       seasonUsed = state.season;
       const watchlist = pickWatchlist(state.players, WATCH_COUNT);
-      const rescanned = await rescanPlayers(watchlist, { season: seasonUsed, log: console.log });
+      const rescanned = await rescanPlayers(watchlist, { season: seasonUsed, liveCtx, log: console.log });
       players = mergePlayers(state.players, rescanned);
     }
   }
 
   if (mode === "full") {
-    const scan = await scanLeague({ season, log: console.log });
+    const scan = await scanLeague({ season, liveCtx, log: console.log });
     players = scan.players;
     seasonUsed = scan.season;
     await putJSON(STATE_KEY, { scannedAt: new Date().toISOString(), season: seasonUsed, players }, "no-cache");
