@@ -19,6 +19,7 @@ const scan = await scanLeague({ liveCtx, log });
 console.log(`Baseline ready: ${scan.players.length} players, ${takeApiCallCount()} API calls.\n`);
 
 const lastSeen = new Map();
+const finalizedGamePks = new Set();
 const deadline = Date.now() + minutes * 60_000;
 let cycle = 0;
 
@@ -35,11 +36,13 @@ while (Date.now() < deadline) {
       }
     },
     lastSeen,
+    finalizedGamePks,
     log,
   });
   console.log(
     `  cycle summary: ${result.liveGames} live games, ${result.watched} watched, ` +
-      `${result.publishes} would-be publishes, ${takeApiCallCount()} API calls\n`
+      `${result.finalized} reconciled, ${result.publishes} would-be publishes, ` +
+      `${takeApiCallCount()} API calls\n`
   );
   if (!result.liveGames) break; // nothing on; no point looping
 }

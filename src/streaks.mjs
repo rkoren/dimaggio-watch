@@ -97,18 +97,20 @@ export async function getLiveContext() {
   const date = mlbToday();
   const data = await getJSON(`${API}/schedule?sportId=${SPORT_ID}&date=${date}`);
   const games = data?.dates?.[0]?.games ?? [];
+  const teamIdsOf = (g) => [g.teams.away.team.id, g.teams.home.team.id];
   const live = games.filter((g) => g.status?.abstractGameState === "Live");
+  const final = games.filter((g) => g.status?.abstractGameState === "Final");
   return {
     date,
-    liveTeamIds: new Set(live.flatMap((g) => [g.teams.away.team.id, g.teams.home.team.id])),
+    liveTeamIds: new Set(live.flatMap(teamIdsOf)),
     // Pending detection is by gamePk, not date: in a doubleheader, a final
     // game 1 must count normally (a hitless one breaks the streak) while
     // only the in-progress game 2 is provisional.
     liveGamePks: new Set(live.map((g) => g.gamePk)),
-    liveGames: live.map((g) => ({
-      gamePk: g.gamePk,
-      teamIds: [g.teams.away.team.id, g.teams.home.team.id],
-    })),
+    liveGames: live.map((g) => ({ gamePk: g.gamePk, teamIds: teamIdsOf(g) })),
+    // Today's completed games, so the live watcher can reconcile a watched
+    // player's streak the moment their game ends.
+    finalGames: final.map((g) => ({ gamePk: g.gamePk, teamIds: teamIdsOf(g) })),
   };
 }
 

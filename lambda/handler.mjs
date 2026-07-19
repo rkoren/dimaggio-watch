@@ -31,6 +31,7 @@ import {
   mergePlayers,
   buildPayload,
   getLiveContext,
+  mlbToday,
   takeApiCallCount,
 } from "./src/streaks.mjs";
 import { runLiveCycle } from "./src/live.mjs";
@@ -63,9 +64,11 @@ function putJSON(key, value, cacheControl) {
   );
 }
 
-// Survives warm invocations so the live loop only reacts to NEW plate
-// appearances instead of re-syncing every watched player each minute.
+// Survive warm invocations: liveLastSeen so the live loop only reacts to NEW
+// plate appearances; liveFinalized so each completed game is reconciled once
+// (a cold start re-reconciles today's final games once — harmless).
 const liveLastSeen = new Map();
+const liveFinalized = new Set();
 
 export async function handler(event = {}) {
   if (!BUCKET) throw new Error("DATA_BUCKET env var is not set");
@@ -80,13 +83,15 @@ export async function handler(event = {}) {
       publish: (payload) => putJSON("streaks.json", payload, "no-cache"),
       watchCount: WATCH_COUNT,
       lastSeen: liveLastSeen,
+      finalizedGamePks: liveFinalized,
       log: console.log,
     });
     const secs = ((Date.now() - startedAt) / 1000).toFixed(1);
     const apiCalls = takeApiCallCount();
     console.log(
       `[live] ${result.liveGames} live games, ${result.watched} watched, ` +
-        `${result.publishes} publishes in ${secs}s using ${apiCalls} MLB API calls.`
+        `${result.finalized} reconciled, ${result.publishes} publishes in ${secs}s ` +
+        `using ${apiCalls} MLB API calls.`
     );
     return { ok: true, mode, apiCalls, ...result };
   }
@@ -123,8 +128,11 @@ export async function handler(event = {}) {
   // no-cache => browsers revalidate with If-None-Match and get a cheap 304
   // from S3 when the data hasn't changed.
   await putJSON("streaks.json", payload, "no-cache");
-  const day = payload.generatedAt.slice(0, 10); // YYYY-MM-DD (UTC)
-  await putJSON(`history/${day}.json`, payload, "public, max-age=3600");
+  // Keyed to the MLB (US Eastern) day, not UTC: night games span UTC
+  // midnight, so a UTC key would freeze mid-game provisional stats. The last
+  // write of an ET day lands well after every game is final, making each
+  // snapshot a reconciled end-of-day record (the seed for the pace chart).
+  await putJSON(`history/${mlbToday()}.json`, payload, "public, max-age=3600");
 
   const secs = ((Date.now() - startedAt) / 1000).toFixed(1);
   const apiCalls = takeApiCallCount();
