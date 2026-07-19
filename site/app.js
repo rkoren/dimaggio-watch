@@ -204,14 +204,32 @@ function nextPollDelay() {
   return anyLive ? POLL_LIVE_MS : POLL_IDLE_MS;
 }
 
-async function pollLoop() {
-  await refresh();
-  setTimeout(pollLoop, nextPollDelay());
+// Poll only while the tab is visible: background tabs stop entirely, and
+// coming back refetches immediately so the board is never stale on return.
+let pollTimer = null;
+
+function schedulePoll() {
+  clearTimeout(pollTimer);
+  pollTimer = setTimeout(pollLoop, nextPollDelay());
 }
+
+async function pollLoop() {
+  if (document.hidden) return; // resumed by visibilitychange
+  await refresh();
+  schedulePoll();
+}
+
+document.addEventListener("visibilitychange", async () => {
+  clearTimeout(pollTimer);
+  if (!document.hidden) {
+    await refresh();
+    schedulePoll();
+  }
+});
 
 async function main() {
   await refresh({ firstLoad: true });
-  setTimeout(pollLoop, nextPollDelay());
+  schedulePoll();
   // Keep the relative "updated Xm ago" line ticking between polls.
   setInterval(() => {
     if (latestData) renderUpdatedLine(latestData);

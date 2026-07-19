@@ -132,6 +132,9 @@ Resources:
               - Effect: Allow
                 Action: [s3:PutObject, s3:GetObject] # Get: quick scan reads state/full-scan.json
                 Resource: !Sub ${DataBucket.Arn}/*
+              - Effect: Allow
+                Action: sns:Publish
+                Resource: !Ref MilestoneTopic
 
   RefreshFunction:
     Type: AWS::Lambda::Function
@@ -151,6 +154,7 @@ Resources:
         Variables:
           DATA_BUCKET: !Ref DataBucket
           WATCH_COUNT: "40"
+          MILESTONE_TOPIC_ARN: !Ref MilestoneTopic
 
   QuickSchedule:
     Type: AWS::Events::Rule
@@ -225,6 +229,21 @@ Resources:
       Protocol: email
       Endpoint: !Ref AlarmEmail
 
+  # Separate topic for the fun emails ("X reached 20 games") so baseball news
+  # and ops alarms don't share a channel.
+  MilestoneTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: dimaggio-watch-milestones
+
+  MilestoneEmailSubscription:
+    Type: AWS::SNS::Subscription
+    Condition: HasAlarmEmail
+    Properties:
+      TopicArn: !Ref MilestoneTopic
+      Protocol: email
+      Endpoint: !Ref AlarmEmail
+
   RefreshErrorsAlarm:
     Type: AWS::CloudWatch::Alarm
     Properties:
@@ -244,6 +263,29 @@ Resources:
       Threshold: 2 # quick scans alone failing (every 2 min) must still trip it
       ComparisonOperator: GreaterThanOrEqualToThreshold
       TreatMissingData: notBreaching
+      AlarmActions: [!Ref AlertTopic]
+      OKActions: [!Ref AlertTopic]
+
+  RefreshSilentAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmName: dimaggio-watch-refresh-silent
+      AlarmDescription: >-
+        The refresher has barely run in the last 30 minutes (expected ~45
+        invocations across the quick/live/full schedules) — the site is going
+        stale WITHOUT errors. Likely a disabled EventBridge rule or a deploy
+        that dropped a schedule.
+      Namespace: AWS/Lambda
+      MetricName: Invocations
+      Dimensions:
+        - Name: FunctionName
+          Value: !Ref RefreshFunction
+      Statistic: Sum
+      Period: 1800
+      EvaluationPeriods: 1
+      Threshold: 10
+      ComparisonOperator: LessThanThreshold
+      TreatMissingData: breaching # zero invocations = no datapoints = exactly the failure
       AlarmActions: [!Ref AlertTopic]
       OKActions: [!Ref AlertTopic]
 

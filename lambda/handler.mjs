@@ -24,6 +24,7 @@
 // See infra/template.yaml for the schedules.
 
 import { S3Client, PutObjectCommand, GetObjectCommand } from "@aws-sdk/client-s3";
+import { SNSClient, PublishCommand } from "@aws-sdk/client-sns";
 import {
   scanLeague,
   rescanPlayers,
@@ -35,22 +36,28 @@ import {
   takeApiCallCount,
 } from "./src/streaks.mjs";
 import { runLiveCycle } from "./src/live.mjs";
+import { computeMilestoneAlerts, formatMilestoneAlert } from "./src/milestones.mjs";
 
 const s3 = new S3Client({});
+const sns = new SNSClient({});
 const BUCKET = process.env.DATA_BUCKET;
+const MILESTONE_TOPIC = process.env.MILESTONE_TOPIC_ARN;
 const STATE_KEY = "state/full-scan.json";
+const MILESTONE_STATE_KEY = "state/milestones.json";
 const WATCH_COUNT = Number(process.env.WATCH_COUNT) || 40;
 // A baseline older than this forces a full scan (normally refreshed every 3h).
 const STATE_MAX_AGE_MS = 12 * 60 * 60 * 1000;
 
-async function readState() {
+async function readJSON(key) {
   try {
-    const res = await s3.send(new GetObjectCommand({ Bucket: BUCKET, Key: STATE_KEY }));
+    const res = await s3.send(new GetObjectCommand({ Bucket: BUCKET, Key: key }));
     return JSON.parse(await res.Body.transformToString());
   } catch {
-    return null; // missing/unreadable -> caller falls back to a full scan
+    return null; // missing/unreadable
   }
 }
+
+const readState = () => readJSON(STATE_KEY);
 
 function putJSON(key, value, cacheControl) {
   return s3.send(
@@ -62,6 +69,32 @@ function putJSON(key, value, cacheControl) {
       CacheControl: cacheControl,
     })
   );
+}
+
+// The single publish path for every mode: write the board, keep the daily
+// snapshot current, and fire milestone alerts on newly-crossed thresholds.
+async function publishBoard(payload) {
+  await putJSON("streaks.json", payload, "no-cache");
+  // Keyed to the MLB (US Eastern) day, not UTC: night games span UTC
+  // midnight, so a UTC key would freeze mid-game provisional stats. The last
+  // write of an ET day lands well after every game is final, making each
+  // snapshot a reconciled end-of-day record (the seed for the pace chart).
+  await putJSON(`history/${mlbToday()}.json`, payload, "public, max-age=3600");
+  await notifyMilestones(payload);
+}
+
+async function notifyMilestones(payload) {
+  if (!MILESTONE_TOPIC) return;
+  const prevState = (await readJSON(MILESTONE_STATE_KEY)) ?? {};
+  const { alerts, nextState } = computeMilestoneAlerts(payload.streaks, prevState);
+  if (JSON.stringify(nextState) !== JSON.stringify(prevState)) {
+    await putJSON(MILESTONE_STATE_KEY, nextState, "no-cache");
+  }
+  for (const alert of alerts) {
+    const { subject, message } = formatMilestoneAlert(alert);
+    await sns.send(new PublishCommand({ TopicArn: MILESTONE_TOPIC, Subject: subject, Message: message }));
+    console.log(`[milestone] ${subject}`);
+  }
 }
 
 // Survive warm invocations: liveLastSeen so the live loop only reacts to NEW
@@ -80,7 +113,7 @@ export async function handler(event = {}) {
   if (mode === "live") {
     const result = await runLiveCycle({
       getState: readState,
-      publish: (payload) => putJSON("streaks.json", payload, "no-cache"),
+      publish: publishBoard,
       watchCount: WATCH_COUNT,
       lastSeen: liveLastSeen,
       finalizedGamePks: liveFinalized,
@@ -125,14 +158,7 @@ export async function handler(event = {}) {
 
   const payload = buildPayload(players, seasonUsed, liveCtx);
 
-  // no-cache => browsers revalidate with If-None-Match and get a cheap 304
-  // from S3 when the data hasn't changed.
-  await putJSON("streaks.json", payload, "no-cache");
-  // Keyed to the MLB (US Eastern) day, not UTC: night games span UTC
-  // midnight, so a UTC key would freeze mid-game provisional stats. The last
-  // write of an ET day lands well after every game is final, making each
-  // snapshot a reconciled end-of-day record (the seed for the pace chart).
-  await putJSON(`history/${mlbToday()}.json`, payload, "public, max-age=3600");
+  await publishBoard(payload);
 
   const secs = ((Date.now() - startedAt) / 1000).toFixed(1);
   const apiCalls = takeApiCallCount();
