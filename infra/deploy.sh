@@ -27,7 +27,7 @@ BUILD_DIR=$(mktemp -d)
 trap 'rm -rf "$BUILD_DIR"' EXIT
 cp lambda/handler.mjs "$BUILD_DIR/"
 mkdir -p "$BUILD_DIR/src"
-cp src/streaks.mjs "$BUILD_DIR/src/"
+cp src/*.mjs "$BUILD_DIR/src/"
 (cd "$BUILD_DIR" && zip -qr code.zip handler.mjs src)
 
 HASH=$(shasum -a 256 "$BUILD_DIR/code.zip" | cut -c1-16)
